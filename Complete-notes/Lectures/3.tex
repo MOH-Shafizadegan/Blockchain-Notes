@@ -1,0 +1,89 @@
+\chapter{Proof of Work and Nakamoto Consensus}
+Still it is note worthy to remember the two keywords for blockchains, decentralization, and trust. What we have discussed so far was that blockchain data structure enables a tamper-evident and tamper-resistant ledger but only a single party has the privilege to write into the ledger. We saw that this data structure has trust built into it. In this lecture we will go through the idea of decentralization and we will see that how bitcoin deals with decentralization via the Nakamoto consensus protocol.
+
+\section{Decentralized Blockchain \& Nakamoto consensus}
+We saw the idea of signature on the previous lecture. The identity of the signer is so called the public key, in blockchain or bitcoin terminology is simply called address. In a bitcoin wallet, the address simply reports the public key of the wallet. There is also a secret key corresponding to each public key. Giving away secret key would be tantamount to giving away the access to be able to let other people sign for you .\\\\
+A coin has a unique identity that is linked to its owner. The owner is the person who received the coin in the last transfer transaction, which can be traced back to the original coin creation transaction or the Genesis block.In blockchains, there are special people who have the authority to create new coins. We will discuss who they are, how they got this power, and what are the principles and rules of coin creation in blockchains. This is related to the field of tokenomics, which studies the design and economics of tokens.\\\\
+A signature can also be on a block itself.  If there are several people who are writing to a database, then it may make sense to know who has signed it and who has entered the data. This data structure, or ledger, can be updated by a fixed and known group of parties who may not fully trust each other. They have a common interest in maintaining the ledger, but they need to follow certain rules to add new blocks to it. This could be consortium. \\\\
+Unlike some blockchains that limit the number of participants, Bitcoin is open and unlimited. Anyone can create as many identities as they want by generating public and private keys. Bitcoin is a free and decentralized system.
+
+\subsection{Distributed consensus}
+ When different people can update the ledger, who keeps track of all the changes? One way is to have everyone store the whole ledger, but this is very inefficient and costly. We will see how we can relax this assumption and make the system more scalable.They follow a protocol that lets them check and verify each other’s blocks. This is how they ensure the ledger’s integrity and security. Consensus or agreement is at the heart of trust.\\\\
+Byzantine fault tolerance (BFT) is a property of a distributed system that allows it to reach a consensus among its components, even if some of them are faulty or malicious. BFT is important for ensuring the reliability and security of a distributed system, especially in scenarios where there is no central authority or trust among the participants. BFT is also relevant for blockchain systems, which are distributed networks that store and process transactions without relying on a central authority. Blockchain systems use consensus protocols to ensure that all nodes in the network agree on the same state of the ledger, despite the presence of faulty or malicious nodes.  You could use one of these BFT protocols to come up with agreement among the participants on a block.\\\\
+Bitcoin consensus protocol is so different from BFT protocols in some ways:
+\begin{itemize}
+	\item It's decentralized truly in the sense of permissionless.
+	\item It makes less pessimistic network assumptions.
+\end{itemize}
+Now there will be a question that  \textbf{how do people come to consensus?}\\
+Since in case of bitcoin, one can have several identities,  voting can not be an answer like it is for democracy. We  need a way to have consensus without voting. This was somehow assumed impossible before Nakamoto.
+
+\subsection{Network Assumptions}
+People in a consensus need to communicate with each other, in other words wee need a network among the participants.
+Bitcoin assumptions for this concept are as follows:
+\begin{itemize}
+	\item Any node can broadcast to all nodes into the network and it's a fully connected network.
+	\item Every broadcast message reaches every node albeit with some delay which is about 10 minute for bitcoin. 
+\end{itemize}
+These concepts and ideas will be discussed more on future lectures.
+
+\subsection{Leader election: Oracle}
+One way to quickly decentralize is to elect a leader. The leader's job is to basically put the block together and and put it out for everybody to share it. This sharing the block and creating it is called proposal, and this leader is said to be a proposal. Adding a new block to the ledger is a special role that requires some rules and restrictions. Otherwise, there would be too much conflict and confusion among the nodes. They need to agree on the same ledger state. A proposal is simply identified with a public key and not with IP address or network (node).\\
+The ledger is updated in regular intervals, called rounds. Blocks are not created randomly or too frequently (e.g. every second). For example, in Bitcoin, the protocol specifies that a new block is added every 10 minutes. A node creates a new block by collecting all the new and valid transactions that it has seen on the network, and that are not already in previous blocks. This block is the node’s proposal for the next ledger state.\\\\
+A transaction is valid if it meets two criteria:
+\begin{enumerate}
+	\item The sender of the coin must have owned the coin in a previous block in the ledger
+	\item The sender must not have spent the coin twice in different transactions. This ensures that the coin is not duplicated or forged.
+\end{enumerate}
+In a glance here are the 4 main activities that a proposal do:
+\begin{enumerate}
+	\item constitutes a block with transactions
+	\item validates transactions
+	\item includes hash pointer to previous block
+	\item signs the block
+\end{enumerate}
+A malicious proposer could try to cheat by signing a block when it was not their turn, or by inserting fake or invalid transactions in the block. However, this can be detected and prevented by the other nodes, who can verify the signature and the transactions. The proposer cannot fool the system by being dishonest or lazy. Everyone can verify the validity of transactions by using the ledger, which is a chain of blocks. Each block has a Merkle root that preserves the order of the transactions in the block. The ledger gives a complete history of all transactions ever made, and allows anyone to track the current state of the coins and their owners. This is how validation is done.\\\\
+There are two kinds of messages that are broadcasted in the network: transactions and proposals. Transactions are sent by anyone who wants to transfer coins, and they are stored in a temporary memory pool by the nodes. Proposals are created by special nodes who have the right to make new blocks, and they contain some transactions from the memory pool. The proposer can choose which transactions to include in the block, as long as the block size is one megabyte.\\\\
+A satoshi is the smallest unit of a bitcoin, equivalent to 0.00000001 BTC. There are 100 million satoshi in one bitcoin.
+
+\section{Proof of Work}
+the method to elect a proposer that Bitcoin shows here in general is called proof of work. The goal of the competition is to select one of the participants to be the proposer.  The competition proceeds like this.  Proof of work requires miners to solve complex mathematical problems using their computing power, which consumes a lot of energy. The problems are hard to solve but easy to verify, and the probability of finding a solution is proportional to the amount of work done. The first miner who finds a valid solution gets to create a new block of transactions and receive a reward in Bitcoin. The new block is then broadcasted to the rest of the network and added to the chain of previous blocks, forming the blockchain.\\\\
+The mathematical problem is actually a hash puzzle. Hash puzzles are a game in which one tries to find a nonce (an integer) such that 
+\begin{align*}
+	H(nonce, data) < T
+\end{align*}
+where T is the target difficulty level. If you can find a nonce, that's the proof of what is work here. We include nonce inside the block. Threshold is chosen such that a block is mined successfully on average once in 10 minutes.\\
+The process of searching for a nonce that solves the hash puzzle is called mining.
+\subsection*{Properties of Proof of Work}
+\begin{enumerate}
+	\item Random miner selected at each time
+	\item Independent randomness across time and across miners
+	\item Probability of successful mining proportional to fraction of total hash power
+	\item Sybil resistance
+	\item Spam resistance
+	\item Tamper proof – even by the proposer!
+\end{enumerate}
+The chance of winning is proportional to how much hash power this miner brings to the competition. Hash power relates to the number of hashes I can try per second, which is directly proportional to how much GPUs energy i can bring.\\
+Sybil resistance is the ability of a system to prevent or deter malicious actors from creating multiple fake identities or nodes to manipulate or attack the system. For example, in a peer-to-peer network, a sybil attacker could create many fake nodes to isolate, censor, or deceive honest nodes, or to gain more influence or voting power.
+
+\section{Forks and Longest Chain Protocol}
+
+ Forks and the longest chain rule are related to how the Bitcoin network reaches a consensus on the state of the ledger, which is a chain of blocks that contains all the transactions ever made.\\\\
+A fork is a situation where there are two or more competing versions of the ledger, each with a different block at the end. A fork can happen when two miners find a valid block at the same time, or when some nodes do not receive or accept a new block. A fork can also be caused by malicious nodes who try to create fake or invalid blocks.
+\begin{center}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.6\linewidth]{Fig/L3_F1}
+		\caption{Forks in Blockchain}
+		\label{fig:l3_f1}
+	\end{figure}
+\end{center}
+The longest chain rule is a way of resolving forks and choosing the valid version of the ledger. The longest chain rule states that the nodes should always follow and extend the chain of blocks that has the most accumulated proof-of-work, which is a measure of how much energy and effort was spent to create the blocks. The longest chain rule ensures that the majority of the network agrees on the same ledger, and that any forked or orphaned blocks are discarded.
+\begin{center}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.6\linewidth]{Fig/L3_F2}
+		\caption{The longest chain rule}
+		\label{fig:l3_f1}
+	\end{figure}
+\end{center}
