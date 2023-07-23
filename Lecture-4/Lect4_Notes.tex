@@ -8,7 +8,7 @@
 \title{\Huge{Principles of Blockchains \\ Princeton University,\\
 		Professor: Pramod Viswanath}}
 	
-\author{\huge{Lecture 4} \\\\ Peer to Peer Network and Bitcoin system}
+\author{\huge{Lecture 4} \\\\ Peer to Peer Network}
 
 \begin{document}
 
@@ -19,7 +19,7 @@
 \tableofcontents
 \pagebreak
 
-\chapter{Peer to Peer Network and Bitcoin system}
+\chapter{Peer to Peer Network}
 \section{Blockchains and Networking}
 A blockchain network is a system that provides ledger and smart contract services to applications without relying on a centralized server or authority. A centralized server can be a single point of failure or a target for censorship, which can compromise the security and availability of the network. Therefore, a blockchain network has the following networking requirements:
 \begin{itemize}
@@ -149,6 +149,149 @@ The Perigee Algorithm works as follows:
 	\item It retains the subset of neighbors with the best score and disconnects the node that is not in the subset.
 	\item It forms a connection to a random neighbor to explore new potential connections.
 \end{itemize}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\linewidth]{Fig/F5}
+	\caption{Performance of Perigee}
+	\label{fig:f5}
+\end{figure}
+\section{Efficient Networking}
+ Efficient networking is the ability to transmit and receive data in a fast, reliable, and scalable way. There are three aspects of efficient networking:
+ \begin{enumerate}
+ 	\item \textbf{Trusted networks} : \\
+ 	Trusted networks are networks where nodes can trust each other to relay valid and timely data. Trusted networks can improve the efficiency of the network by reducing the overhead and redundancy of data transmission. However, trusted networks also pose some risks, such as centralization and censorship.
+ 	\item \textbf{Privacy} : \\
+ 	Privacy is the ability to protect the identity and activity of nodes from external observers. Privacy can improve the efficiency of the network by reducing the exposure and vulnerability of nodes. However, privacy also poses some challenges, such as linking transaction source to IP address and plausible deniability for forking.
+ 	\item \textbf{Security} : \\
+ 	Security is the ability to prevent and resist attacks from malicious nodes or adversaries. Security can improve the efficiency of the network by maintaining the integrity and consistency of the data. However, security also poses some difficulties, such as eclipse attacks and plausible deniability for forking.
+ \end{enumerate}
+\subsection{FRN (Fast relay network)}
+ FRN (Fast relay network) is an example of a trusted network model, which is a hub and spoke model where miners connect to FRN servers. FRN servers are trusted servers that are fast and efficient in relaying blocks and transactions. FRN servers can reduce the latency and bandwidth usage of the network by filtering and compressing the data. However, FRN servers also pose some risks, such as centralization, censorship, and single point of failure.
+ \begin{figure}[h!]
+ 	\centering
+ 	\includegraphics[width=0.7\linewidth]{Fig/F6}
+ 	\caption{FRN}
+ 	\label{fig:f6}
+ \end{figure}
+ \subsection{Trusted Networks: Falcon}
+ Falcon network routing is based on the idea of cut through routing, which is a method of forwarding data packets as soon as their headers are verified, without waiting for the whole packet to arrive. This can reduce the latency and bandwidth usage of the network, as well as the risk of forking and double spending. Falcon network routing uses a set of trusted servers, called FRN servers, to relay data packets between nodes.\\\\
+\textbf{Cut through routing} is the way of sending data packets from point a to point b, where each node verifies the header of the packet and forwards it to the next node without waiting for the whole packet to arrive. The diagram shows that cut through routing has lower latency than legacy routing, which is represented by the distance between the green lines and the red lines in the diagram. The diagram also shows that cut through routing uses FRN servers to relay data packets between nodes.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Fig/F7}
+	\caption{Legacy routing vs. Cut through routing}
+	\label{fig:f7}
+\end{figure}
+\section{Network Anonymity and Privacy}
+Blockchains are systems where the data structure of the blockchain is shared and visible to all participants. For example, in a cryptocurrency, the blockchain records every transaction that ever happened in the currency. However, this also means that the blockchain can contain sensitive data of users, such as their identities and balances. This can raise privacy concerns for users who do not want their data to be public. Therefore, privacy is an important issue in blockchains. How can users achieve privacy in blockchains?\\\\
+Bitcoin and most other cryptocurrencies use pseudonymous identifiers to protect the privacy of users. Each user has one or more pseudonym, which is a public key that they use to participate in the system. The blockchain only shows the transaction patterns of each pseudonym, not the real identity of the user. However, this system is not very secure, because there are ways to link the pseudonyms to the user’s real identity, especially if there is extra information available. These are called de-anonymization attacks, and they can expose the user’s sensitive data.
+
+\subsection{Network De-anonymization Problem}
+he network de-anonymization problem is the challenge of finding the real identities of users who participate in a network that uses anonymization techniques. Anonymization techniques are methods that hide the personal information of users, such as their names and locations, by using random or fake identifiers. Anonymization techniques are supposed to protect the privacy of users, but they can be broken by attackers who have access to some extra information or techniques. The network de-anonymization problem can be modeled using a graph, where nodes represent users and edges represent connections between them. The attacker’s goal is to guess which node in the anonymized graph corresponds to which user in the original graph. The attacker can use different methods, such as eavesdropper adversaries or botnet adversaries, to collect and analyze data from the network. Eavesdropper adversaries are attackers who listen to all or most of the network traffic and use metadata and topology information to infer the source of a message. Botnet adversaries are attackers who control a set of compromised nodes that participate in the network normally and share information with each other. The network de-anonymization problem is a difficult and important problem for network security and privacy.\\\\
+There are two main types of attackers in network de-anonymization:
+\begin{enumerate}
+	\item \textbf{Eavesdropper attackers} :\\ Eavesdropper attackers are attackers who connect to all or most of the nodes in the network and listen to their communications. They look like normal nodes to the honest nodes, who relay messages to them as usual. Eavesdropper attackers can collect metadata, such as timestamps and IP addresses, from the messages they receive. They can also use information about the network topology, such as the connections between nodes, to guess the source of a message. Eavesdropper attackers usually do not send any messages; they only observe and analyze the messages they receive.
+	\item \textbf{Botnet attackers} : \\
+	Botnet attackers are attackers who control a set of compromised nodes that act like normal nodes in the network. They can accept and relay messages from other nodes, but they also share information with each other. Botnet attackers can have limited visibility into the network, depending on how many nodes they control and how they are connected. Botnet attackers can also inject fake or modified messages into the network to confuse or mislead other nodes.
+\end{enumerate}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Fig/F8}
+	\caption{Eavesdropper adversary (Left graph) - Botnet adversary (Right graph)}
+	\label{fig:f8}
+\end{figure}
+De-anonymization algorithms are methods that can break the privacy of users who participate in a network that uses anonymization techniques. Anonymization techniques are ways of hiding the personal information of users, such as their names and locations, by using random or fake identifiers. However, these techniques can be defeated by attackers who have access to some extra information or techniques. De-anonymization algorithms are based on the idea of centrality or symmetry, which means that the source of a message is usually located at the center of a disc-shaped region on the network graph. The attackers can use metadata and topology information to infer the shape of the disc and identify the central node with a high probability. These algorithms show that diffusion, which is a common way of spreading messages on the network, is not very good at protecting the anonymity of users at the network level. Therefore, there is a need for alternative spreading protocols that can protect the anonymity of users.
+
+\subsection{Flooding Protocol}
+ Flooding protocols are methods of sending packets to all nodes in a network by having each node rebroadcast the packets it receives.Flooding protocols can be useful for applications such as firmware updates, routing information, and multicast forwarding. However, flooding protocols can also cause problems such as network congestion, packet loss, and high energy consumption.\\\\
+ There are two flooding protocols:
+ \begin{enumerate}
+ 	\item \textbf{Trickle} : \\
+ 	Trickle uses a \textbf{polite gossip} policy to control the send rates of nodes. Trickle divides time into intervals and each node maintains a counter of how many consistent packets it has heard from its neighbors. If the counter is below a threshold, the node transmits its packet with a high probability. Otherwise, the node transmits its packet with a low probability. This way, Trickle ensures that nodes hear enough packets to stay consistent, but not too many to cause redundancy.
+ 	\item \textbf{Diffusion} : \\
+ 	Diffusion uses an exponential backoff mechanism to reduce the send rates of nodes. Diffusion assigns each node an exponent value based on its hop distance from the source node. The exponent value determines how long the node waits before transmitting its packet. The closer the node is to the source, the smaller the exponent value and the shorter the waiting time. The farther the node is from the source, the larger the exponent value and the longer the waiting time. This way, Diffusion reduces the number of collisions and retransmissions in the network, and improves the reliability and efficiency of packet delivery.
+ \end{enumerate}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Fig/F10}
+	\caption{Flooding Protocols}
+	\label{fig:f10}
+\end{figure}
+Figure \ref{fig:f11} shows that Trickle has a higher probability of detection than Diffusion for any given number of eavesdropper connections. This means that Trickle is more effective in identifying and reporting eavesdropper connections than Diffusion.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Fig/F11}
+	\caption{Performance of Trickle and Diffusion}
+	\label{fig:f11}
+\end{figure}\\
+Diffusion does not have (significantly) better anonymity properties than trickle.
+ 
+ \subsection{Anonymity in Botnet adversarial model}
+ Anonymity is the degree to which a user’s identity and transactions are hidden from other users and observers. Anonymity can be measured by two factors: recall and precision. Recall is the probability that a user’s transactions are detected by an observer, while precision is the accuracy of the observer’s detection.
+ \begin{figure}[h!]
+ 	\centering
+ 	\includegraphics[width=0.25\linewidth]{Fig/F12}
+ 	\caption{Mapping $M$}
+ 	\label{fig:f12}
+ \end{figure}
+ Recall can be calculated using the following formula
+ \begin{align*}
+ 	\frac{1}{n}\sum_v 1\{M(v' \, s \, \text{tx}) = v\}
+ \end{align*}
+ where $n$ is the number of honest users in the network, $v$ is a user index, $M(v' \, s \, \text{tx})$ is the mapping function that assigns a user’s transactions to a user index, and $1\{M(v' \, s \, \text{tx}) = v\}$ is an indicator function that returns 1 if the mapping is correct and 0 otherwise.\\\\
+ The formula for calculating precision is :
+ \begin{align*}
+ 	\frac{1}{n}\sum_v \frac{1\{M(v' \, s \, \text{tx}) = v\}}{\text{\# tx mapped to } v}
+ \end{align*}
+Our goal is to design a distributed flooding protocol that minimizes the maximum precision and recall achievable by a computationally-unbounded adversary. \\
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Fig/F13}
+	\includegraphics[width=0.4\linewidth]{Fig/F14}
+	\caption{Fundamental Limits}
+	\label{fig:f13}
+\end{figure}\\
+Figure \ref{fig:f13} implies that we can’t have high precision-low recall and vice versa.
+
+\subsection{Dandelion}
+One of the main insights from studying how information spreads is that we need to make the communication protocol asymmetric, so that the adversary cannot easily figure out the message. This is the idea behind the Dandelion P2P network protocol, which has two stages:
+\begin{enumerate}
+	\item a \textbf{stem stage (or anonymity stage)} : \\
+	In the stem stage, each node sends each message along a random direction. This stage lasts for a random number of hops
+	\item a \textbf{fluff stage (or diffusion stage)} : \\
+	in the fluff stage, the message is diffused to the whole network by broadcasting it
+\end{enumerate} 
+The stem stage provides anonymity, while the fluff stage ensures fast and reliable delivery.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Fig/F9}
+	\caption{Spreading Protocol: Dandelion}
+	\label{fig:f9}
+\end{figure}
+We will describe the Dandelion protocol in more detail next. Dandelion works in epochs that are not synchronized; each node changes its epoch when its internal clock reaches a random value (in practice, this will be a few minutes). Within an epoch, the main algorithmic components of Dandelion are:
+\begin{enumerate}
+	\item \textbf{Anonymity graph:}\\ The random walk happens on a layer of the P2P graph called the anonymity graph. This layer should be either a random cycle graph (i.e., a graph with two edges per node) or a graph with four edges per node. This graph with four edges per node is created from the P2P graph by having each node pick (up to) two of its outgoing edges, without repeating, randomly as Dandelion relays. This does not make an exact graph with four edges per node, but a close one. Each time a node moves to the next epoch, it chooses new Dandelion relays.
+	\item \textbf{Sending of a node’s own transactions:}\\ Each time a node creates a transaction, it sends the transaction in stem phase along the same random edge on the anonymity graph. If the anonymity graph is a cycle, there is only one edge per node; otherwise, the node must pick one of its two edges.
+	\item \textbf{Relaying of other nodes’ transactions} : \\  Each time a node gets a transaction in stem phase from another node, it either passes the transaction on or broadcasts it. The decision to broadcast transactions is pseudo-random, and is based on a hash of the node’s own identity and epoch number. Note that the choice to broadcast does not depend on the transaction itself—in each epoch, a node is either a broadcaster or a passer for all passed transactions. If the node is not a broadcaster in this epoch (i.e.,it is a passer), then it passes transactions pseudo-randomly; each node assigns each of its incoming edges in the anonymity graph to an outgoing edge in the anonymity graph (with repetition). This assignment is chosen at the start of each epoch, and determines how transactions are passed.
+	\item \textbf{Robustness mechanism}:\\ Each node keeps track, for each transaction in stem phase that it sends or passes on, whether the transaction comes back as a transaction in fluff phase within some random time. If not, the node begins to broadcast the transaction.
+\end{enumerate}
+Dandelion spreading can achieve the lowest possible recall for any given fraction of spies in the network. 
+\thm{Recall of Dandelion}{Dandelion spreading has an optimally low maximum recall of \begin{align*}
+		p + O \left(\frac{1}{n}\right)
+	\end{align*}.}
+The theorem implies that no algorithm can reduce the accuracy of detection by an adversary below this bound.
+\thm{Precision of Dandelion}{Dandelion has a nearly-optimal 
+	maximum precision of \begin{align*}
+		\frac{2p^2}{1-p} \, \log\left(\frac{2}{p}\right) + O \left(\frac{1}{n}\right) \quad \text{ for } p < \frac{1}{3}
+	\end{align*}
+}
+Figure \ref{fig:f15} is a timeline chart that shows the evolution of privacy technologies in cryptocurrencies.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\linewidth]{Fig/F15}
+	\caption{Evolution timeline}
+	\label{fig:f15}
+\end{figure}
 
 
 \section{Basic requirements for a banking system}
