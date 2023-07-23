@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.7.25)  22 JUL 2023 22:02
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.7.25)  23 JUL 2023 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1396,13 +1396,13 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-)
+ [1
+
+])
 \tf@toc=\write7
 \openout7 = `complete_notes.toc'.
 
- [1
-
-] [2] (./Lectures/1.tex
+ [2] (./Lectures/1.tex
 Chapter 1.
 [3
 
@@ -1658,9 +1658,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 File: Fig/L4_F8.png Graphic file (type bmp)
 <Fig/L4_F8.png>
 [33]
+Underfull \hbox (badness 10000) in paragraph at lines 185--188
+
+ []
+
+File: Fig/L4_F10.png Graphic file (type bmp)
+<Fig/L4_F10.png>
+File: Fig/L4_F11.png Graphic file (type bmp)
+<Fig/L4_F11.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Fig/L4_F12.png Graphic file (type bmp)
+<Fig/L4_F12.png>
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 219--222
+
+ []
+
+File: Fig/L4_F13.png Graphic file (type bmp)
+<Fig/L4_F13.png>
+File: Fig/L4_F14.png Graphic file (type bmp)
+<Fig/L4_F14.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[35]
 File: Fig/L4_F9.png Graphic file (type bmp)
 <Fig/L4_F9.png>
- [34]) [35]
+ [36]
+File: Fig/L4_F15.png Graphic file (type bmp)
+<Fig/L4_F15.png>
+) [37]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./complete_notes.aux)
@@ -1675,12 +1704,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 35468 strings out of 479418
- 689171 string characters out of 5888105
- 1069497 words of memory out of 5000000
- 52259 multiletter control sequences out of 15000+600000
- 589509 words of font info for 134 fonts, out of 8000000 for 9000
+ 35551 strings out of 479418
+ 690412 string characters out of 5888105
+ 1069743 words of memory out of 5000000
+ 52332 multiletter control sequences out of 15000+600000
+ 589525 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,10n,105p,1348b,1365s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,12n,105p,1348b,1365s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on complete_notes.pdf (36 pages).
+Output written on complete_notes.pdf (38 pages).
