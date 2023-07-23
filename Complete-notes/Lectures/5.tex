@@ -1,28 +1,5 @@
-\documentclass{report}
-\usepackage{graphicx}
-
-\input{./includes/preamble}
-\input{./includes/macros}
-\input{./includes/letterfonts}
-
-\title{\Huge{Principles of Blockchains \\ Princeton University,\\
-		Professor: Pramod Viswanath}}
-	
-\author{\huge{Lecture 5} \\\\ Bitcoin system}
-
-\begin{document}
-
-\maketitle
-\newpage% or \cleardoublepage
-% \pdfbookmark[<level>]{<title>}{<dest>}
-\pdfbookmark[section]{\contentsname}{toc}
-\tableofcontents
-\pagebreak
-
 \chapter{Bitcoin system}
-
 \section{Basic requirements for a banking system}
-
 In any currency/banking system, there are some basic requirements that the system must provide for. We list them here:
 \begin{enumerate}
 	\item There should be a unit of currency/money.
@@ -31,7 +8,7 @@ In any currency/banking system, there are some basic requirements that the syste
 	fixed amount of money in the system at any given time, and new money should be introduced in a systematic manner.
 	\item A user should not be able to spend more money than he/she owns. There should be a way to verify whether or not this happens.
 	\item One user should not be able to spend someone else’s money (at least, not without their permission).
-	 
+	
 \end{enumerate}
 Let us see how the Bitcoin system provides these features.
 
@@ -58,10 +35,10 @@ In ordinary parlance, the term \textbf{transaction} refers to an exchange of som
 	\end{itemize}
 	\item \textbf{Receiving vs. Spending Coins:}
 	\begin{itemize}
-	\item To receive coins, a user only needs to share their Bitcoin address with others. The address serves as a public identifier for receiving funds.
-	\item However, to spend coins, a user must also reveal the corresponding public key associated with the address.
-	\item This is because spending requires providing proof of ownership through a digital signature, which is created using the user's private key.
-	\item The idiosyncrasy lies in the fact that while an address (hash of public key) is publicly visible and used for receiving, the associated public key is only revealed during the spending process for cryptographic verification.
+		\item To receive coins, a user only needs to share their Bitcoin address with others. The address serves as a public identifier for receiving funds.
+		\item However, to spend coins, a user must also reveal the corresponding public key associated with the address.
+		\item This is because spending requires providing proof of ownership through a digital signature, which is created using the user's private key.
+		\item The idiosyncrasy lies in the fact that while an address (hash of public key) is publicly visible and used for receiving, the associated public key is only revealed during the spending process for cryptographic verification.
 	\end{itemize}
 \end{enumerate}
 \subsection{Transaction inputs and outputs}
@@ -139,7 +116,7 @@ The UTXO (Unspent Transaction Output) model is a key feature of the Bitcoin syst
 \end{enumerate}
 The UTXO model's design ensures that each transaction is valid, and its structure allows for flexibility in handling various scenarios, such as spending from multiple sources and sending funds to multiple recipients in one transaction. The adoption of the UTXO model is one of the key factors that contribute to the security and integrity of the Bitcoin blockchain.
 \subsection{Cryptocurrency wallets}
-	Cryptocurrency wallets play a crucial role in simplifying the process of managing and transacting with cryptocurrencies like Bitcoin. Here are the key points about cryptocurrency wallets:\\
+Cryptocurrency wallets play a crucial role in simplifying the process of managing and transacting with cryptocurrencies like Bitcoin. Here are the key points about cryptocurrency wallets:\\
 \begin{enumerate}
 	\item \textbf{Complexity of UTXO Management:} 
 	\begin{itemize}
@@ -168,7 +145,7 @@ The UTXO model's design ensures that each transaction is valid, and its structur
 	\end{itemize}
 \end{enumerate}
 \subsection{Transaction fees}
-	Transaction fees play a crucial role in the Bitcoin network and serve as an incentive for miners to include transactions in the blocks they mine. Here are the key points about transaction fees:
+Transaction fees play a crucial role in the Bitcoin network and serve as an incentive for miners to include transactions in the blocks they mine. Here are the key points about transaction fees:
 \begin{enumerate}
 	\item \textbf{Total Value in Inputs and Outputs:} 
 	\begin{itemize}
@@ -193,7 +170,7 @@ The UTXO model's design ensures that each transaction is valid, and its structur
 		\item Higher fee rates result in faster confirmation times, while lower rates may lead to delayed confirmations.
 	\end{itemize}
 	\item \textbf{Dynamic Fee Variation:}
-		\begin{itemize}
+	\begin{itemize}
 		\item Transaction fees can vary over time due to fluctuations in network demand and block space availability.
 		\item During periods of high network congestion, transaction fees may increase as users compete for limited block space.
 	\end{itemize}
@@ -232,14 +209,14 @@ Coinbase transactions are a crucial mechanism for introducing new Bitcoins into 
 \end{enumerate}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/F1}
+	\includegraphics[width=0.6\linewidth]{Fig/L5_F1}
 	\caption{Bitcoin block reward in bitcoins. Figure sourced from  \href{https://www.coindesk.com/bitcoin-halving-explainer}{here}}
 	\label{fig:f1}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/F2}
+	\includegraphics[width=0.6\linewidth]{Fig/L5_F2}
 	\caption{Bitcoin rewards in dollars. Figure sourced from  \href{https://www.cmcmarkets.com/en/learn-cryptocurrencies/bitcoin-halving}{here}}
 	\label{fig:f1}
 \end{figure}
@@ -324,7 +301,7 @@ Overall, the state of the system (UTXO set) plays a vital role in maintaining th
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/F3}
+	\includegraphics[width=0.6\linewidth]{Fig/L5_F3}
 	\caption{Number of UTXOs over time in Bitcoin. Figure sourced from \href{https://www.blockchain.com/explorer/charts/utxo-count}{here}}
 	\label{fig:f1}
 \end{figure}
@@ -405,4 +382,3 @@ However, Bitcoin scripts allow for additional conditions to be specified. Some e
 	\item \textbf{Hashed Timelock Contracts (HTLCs):} HTLCs are a specific type of smart contract that combines time locks and hash locks. They are useful for setting up secure escrow arrangements for exchanging assets or payments between parties, ensuring that both parties fulfill their obligations before the funds are released.
 \end{enumerate}
 The combination of these conditions in Bitcoin scripts enables the creation of more sophisticated smart contracts, even though Bitcoin's scripting language is not as powerful as the one used in platforms like Ethereum. While Bitcoin's script language is intentionally limited for security reasons, it still provides enough flexibility to implement useful smart contract functionalities, especially for simple financial transactions and basic programmability.
-\end{document}

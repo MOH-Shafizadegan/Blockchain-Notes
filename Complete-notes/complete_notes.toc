@@ -44,4 +44,22 @@
 \contentsline {subsection}{\numberline {4.5.2}Flooding Protocol}{34}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Anonymity in Botnet adversarial model}{35}{subsection.4.5.3}%
 \contentsline {subsection}{\numberline {4.5.4}Dandelion}{36}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Bitcoin system}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Basic requirements for a banking system}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Bitcoin and Satoshi}{38}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Transactions}{38}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Addressing}{39}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Transaction inputs and outputs}{39}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Signatures on transactions}{40}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}UTXO}{40}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Cryptocurrency wallets}{41}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Transaction fees}{42}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Coinbase transactions}{42}{subsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.3.8}Transaction mempool}{43}{subsection.5.3.8}%
+\contentsline {section}{\numberline {5.4}Validating a block}{45}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}The state of the system}{45}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Validating blocks}{46}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Light nodes and stateless clients}{47}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Smart contracts}{47}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Scripts in Bitcoin}{48}{subsection.5.5.1}%
 \contentsfinish 
