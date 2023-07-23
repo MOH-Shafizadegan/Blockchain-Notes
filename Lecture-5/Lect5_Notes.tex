@@ -8,7 +8,7 @@
 \title{\Huge{Principles of Blockchains \\ Princeton University,\\
 		Professor: Pramod Viswanath}}
 	
-\author{\huge{Lecture 4} \\\\ Peer to Peer Network and Bitcoin system}
+\author{\huge{Lecture 5} \\\\ Peer to Peer Network and Bitcoin system}
 
 \begin{document}
 
@@ -20,136 +20,6 @@
 \pagebreak
 
 \chapter{Peer to Peer Network and Bitcoin system}
-\section{Blockchains and Networking}
-A blockchain network is a system that provides ledger and smart contract services to applications without relying on a centralized server or authority. A centralized server can be a single point of failure or a target for censorship, which can compromise the security and availability of the network. Therefore, a blockchain network has the following networking requirements:
-\begin{itemize}
-	\item 
-	The key primitive of the network is to \textbf{broadcast blocks and transactions to all nodes}.\\ Blocks are data structures that contain transactions, which are records of value transfers or contract executions. Transactions are validated and appended to the ledger by consensus algorithms. Broadcasting ensures that all nodes have the same view of the ledger and can verify its integrity.
-	\item 
-	The network also needs to be \textbf{robust and resilient to node failures or attacks}. \\ Some nodes may go offline due to various reasons, such as power outages, network disruptions, or malicious attacks. The network should be able to tolerate a certain percentage of node failures without affecting its functionality. Moreover, the network should allow new nodes to join and synchronize with the existing nodes, as well as handle node churns and partitions.
-\end{itemize}
-\subsection{Types of Network Architecture}
-There are two types of network architecture:
-\begin{enumerate}
-	\item \textbf{Client Server} : \\
-	This is a type of network architecture where one or more servers store most of the data and resources, and the clients access them through requests. The server is the central authority that controls the network, and the clients are dependent on the server for their functionality.
-	\item \textbf{Peer to Peer} :\\
-	This is a type of network architecture where each node acts as both a client and a server, and there is no central authority or hierarchy. The nodes share their data and resources directly with each other, without relying on a server.
-\end{enumerate}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/F1}
-	\caption{Types of Network Architecture}
-	\label{fig:f1}
-\end{figure}
-The need for robustness implies that we do not want a client-server relationship; we settle for a peer-to-peer (P2P) network where each node has identical behavior.
-\subsection{Overlay Networks}
-An overlay network depicts the connections between nodes, and is represented as a graph. It abstracts out the physical network switches and routers and defines virtual links between nodes. Two nodes that are connected by a link can exchange messages directly. Those that are not connected by a link must find a path connecting them on this overlay
-network in order to communicate messages.
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/F2}
-	\caption{Overlay Network}
-	\label{fig:f2}
-\end{figure}\\
-There are different ways to classify overlay networks, but one common way is to distinguish between two types of overlay networks
-\begin{itemize}
-	\item \textbf{structured} : These are overlay networks that have a specific topology or organization, such as a ring, a tree, or a grid. Structured overlay networks, like CHORD, assign an identifier to each node and uses that to construct welldefined
-	routing rules. These networks are excellent for routing sending point to point messages, a use case not required for Bitcoin. Structured networks are suitable for broadcast, too; any message transmission takes O(logN) hops on CHORD with O(logN) connections per node.
-	\item \textbf{unstructured} : These are overlay networks that have no specific topology or organization, and the nodes are connected randomly or based on some criteria, such as proximity, interest, or availability. Unstructured networks like d-regular graphs have no node identifiers; a node connects to d other nodes randomly.
-\end{itemize}
-Routing point to point messages is not feasible because it takes O(logN) hops and requires many peer queries to find the path from point A to point B. However, broadcast is very effective using gossip and also takes O(logN) hops. Therefore, the number of hops needed is equal to the structured network with the extra advantage of O(1) peer connections. That is why the Bitcoin network uses an unstructured d-regular overlay network.
-\subsection{Gossip and Flooding}
-Gossip and Flooding are two techniques for disseminating information in a network of nodes. Gossip is a technique that randomly sends the information to some of its neighbors, while Flooding sends the information to all of its neighbors. Both techniques can spread the information exponentially and reach all nodes in O(logN) time.\\
-Gossip and Flooding can be used to achieve fast and reliable information dissemination in a network, but they differ in terms of efficiency, overhead, and robustness.
-\subsection{Expander Graph}
-Expander graph is a type of graph that has the property of being well connected but sparse. 
-\dfn{Sparse Graph}{A sparse graph $G(V,E)$ is a graph that has a small number of edges compared to the number of vertices, such that $|E| = O(|V|)$, where $|E|$ is the number of edges and $|V|$ is the number of vertices. \\\\
-An Expander graph is a sparse graph that is also well connected, such that for any subset $A$ of vertices, the number of vertices outside $A$ that have at least one neighbor in $A$, denoted by $|A|$, is large.}
-A gossip message starts with $A(0)$ as the broadcasting node with $|A(0)| = 1$. In the next hop, it will reach $\partial A(0)$ with $|A(1)|$ being at least $(1 + \epsilon)$ times $|A(0)|$. This process repeats and we get $|A(k)|$ being at least $(1 + \epsilon)^k$ times $|A(0)|$ for any $k$. Therefore, the number of steps to get to half the number of nodes is proportional to the logarithm of the number of nodes. It can be proven that the other half of the nodes can also be reached in O(logN) time.
-
-\section{Bitcoin Network}
-Bitcoin is a peer-to-peer network that uses TCP protocol to exchange data. In Bitcoin network:
-\begin{itemize}
-	\item The codebase limits the number of outgoing connections to eight and the number of incoming connections to 117.
-	\item The network has a high churn rate (rate at which users join or leave the system); therefore, the node must be prepared to connect to new peers.
-	\item The node maintains a large list of nodes running Bitcoin in the form of their (IP, port) pair and connects to one of them randomly when a slot becomes available.
-	\item The node ensures that the peers it connects to are selected randomly.
-\end{itemize}
-\subsection{Peer discovery}
-A node starts its list of peers by connecting to a group of DNS seed nodes. These are special nodes that provide a list of IP addresses and ports of active nodes in the network. A node can query a DNS seed node to get this list and then try to connect to some of the nodes in the list.\\
-The seed nodes are not very distributed; so it is not wise to depend entirely on the peer list given by them. After connecting to the first set of peers, a node requests their peer list using \textbf{getAddr} and \textbf{Addr} messages. The node updates its peer list frequently by swapping peer lists with its peers.
-\subsection{Block transmission}
-The process of transmitting blocks and transactions involves the following steps:
-\begin{enumerate}
-	\item A node sends an \textbf{inv} message to its peers, which is an inventory message that tells them what blocks and transactions are available.
-	\item When a peer receives an \textbf{inv} message, it checks if it already has the block or the transaction in its local storage. If not, it sends a \textbf{getData} message to the node to get those blocks and transactions.
-	\item Optionally, the peer can request only the headers of the blocks first, using a \textbf{getHeaders} message, before asking for the full blocks .
-	\item This header-first block transmission can reduce the bandwidth use and prevent invalid blocks from being accepted .
-\end{enumerate}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.8\linewidth]{Fig/F3}
-	\caption{Block transmission in blockchain network}
-	\label{fig:f3}
-\end{figure}
-\subsection{Data Broadcast}
-Now we explain how data, such as transactions, are broadcasted in a peer-to-peer network
-\begin{itemize}
-	\item Each node maintains a non-persistent memory to store unconfirmed transactions, which are transactions that have not been included in a block yet. This memory is called the mempool.
-	\item When a node receives a new transaction, it sends an inv message to its peers, which contains the transaction id (txid). The inv message is a way of checking if the peer already has the transaction in its mempool.
-	\item If not, the peer sends a getdata message to request the full transaction data from the node. The node then sends the transaction data (tx) to the peer.
-	\item Some unconfirmed transactions might be removed from the mempool due to various reasons, such as low fees, expiration time, or double spending.
-\end{itemize}
-\subsection{Compact Blocks}
-Here we discuss two methods of relaying blocks in a peer-to-peer network:
-\begin{enumerate}
-	\item \textbf{legacy relaying} : \\
-	Legacy relaying is the traditional way of sending the full block data to each node.
-	\item \textbf{compact block relaying} : \\
-	Compact block relaying is a protocol that reduces the amount of bandwidth and latency required to transfer a block that confirms many transactions that the nodes already have in their mempools.
-\end{enumerate}
-There some differences between the two methods in terms of the messages exchanged between the nodes .Here are the advantages of compact block relaying over legacy relaying:
-\begin{itemize}
-	\item Compact block relaying uses shortened transaction identifiers (txids) instead of full transaction data, which reduces the size of the block data.
-	\item Compact block relaying allows nodes to request only the transactions they are missing from their mempools, which reduces the redundancy of sending transactions twice.
-	\item Compact block relaying has two modes: low bandwidth mode and high bandwidth mode.\\ Low bandwidth mode minimizes the bandwidth usage by asking for permission before sending a compact block.\\ High bandwidth mode reduces the latency by sending a compact block as soon as possible without asking for permission.
-	\item Compact block relaying can verify the proof of work (PoW) from the block header before requesting the full block data, which prevents invalid blocks from being accepted.
-\end{itemize}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/F4}
-	\caption{Compact Block}
-	\label{fig:f4}
-\end{figure}
-There is a trade-off between capacity and propagation delay in a peer-to-peer network. \textbf{Capacity} (C) is the maximum amount of data that can be transmitted in a given time, measured in bits per second (bps). \textbf{Propagation delay} (D) is the time it takes for a signal to travel from one node to another, measured in seconds. The end to end delay, which is the total time it takes for a block to reach all nodes in the network, increases with the increase in block size. This is because larger blocks take longer to transmit and verify, which can cause congestion and orphaning. Therefore, there is a trade-off between increasing the capacity and reducing the propagation delay of the network. This increase in delay affect the system in following ways:
-\begin{itemize}
-	\item Wasted Hash power
-	\item Forking
-\end{itemize}
-\subsection{Disadvantages of current p2p network}
-\begin{itemize}
-	\item \textbf{Efficiency:} \\ It requires a lot of communication between nodes. The total communication is proportional to the number of nodes (N) and the average degree of connectivity (d). This means that as the network grows, the communication overhead also increases, which can affect the performance and scalability of the system.
-	\item \textbf{Privacy:} \\ It can link the transaction source to the IP address of the node that broadcasts it. This means that anyone who monitors the network traffic can potentially identify the sender and receiver of a transaction, which can compromise their anonymity and privacy.
-	\item \textbf{Security:} \\ It allows for plausible deniability for forking. Forking can cause inconsistency and double spending. Plausible deniability means that a node can claim that it did not receive a valid block from another node, even if it did, and create a fork on purpose. This can be used as an attack strategy to disrupt the consensus and integrity of the system.
-\end{itemize}
-
-\section{Geometric Random Network}
-The current network topology is based on random IP addresses, which are not related to geographic distances. This means that nodes may be connected to peers that are far away from them, which can increase the latency and bandwidth usage of the network. \\\\
-A better network topology would be based on a \textbf{geometric random network}, which is a network where nodes are placed according to some geometric criteria, such as proximity or similarity. This way, nodes can connect to peers that are closer or more relevant to them, which can improve the efficiency and performance of the network. The challenges are creating a self-adapting network topology based on measurements, such as latency, bandwidth, or trust. This means that nodes can dynamically adjust their connections based on the changing conditions and preferences of the network.
-
-\subsection{Perigee}
-Perigee is a self-adaptive network topology algorithm for peer-to-peer networks. Perigee is a decentralized algorithm that selects neighbors based on past interactions. It aims to retain neighbors that relay blocks fast and disconnect from neighbors that do not relay blocks fast. It also explores unseen neighbors to discover new potential connections.\\\\
-`Perigee is motivated by the multi-armed bandit problem, which is a problem of finding the optimal strategy for choosing among several options with uncertain rewards. Perigee tries to balance between exploration and exploitation, which means finding new neighbors and using existing neighbors, respectively. Perigee can improve the efficiency and performance of the peer-to-peer network by reducing the latency and bandwidth usage.
-
-\subsubsection{Algorithm}
-The Perigee Algorithm works as follows:
-\begin{itemize}
-	\item It assigns scores for each subset of neighbors based on how fast they relay blocks.
-	\item It retains the subset of neighbors with the best score and disconnects the node that is not in the subset.
-	\item It forms a connection to a random neighbor to explore new potential connections.
-\end{itemize}
-
 
 \section{Basic requirements for a banking system}
 
@@ -360,7 +230,21 @@ Coinbase transactions are a crucial mechanism for introducing new Bitcoins into 
 		\item In the early years of Bitcoin, coinbase transactions formed a significant portion of the rewards for miners, but over time, the contribution of transaction fees has increased.
 	\end{itemize}
 \end{enumerate}
-The combination of coinbase transactions and transaction fees ensures the proper functioning and security of the Bitcoin network. Miners are motivated to continue mining, securing the network, and processing transactions as they receive both block rewards and transaction fees as incentives for their efforts. The gradual reduction in block rewards through halvings also creates a deflationary monetary policy, which further contributes to Bitcoin's scarcity and potential value appreciation over time.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Fig/F1}
+	\caption{Bitcoin block reward in bitcoins. Figure sourced from  \href{https://www.coindesk.com/bitcoin-halving-explainer}{here}}
+	\label{fig:f1}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Fig/F2}
+	\caption{Bitcoin rewards in dollars. Figure sourced from  \href{https://www.cmcmarkets.com/en/learn-cryptocurrencies/bitcoin-halving}{here}}
+	\label{fig:f1}
+\end{figure}
+
+The combination of coinbase transactions and transaction fees ensures the proper functioning and security of the Bitcoin network. Miners are motivated to continue mining, securing the network, and processing transactions as they receive both block rewards and transaction fees as incentives for their efforts. The gradual reduction in block rewards through halvings also creates a deflationary monetary policy, which further contributes to Bitcoin's scarcity and potential value appreciation over time (Figure 1.1, 1.2).
 
 \subsection{Transaction mempool}
 The transaction mempool plays a crucial role in the process of how Bitcoin transactions are propagated, verified, and eventually included in blocks. Here are the key points about the transaction mempool and its significance:
@@ -398,6 +282,127 @@ The transaction mempool plays a crucial role in the process of how Bitcoin trans
 		\item Other blockchain designs may have different approaches and trade-offs, which will be explored in future lectures.
 	\end{itemize}
 \end{enumerate}
-The mempool and the prioritization of transactions based on fees are essential components that allow the Bitcoin network to efficiently process and confirm transactions while incentivizing miners to maintain the security of the blockchain through the proof-of-work process.
+The mempool and the prioritization of transactions based on fees are essential components that allow the Bitcoin network to efficiently process and confirm transactions while incentivizing miners to maintain the security of the blockchain through the proof-of-work process (Figure 1.3).
 
+\section{Validating a block}
+\subsection{The state of the system}
+The state of the blockchain system, also known as the UTXO set (Unspent Transaction Output set), is a critical component in ensuring the integrity of the cryptocurrency network. Here are the key points about the state of the system and its significance in Bitcoin:
+\begin{enumerate}
+	\item \textbf{Verifying Transaction Double-Spending:}
+	\begin{itemize}
+		\item One of the essential tasks in the Bitcoin system is to prevent double-spending, where a user attempts to spend the same coin or UTXO more than once.
+		\item To verify the validity of a new transaction, users need to check if the transaction's inputs (UTXOs) have not been spent previously.
+	\end{itemize}
+	\item \textbf{Unspent Transaction Outputs (UTXOs):}
+	\begin{itemize}
+		\item The state of the system is represented by the set of UTXOs, which includes all transaction outputs that have not been spent in the blockchain.
+		\item UTXOs are created when transactions are included in the blockchain and are considered valid until they are spent by new transactions.
+	\end{itemize}
+	\item \textbf{Separate from the Mempool:}
+	\begin{itemize}
+		\item The state of the system is distinct from the mempool, which contains pending transactions yet to be confirmed.
+		\item The state consists of UTXOs that have been confirmed and permanently recorded in the blockchain.
+	\end{itemize}
+	\item \textbf{Role in Transaction Validation:}
+	\begin{itemize}
+		\item When miners construct new blocks from transactions in the mempool, they only include valid transactions by checking the information in the state (UTXO set).
+		\item Transactions that attempt to spend already spent UTXOs are rejected as invalid.
+	\end{itemize}
+	\item \textbf{Summary of Ledger Entries:}
+	\begin{itemize}
+		\item The state contains a summary of all the confirmed ledger entries in the blockchain until the current point in time.
+		\item This summary is crucial for validating new transactions and ensuring their consistency with previous transactions.
+	\end{itemize}
+	\item \textbf{Growth and Size Challenges:}
+	\begin{itemize}
+		\item The UTXO set grows over time as more transactions are confirmed and new UTXOs are created.
+		\item As of now, the UTXO set size is quite large, over 5 GB, and it continues to increase as Bitcoin gains popularity.
+		\item The size of the UTXO set presents scalability challenges, especially concerning memory requirements and specialized hardware for storage and management.
+	\end{itemize}
+\end{enumerate}
+Overall, the state of the system (UTXO set) plays a vital role in maintaining the integrity of the Bitcoin network, preventing double-spending, and ensuring that new transactions are consistent with previous ones. Managing the growth of the UTXO set is an important aspect of addressing scalability concerns in the blockchain system.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Fig/F3}
+	\caption{Number of UTXOs over time in Bitcoin. Figure sourced from \href{https://www.blockchain.com/explorer/charts/utxo-count}{here}}
+	\label{fig:f1}
+\end{figure}
+
+
+\subsection{Validating blocks}
+Validating blocks is a crucial step for miners in the Bitcoin network to ensure that the newly received or constructed block adheres to the rules and integrity of the blockchain. Here are the important points about block validation:
+
+\begin{enumerate}
+	\item \textbf{Proof-of-Work (PoW) Check:}
+	\begin{itemize}
+		\item The first check performed by a miner is to verify whether the proof-of-work presented in the block meets the required threshold.
+		\item The proof-of-work is a computationally intensive puzzle that miners must solve to create a new block, and it ensures the security and immutability of the blockchain.
+		\item If the proof-of-work is valid, the miner can proceed with further checks.
+	\end{itemize}
+	\item \textbf{Transaction Consistency Check:}
+	\begin{itemize}
+		\item After validating the proof-of-work, the miner needs to verify whether the transactions included in the block are consistent with the current state (UTXO set).
+		\item This consistency check is crucial to prevent any attempts at double-spending or invalid transactions.
+		\item The miner must confirm that each input in every transaction is a valid unspent transaction output (UTXO) according to the current state.
+	\end{itemize}
+	\item \textbf{Updating the State:}
+	\begin{itemize}
+		\item If all the transactions in the block pass the consistency check, the miner accepts the block, removes the relevant transactions from its mempool, and updates the state (UTXO set).
+		\item Updating the state involves deleting the spent transaction outputs (UTXOs) that were used as inputs in the block's transactions.
+		\item Additionally, the newly generated unspent transaction outputs (UTXOs) are added to the state, representing the funds transferred in the block.
+	\end{itemize}
+	\item \textbf{Preemptive Validation in Block Construction:}
+	\begin{itemize}
+		\item Before a miner starts mining a new block, it performs the same validation steps preemptively on the transactions it intends to include in the block.
+		\item This ensures that the constructed block will be accepted by the network once it is mined, saving computational effort.
+	\end{itemize}
+\end{enumerate}
+In summary, block validation is a critical process to maintain the integrity of the blockchain. Miners verify the proof-of-work and the consistency of transactions with the current state (UTXO set). Once validated, a new block is added to the blockchain, and the state is updated to reflect the changes made by the included transactions.
+\subsection{Light nodes and stateless clients}
+Light nodes and stateless clients are important concepts in blockchain networks, especially for enhancing scalability and allowing users with limited resources to participate in the system. Here's an explanation of these concepts:
+\begin{enumerate}
+	\item \textbf{Light Nodes / Light Clients:}
+	\begin{itemize}
+		\item Light nodes, also known as light clients, are participants in the blockchain network who do not store the full state of the system.
+		\item Instead, they only verify the proof-of-work on blocks to ensure their validity, and they may selectively verify specific transactions that concern them.
+		\item By avoiding the storage of the entire state, light nodes require much less computation and storage power compared to full nodes, making them more accessible to devices with limited resources.
+	\end{itemize}
+	\item \textbf{Stateless Clients:}
+	\begin{itemize}
+		\item Stateless clients are an extension of light nodes that aim to validate transactions and blocks without maintaining the full state of the blockchain at all times.
+		\item Instead of storing the entire state, stateless clients download only the necessary state information on-demand to validate a specific block or transaction.
+		\item Once the validation is complete, the stateless client can delete the downloaded state information to save storage space.
+		\item To securely handle the state information, it is stored in the form of an accumulator, a data structure that we discussed in Lecture 2 of the blockchain course.
+	\end{itemize}
+	\item \textbf{Advantages of Stateless Clients:}
+	\begin{itemize}
+		\item The adoption of stateless clients can significantly enhance the scalability of blockchain networks. It allows more users to participate without the need for extensive resources to store the full state.
+		\item By reducing the storage requirements for clients, the network becomes more inclusive and accessible to a wider range of devices, including mobile phones and low-powered computers.
+		\item Stateless clients can still contribute to the network's security by validating transactions and blocks, albeit without maintaining a persistent copy of the state.
+	\end{itemize}
+	\item \textbf{Implementation in Ethereum:}
+	\begin{itemize}
+		\item The concept of stateless clients is actively pursued by the Ethereum blockchain network as a scalability solution.
+		\item Ethereum aims to transition from a stateful design (where clients store the full state) to a stateless design, using stateless clients to improve the network's performance and reduce resource requirements.
+	\end{itemize}
+\end{enumerate}
+In conclusion, light nodes and stateless clients are innovative approaches to make blockchain networks more scalable and inclusive. By allowing participants to interact with the network without storing the full state, these concepts address the challenges of resource-intensive storage and computation in traditional blockchain architectures.
+
+\section{Smart contracts}
+In the context of blockchain technology, smart contracts are self-executing contracts with the terms and conditions written directly into code. They are programmed to automatically execute and enforce the terms of the contract without the need for a trusted third party. Smart contracts run on blockchain networks, and their execution is validated and recorded on the blockchain, making them transparent and immutable.\\
+In traditional settings, when two parties want to exchange money subject to certain conditions, they would create a written contract and rely on a trusted intermediary or authority to enforce the contract's terms. With smart contracts on a blockchain, this intermediary is eliminated, and the trust is decentralized across the network.\\
+In summary, smart contracts are a powerful innovation that leverages blockchain technology to enable secure, automated, and transparent execution of agreements without the need for intermediaries. While Bitcoin's smart contract capabilities are limited, other blockchain platforms like Ethereum have expanded the possibilities of smart contracts to revolutionize various industries and applications.
+\subsection{Scripts in Bitcoin}
+In the context of Bitcoin, smart contracts are referred to as "scripts." A script is a sequence of opcodes included in every transaction output, specifying the conditions that must be satisfied to spend the coins from that output. By using different combinations of opcodes, Bitcoin scripts can enforce various conditions beyond the default ones, providing a level of programmability.
+
+The default condition in a regular transaction output requires the spender to provide a public key that matches the address mentioned in the output and sign the transaction with the corresponding private key. This ensures that only the rightful owner of the coins can spend them.
+
+However, Bitcoin scripts allow for additional conditions to be specified. Some examples include:
+\begin{enumerate}
+	\item \textbf{Timelocks:} A transaction can be configured to be unspendable until a certain block height or a specific time is reached. This can be useful for time-sensitive transactions or implementing time-based conditions.
+	\item \textbf{Multisig:} A script can require multiple signatures from different private keys to spend the coins. This allows for escrow-like arrangements, where funds are held until all parties involved in the transaction provide their signatures.
+	\item \textbf{Hashed Timelock Contracts (HTLCs):} HTLCs are a specific type of smart contract that combines time locks and hash locks. They are useful for setting up secure escrow arrangements for exchanging assets or payments between parties, ensuring that both parties fulfill their obligations before the funds are released.
+\end{enumerate}
+The combination of these conditions in Bitcoin scripts enables the creation of more sophisticated smart contracts, even though Bitcoin's scripting language is not as powerful as the one used in platforms like Ethereum. While Bitcoin's script language is intentionally limited for security reasons, it still provides enough flexibility to implement useful smart contract functionalities, especially for simple financial transactions and basic programmability.
 \end{document}

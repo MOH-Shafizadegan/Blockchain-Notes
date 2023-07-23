@@ -1,0 +1,27 @@
+\contentsline {chapter}{\numberline {1}Peer to Peer Network and Bitcoin system}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Blockchains and Networking}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Types of Network Architecture}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Overlay Networks}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Gossip and Flooding}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Expander Graph}{4}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Bitcoin Network}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Peer discovery}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Block transmission}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Data Broadcast}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Compact Blocks}{5}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Disadvantages of current p2p network}{6}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Geometric Random Network}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Perigee}{7}{subsection.1.3.1}%
+\contentsline {subsubsection}{Algorithm}{7}{section*.2}%
+\contentsline {section}{\numberline {1.4}Basic requirements for a banking system}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Bitcoin and Satoshi}{7}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Transactions}{8}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Addressing}{8}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Transaction inputs and outputs}{8}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Signatures on transactions}{9}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}UTXO}{9}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Cryptocurrency wallets}{10}{subsection.1.6.5}%
+\contentsline {subsection}{\numberline {1.6.6}Transaction fees}{11}{subsection.1.6.6}%
+\contentsline {subsection}{\numberline {1.6.7}Coinbase transactions}{11}{subsection.1.6.7}%
+\contentsline {subsection}{\numberline {1.6.8}Transaction mempool}{12}{subsection.1.6.8}%
+\contentsfinish 
