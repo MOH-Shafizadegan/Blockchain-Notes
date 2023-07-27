@@ -62,15 +62,26 @@
 \contentsline {subsection}{\numberline {5.4.3}Light nodes and stateless clients}{47}{subsection.5.4.3}%
 \contentsline {section}{\numberline {5.5}Smart contracts}{47}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Scripts in Bitcoin}{48}{subsection.5.5.1}%
-\contentsline {chapter}{\numberline {6}Liveness of Bitcoin}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}What is Liveness}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Chain Growth}{50}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Chain Quality}{51}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Selfish Mining}{52}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Fruitchains}{52}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Cryptographic Sortition}{52}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Fruitchain Protocol}{53}{subsection.6.5.2}%
-\contentsline {subsubsection}{Safety of fruitchain protocol}{54}{section*.14}%
-\contentsline {subsubsection}{Liveness of fruitchain protocol}{54}{section*.15}%
-\contentsline {subsection}{\numberline {6.5.3}Short time scale optimal CQ}{54}{subsection.6.5.3}%
+\contentsline {chapter}{\numberline {6}Safety of Bitcoin}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{49}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Mining as a Poisson process}{49}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Nakamoto consensus protocol model}{51}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Formal defnitions of safety}{52}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Private attack}{52}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Analysis of the private attack under zero delay}{53}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Private attack is the worst-case attack}{54}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Safety analysis under bounded network delay}{55}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Nakamoto blocks}{56}{section.6.9}%
+\contentsline {section}{\numberline {6.10}Importance of synchronous network}{58}{section.6.10}%
+\contentsline {chapter}{\numberline {7}Liveness of Bitcoin}{59}{chapter.7}%
+\contentsline {section}{\numberline {7.1}What is Liveness}{59}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Chain Growth}{60}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Chain Quality}{61}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Selfish Mining}{62}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Fruitchains}{62}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Cryptographic Sortition}{62}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Fruitchain Protocol}{63}{subsection.7.5.2}%
+\contentsline {subsubsection}{Safety of fruitchain protocol}{64}{section*.14}%
+\contentsline {subsubsection}{Liveness of fruitchain protocol}{64}{section*.15}%
+\contentsline {subsection}{\numberline {7.5.3}Short time scale optimal CQ}{64}{subsection.7.5.3}%
 \contentsfinish 

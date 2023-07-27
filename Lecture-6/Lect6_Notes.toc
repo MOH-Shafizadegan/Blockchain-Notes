@@ -1,0 +1,12 @@
+\contentsline {chapter}{\numberline {1}Safety of Bitcoin}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Mining as a Poisson process}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Nakamoto consensus protocol model}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Formal defnitions of safety}{5}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Private attack}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Analysis of the private attack under zero delay}{6}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Private attack is the worst-case attack}{7}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Safety analysis under bounded network delay}{8}{section.1.8}%
+\contentsline {section}{\numberline {1.9}Nakamoto blocks}{9}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Importance of synchronous network}{11}{section.1.10}%
+\contentsfinish 
