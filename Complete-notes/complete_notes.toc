@@ -84,4 +84,12 @@
 \contentsline {subsubsection}{Safety of fruitchain protocol}{64}{section*.14}%
 \contentsline {subsubsection}{Liveness of fruitchain protocol}{64}{section*.15}%
 \contentsline {subsection}{\numberline {7.5.3}Short time scale optimal CQ}{64}{subsection.7.5.3}%
+\contentsline {chapter}{\numberline {8}Scaling Throughput in Bitcoin}{66}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Bitcoin’s throughput is security limited}{66}{section.8.1}%
+\contentsline {section}{\numberline {8.2}GHOST - embrace forking}{67}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Private attack on GHOST}{67}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Balance attack on GHOST}{67}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Reduce Forking and Bitcoin-NG}{68}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Bribing attack in Bitcoin-NG}{69}{subsection.8.3.1}%
+\contentsline {section}{\numberline {8.4}Prism 1.0 }{70}{section.8.4}%
 \contentsfinish 
