@@ -13,3 +13,4 @@ Notes of Principles of Blockchain course taught by Pramod Viswanath from Princet
 - Chapter 5 : Bitcoin System
 - Chapter 6 : Safety of Bitcoin 
 - Chapter 7 : Liveness of Bitcoin
+- Chapter 9: Scaling Latency 

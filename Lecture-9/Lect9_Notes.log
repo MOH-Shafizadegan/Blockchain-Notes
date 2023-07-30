@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  30 JUL 2023 09:53
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  30 JUL 2023 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**complete_notes.tex
-(./complete_notes.tex
+**Lect9_Notes.tex
+(./Lect9_Notes.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 (e:/Program Files/texlive/2020/texmf-dist/tex/latex/base/report.cls
@@ -1298,31 +1298,7 @@ File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 Package: titletoc 2019/10/16 v2.13 TOC entries
 \ttl@leftsep=\dimen322
 ))
-(./includes/macros.tex) (./includes/letterfonts.tex) (./complete_notes.aux
-
-LaTeX Warning: Label `fig:l3_f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
+(./includes/macros.tex) (./includes/letterfonts.tex) (./Lect9_Notes.aux
 
 LaTeX Warning: Label `fig:f1' multiply defined.
 
@@ -1339,7 +1315,7 @@ LaTeX Warning: Label `fig:f1' multiply defined.
 LaTeX Warning: Label `fig:f1' multiply defined.
 
 )
-\openout1 = `complete_notes.aux'.
+\openout1 = `Lect9_Notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 13.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
@@ -1495,551 +1471,35 @@ LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(./complete_notes.toc
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
- [1
-
-]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+(./Lect9_Notes.toc
 Missing character: There is no ; in font nullfont!
 )
 \tf@toc=\write7
-\openout7 = `complete_notes.toc'.
+\openout7 = `Lect9_Notes.toc'.
 
- [2] (./Lectures/1.tex
+ [1
+
+]
 Chapter 1.
-[3
-
-]
-File: Fig/L1_F1.png Graphic file (type bmp)
-<Fig/L1_F1.png>
-File: Fig/L1_F4.png Graphic file (type bmp)
-<Fig/L1_F4.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--52
-
- []
-
-[4]
-File: Fig/L1_F2.png Graphic file (type bmp)
-<Fig/L1_F2.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--67
-
- []
-
-[5]
-File: Fig/L1_F3.png Graphic file (type bmp)
-<Fig/L1_F3.png>
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 111--115
-
- []
-
-) (./Lectures/2.tex [7] [8]
-Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--5
-
- []
-
-[9
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 31--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--36
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--46
-
- []
-
-File: Fig/L2_F1.png Graphic file (type bmp)
-<Fig/L2_F1.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-
- []
-
-[10]
-File: Fig/L2_F2.png Graphic file (type bmp)
-<Fig/L2_F2.png>
- [11]
-File: Fig/L2_F4.jpg Graphic file (type bmp)
-<Fig/L2_F4.jpg>
-File: Fig/L2_F3.png Graphic file (type bmp)
-<Fig/L2_F3.png>
- [12] [13]) (./Lectures/3.tex [14]
-Chapter 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--15
-
- []
-
-[15
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 31--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
-
- []
-
-File: Fig/L3_F1.png Graphic file (type bmp)
-<Fig/L3_F1.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[17]
-File: Fig/L3_F2.png Graphic file (type bmp)
-<Fig/L3_F2.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 93--97
-
- []
-
-[18]
-File: Fig/L3_F3.jpg Graphic file (type bmp)
-<Fig/L3_F3.jpg>
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--133
-
- []
-
-[19]
-File: Fig/L3_F4.jpg Graphic file (type bmp)
-<Fig/L3_F4.jpg>
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 152.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 152.
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 165--171
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 172--180
-
- []
-
-[22]
-Missing character: There is no ≫ in font [lmroman10-regular]:mapping=tex-text;!
- [23]
-File: Fig/L3_F5.jpg Graphic file (type bmp)
-<Fig/L3_F5.jpg>
- [24]) (./Lectures/4.tex [25
-
-]
-Chapter 4.
-File: Fig/L4_F1.png Graphic file (type bmp)
-<Fig/L4_F1.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: Fig/L4_F2.png Graphic file (type bmp)
-<Fig/L4_F2.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[26
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-
- []
-
-[27]
-File: Fig/L4_F3.png Graphic file (type bmp)
-<Fig/L4_F3.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[28]
-File: Fig/L4_F4.png Graphic file (type bmp)
-<Fig/L4_F4.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
-
- []
-
-File: Fig/L4_F5.png Graphic file (type bmp)
-<Fig/L4_F5.png>
-[31]
-File: Fig/L4_F6.png Graphic file (type bmp)
-<Fig/L4_F6.png>
-File: Fig/L4_F7.png Graphic file (type bmp)
-<Fig/L4_F7.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
-
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
-
- []
-
-File: Fig/L4_F8.png Graphic file (type bmp)
-<Fig/L4_F8.png>
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 185--188
-
- []
-
-File: Fig/L4_F10.png Graphic file (type bmp)
-<Fig/L4_F10.png>
-File: Fig/L4_F11.png Graphic file (type bmp)
-<Fig/L4_F11.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: Fig/L4_F12.png Graphic file (type bmp)
-<Fig/L4_F12.png>
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 219--222
-
- []
-
-File: Fig/L4_F13.png Graphic file (type bmp)
-<Fig/L4_F13.png>
-File: Fig/L4_F14.png Graphic file (type bmp)
-<Fig/L4_F14.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[35]
-File: Fig/L4_F9.png Graphic file (type bmp)
-<Fig/L4_F9.png>
- [36]
-File: Fig/L4_F15.png Graphic file (type bmp)
-<Fig/L4_F15.png>
-) (./Lectures/5.tex [37]
-Chapter 5.
-[38
-
-] [39] [40]
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
-
- []
-
-[41] [42]
-File: Fig/L5_F1.jpg Graphic file (type bmp)
-<Fig/L5_F1.jpg>
-File: Fig/L5_F2.jpg Graphic file (type bmp)
-<Fig/L5_F2.jpg>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[43] [44]
-File: Fig/L5_F3.jpg Graphic file (type bmp)
-<Fig/L5_F3.jpg>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[45] [46] [47]) (./Lectures/6.tex [48]
-Chapter 6.
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-
- []
-
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[49
-
-]
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ≪ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--27
-
- []
-
-Missing character: There is no λ in font [lmroman10-bold]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[50]
-Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
-
- []
-
-Missing character: There is no ∈ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⪯ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⌊ in font rm-lmr6!
-Missing character: There is no ⌊ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⌊ in font rm-lmr6!
-[51]
-Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⌊ in font rm-lmr7!
-Missing character: There is no ⪯ in font rm-lmr10!
-Missing character: There is no ≡ in font rm-lmr10!
-Missing character: There is no ≡ in font rm-lmr10!
-Missing character: There is no ′ in font rm-lmr10!
-Missing character: There is no ≥ in font rm-lmr10!
-Missing character: There is no ′ in font rm-lmr10!
-Missing character: There is no ∈ in font rm-lmr10!
-Missing character: There is no ′ in font rm-lmr7!
-Missing character: There is no ′ in font rm-lmr10!
-Missing character: There is no ′ in font rm-lmr10!
-Missing character: There is no ′ in font rm-lmr10!
-Missing character: There is no − in font rm-lmr10!
-Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
-File: Fig/L6_F1.jpg Graphic file (type bmp)
-<Fig/L6_F1.jpg>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Missing character: There is no ′ in font rm-lmr10!
-[52]
-Missing character: There is no − in font rm-lmr10!
-Missing character: There is no − in font rm-lmr7!
-Missing character: There is no − in font rm-lmr10!
-File: Fig/L6_F2.jpg Graphic file (type bmp)
-<Fig/L6_F2.jpg>
-Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
- [53]
-Missing character: There is no ≥ in font rm-lmr10!
-Missing character: There is no ≥ in font rm-lmr10!
-Missing character: There is no ≥ in font rm-lmr10!
-File: Fig/L6_F3.jpg Graphic file (type bmp)
-<Fig/L6_F3.jpg>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[54]
-File: Fig/L6_F4.jpg Graphic file (type bmp)
-<Fig/L6_F4.jpg>
-File: Fig/L6_F5.jpg Graphic file (type bmp)
-<Fig/L6_F5.jpg>
-File: Fig/L6_F6.jpg Graphic file (type bmp)
-<Fig/L6_F6.jpg>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[55]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[56]
-File: Fig/L6_F7.jpg Graphic file (type bmp)
-<Fig/L6_F7.jpg>
-Missing character: There is no − in font rm-lmr10!
-Missing character: There is no − in font rm-lmr10!
-) (./Lectures/7.tex [57] [58]
-Chapter 7.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--12
-
- []
-
-[59
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
-
- []
-
-File: Fig/L7_F1.png Graphic file (type bmp)
-<Fig/L7_F1.png>
-[60]
-File: Fig/L7_F2.png Graphic file (type bmp)
-<Fig/L7_F2.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--78
-
- []
-
-[61]
-File: Fig/L7_F3.png Graphic file (type bmp)
-<Fig/L7_F3.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--95
-
- []
-
-File: Fig/L7_F4.png Graphic file (type bmp)
-<Fig/L7_F4.png>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:f4' on page 62 undefined on input line 106.
-
-[62]
-File: Fig/L7_F5.png Graphic file (type bmp)
-<Fig/L7_F5.png>
- [63]
-Missing character: There is no − in font rm-lmr10!
-Missing character: There is no − in font rm-lmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
-
- []
-
-File: Fig/L7_F6.png Graphic file (type bmp)
-<Fig/L7_F6.png>
-) (./Lectures/9.tex
-Underfull \hbox (badness 10000) in paragraph at lines 158--1
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[64] [65]
-Chapter 8.
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
-File: Fig/L9_F1.jpg Graphic file (type bmp)
-<Fig/L9_F1.jpg>
-[66
+File: Fig/F1.jpg Graphic file (type bmp)
+<Fig/F1.jpg>
+[2
 
 ]
-File: Fig/L9_F2.jpg Graphic file (type bmp)
-<Fig/L9_F2.jpg>
- [67]
-File: Fig/L9_F3.jpg Graphic file (type bmp)
-<Fig/L9_F3.jpg>
+File: Fig/F2.jpg Graphic file (type bmp)
+<Fig/F2.jpg>
+ [3]
+File: Fig/F3.jpg Graphic file (type bmp)
+<Fig/F3.jpg>
 Missing character: There is no ≫ in font rm-lmr10!
- [68]
+ [4]
 Missing character: There is no ≤ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
@@ -2047,76 +1507,73 @@ Missing character: There is no − in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--84
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--84
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
 
  []
 
 Missing character: There is no ≤ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
-[69]
-File: Fig/L9_F4.jpg Graphic file (type bmp)
-<Fig/L9_F4.jpg>
- [70]
-File: Fig/L9_F5.jpg Graphic file (type bmp)
-<Fig/L9_F5.jpg>
- [71]
+[5]
+File: Fig/F4.jpg Graphic file (type bmp)
+<Fig/F4.jpg>
+ [6]
+File: Fig/F5.jpg Graphic file (type bmp)
+<Fig/F5.jpg>
+ [7]
 Missing character: There is no β in font zplmi!
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--130
-
- []
-
-Missing character: There is no ∗ in font rm-lmr7!
-Missing character: There is no ∗ in font rm-lmr7!
-Missing character: There is no ∗ in font rm-lmr7!
-Missing character: There is no ≈ in font rm-lmr10!
-Missing character: There is no ∗ in font rm-lmr7!
-Missing character: There is no ∗ in font rm-lmr7!
-Missing character: There is no ≈ in font rm-lmr10!
-[72]
 Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+Missing character: There is no ∗ in font rm-lmr7!
+Missing character: There is no ∗ in font rm-lmr7!
+Missing character: There is no ∗ in font rm-lmr7!
+Missing character: There is no ≈ in font rm-lmr10!
+Missing character: There is no ∗ in font rm-lmr7!
+Missing character: There is no ∗ in font rm-lmr7!
+Missing character: There is no ≈ in font rm-lmr10!
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
 
  []
 
-[73]
-File: Fig/L9_F6.jpg Graphic file (type bmp)
-<Fig/L9_F6.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+[9]
+File: Fig/F6.jpg Graphic file (type bmp)
+<Fig/F6.jpg>
 Missing character: There is no − in font rm-lmr7!
 Missing character: There is no − in font rm-lmr7!
-) [74]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
- (./complete_notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 30.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 30.
+ [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+ (./Lect9_Notes.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 195.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 35917 strings out of 479418
- 702143 string characters out of 5881945
- 1070797 words of memory out of 5000000
- 52664 multiletter control sequences out of 15000+600000
- 589525 words of font info for 136 fonts, out of 8000000 for 9000
+ 35066 strings out of 479418
+ 689623 string characters out of 5881945
+ 1066175 words of memory out of 5000000
+ 51895 multiletter control sequences out of 15000+600000
+ 570589 words of font info for 100 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,13n,105p,1348b,1365s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,7n,105p,1210b,582s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on complete_notes.pdf (75 pages).
+Output written on Lect9_Notes.pdf (11 pages).

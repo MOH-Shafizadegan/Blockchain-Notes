@@ -84,4 +84,15 @@
 \contentsline {subsubsection}{Safety of fruitchain protocol}{64}{section*.14}%
 \contentsline {subsubsection}{Liveness of fruitchain protocol}{64}{section*.15}%
 \contentsline {subsection}{\numberline {7.5.3}Short time scale optimal CQ}{64}{subsection.7.5.3}%
+\contentsline {chapter}{\numberline {8}Scaling Latency}{66}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Bitcoin Latency}{66}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Prism: Fast Confrmation}{67}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Fast confrmation rule in Prism}{70}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Fast confrmation rule}{71}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Tentative Confrmation rule}{72}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Final confrmation rule}{72}{subsection.8.3.3}%
+\contentsline {section}{\numberline {8.4}Non-isolated Proposer Block}{72}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Honest transaction}{73}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Double-spent transaction}{73}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.5}Scaling latency via Prism}{73}{section.8.5}%
 \contentsfinish 
