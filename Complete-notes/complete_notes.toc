@@ -1,98 +1,106 @@
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}What are blockchains}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Bitcoin as the first blockchain}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}What this course is about}{7}{section.1.3}%
-\contentsline {section}{\numberline {1.4}What is Rust?}{8}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Blockchains as Cryptographic Data Structures}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Hash Functions}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Cryptographic Hash Function}{10}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Hash Pointer and chains of block}{10}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Merkle tree}{11}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Digital Signature}{13}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Summary}{13}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Proof of Work and Nakamoto Consensus}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Decentralized Blockchain \& Nakamoto consensus}{15}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Distributed consensus}{15}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Network Assumptions}{16}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Leader election: Oracle}{16}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Proof of Work}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Forks and Longest Chain Protocol}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Adversarial users}{18}{section.3.4}%
-\contentsline {section}{\numberline {3.5}The $k$-deep confrmation rule}{20}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Variable mining difculty}{22}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Bitcoin is Permissionless}{24}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Peer to Peer Network}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Blockchains and Networking}{26}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Types of Network Architecture}{26}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Overlay Networks}{26}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Gossip and Flooding}{27}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Expander Graph}{27}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Bitcoin Network}{28}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Peer discovery}{28}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Block transmission}{28}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Data Broadcast}{29}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Compact Blocks}{29}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Disadvantages of current p2p network}{30}{subsection.4.2.5}%
-\contentsline {section}{\numberline {4.3}Geometric Random Network}{30}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Perigee}{31}{subsection.4.3.1}%
-\contentsline {subsubsection}{Algorithm}{31}{section*.13}%
-\contentsline {section}{\numberline {4.4}Efficient Networking}{31}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}FRN (Fast relay network)}{32}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Trusted Networks: Falcon}{32}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Network Anonymity and Privacy}{33}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Network De-anonymization Problem}{33}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Flooding Protocol}{34}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Anonymity in Botnet adversarial model}{35}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Dandelion}{36}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Bitcoin system}{38}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Basic requirements for a banking system}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Bitcoin and Satoshi}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Transactions}{38}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Addressing}{39}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Transaction inputs and outputs}{39}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Signatures on transactions}{40}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}UTXO}{40}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Cryptocurrency wallets}{41}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Transaction fees}{42}{subsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.3.7}Coinbase transactions}{42}{subsection.5.3.7}%
-\contentsline {subsection}{\numberline {5.3.8}Transaction mempool}{43}{subsection.5.3.8}%
-\contentsline {section}{\numberline {5.4}Validating a block}{45}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}The state of the system}{45}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Validating blocks}{46}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Light nodes and stateless clients}{47}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Smart contracts}{47}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Scripts in Bitcoin}{48}{subsection.5.5.1}%
-\contentsline {chapter}{\numberline {6}Safety of Bitcoin}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Mining as a Poisson process}{49}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Nakamoto consensus protocol model}{51}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Formal defnitions of safety}{52}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Private attack}{52}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Analysis of the private attack under zero delay}{53}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Private attack is the worst-case attack}{54}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Safety analysis under bounded network delay}{55}{section.6.8}%
-\contentsline {section}{\numberline {6.9}Nakamoto blocks}{56}{section.6.9}%
-\contentsline {section}{\numberline {6.10}Importance of synchronous network}{58}{section.6.10}%
-\contentsline {chapter}{\numberline {7}Liveness of Bitcoin}{59}{chapter.7}%
-\contentsline {section}{\numberline {7.1}What is Liveness}{59}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Chain Growth}{60}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Chain Quality}{61}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Selfish Mining}{62}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Fruitchains}{62}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Cryptographic Sortition}{62}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Fruitchain Protocol}{63}{subsection.7.5.2}%
-\contentsline {subsubsection}{Safety of fruitchain protocol}{64}{section*.14}%
-\contentsline {subsubsection}{Liveness of fruitchain protocol}{64}{section*.15}%
-\contentsline {subsection}{\numberline {7.5.3}Short time scale optimal CQ}{64}{subsection.7.5.3}%
-\contentsline {chapter}{\numberline {8}Scaling Latency}{66}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Bitcoin Latency}{66}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Prism: Fast Confrmation}{67}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Fast confrmation rule in Prism}{70}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Fast confrmation rule}{71}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Tentative Confrmation rule}{72}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Final confrmation rule}{72}{subsection.8.3.3}%
-\contentsline {section}{\numberline {8.4}Non-isolated Proposer Block}{72}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Honest transaction}{73}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Double-spent transaction}{73}{subsection.8.4.2}%
-\contentsline {section}{\numberline {8.5}Scaling latency via Prism}{73}{section.8.5}%
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}What are blockchains}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Bitcoin as the first blockchain}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}What this course is about}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}What is Rust?}{9}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Blockchains as Cryptographic Data Structures}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hash Functions}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Cryptographic Hash Function}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Hash Pointer and chains of block}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Merkle tree}{12}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Digital Signature}{14}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Summary}{14}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Proof of Work and Nakamoto Consensus}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Decentralized Blockchain \& Nakamoto consensus}{16}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Distributed consensus}{16}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Network Assumptions}{17}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Leader election: Oracle}{17}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Proof of Work}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Forks and Longest Chain Protocol}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Adversarial users}{19}{section.3.4}%
+\contentsline {section}{\numberline {3.5}The $k$-deep confrmation rule}{21}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Variable mining difculty}{23}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Bitcoin is Permissionless}{25}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Peer to Peer Network}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Blockchains and Networking}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Types of Network Architecture}{27}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Overlay Networks}{27}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Gossip and Flooding}{28}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Expander Graph}{28}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Bitcoin Network}{29}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Peer discovery}{29}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Block transmission}{29}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Data Broadcast}{30}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Compact Blocks}{30}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Disadvantages of current p2p network}{31}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Geometric Random Network}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Perigee}{32}{subsection.4.3.1}%
+\contentsline {subsubsection}{Algorithm}{32}{section*.13}%
+\contentsline {section}{\numberline {4.4}Efficient Networking}{32}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}FRN (Fast relay network)}{33}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Trusted Networks: Falcon}{33}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Network Anonymity and Privacy}{34}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Network De-anonymization Problem}{34}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Flooding Protocol}{35}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Anonymity in Botnet adversarial model}{36}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Dandelion}{37}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Bitcoin system}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Basic requirements for a banking system}{39}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Bitcoin and Satoshi}{39}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Transactions}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Addressing}{40}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Transaction inputs and outputs}{40}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Signatures on transactions}{41}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}UTXO}{41}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Cryptocurrency wallets}{42}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Transaction fees}{43}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Coinbase transactions}{43}{subsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.3.8}Transaction mempool}{44}{subsection.5.3.8}%
+\contentsline {section}{\numberline {5.4}Validating a block}{46}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}The state of the system}{46}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Validating blocks}{47}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Light nodes and stateless clients}{48}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Smart contracts}{48}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Scripts in Bitcoin}{49}{subsection.5.5.1}%
+\contentsline {chapter}{\numberline {6}Safety of Bitcoin}{50}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{50}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Mining as a Poisson process}{50}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Nakamoto consensus protocol model}{52}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Formal defnitions of safety}{53}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Private attack}{53}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Analysis of the private attack under zero delay}{54}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Private attack is the worst-case attack}{55}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Safety analysis under bounded network delay}{56}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Nakamoto blocks}{57}{section.6.9}%
+\contentsline {section}{\numberline {6.10}Importance of synchronous network}{59}{section.6.10}%
+\contentsline {chapter}{\numberline {7}Liveness of Bitcoin}{60}{chapter.7}%
+\contentsline {section}{\numberline {7.1}What is Liveness}{60}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Chain Growth}{61}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Chain Quality}{62}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Selfish Mining}{63}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Fruitchains}{63}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Cryptographic Sortition}{63}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Fruitchain Protocol}{64}{subsection.7.5.2}%
+\contentsline {subsubsection}{Safety of fruitchain protocol}{65}{section*.14}%
+\contentsline {subsubsection}{Liveness of fruitchain protocol}{65}{section*.15}%
+\contentsline {subsection}{\numberline {7.5.3}Short time scale optimal CQ}{65}{subsection.7.5.3}%
+\contentsline {chapter}{\numberline {8}Scaling Throughput in Bitcoin}{67}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Bitcoin’s throughput is security limited}{67}{section.8.1}%
+\contentsline {section}{\numberline {8.2}GHOST - embrace forking}{68}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Private attack on GHOST}{68}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Balance attack on GHOST}{68}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Reduce Forking and Bitcoin-NG}{69}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Bribing attack in Bitcoin-NG}{70}{subsection.8.3.1}%
+\contentsline {section}{\numberline {8.4}Prism 1.0 }{71}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Scaling Latency}{72}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Bitcoin Latency}{72}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Prism: Fast Confrmation}{73}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Fast confrmation rule in Prism}{76}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Fast confrmation rule}{77}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Tentative Confrmation rule}{78}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Final confrmation rule}{78}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Non-isolated Proposer Block}{78}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Honest transaction}{79}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Double-spent transaction}{79}{subsection.9.4.2}%
+\contentsline {section}{\numberline {9.5}Scaling latency via Prism}{79}{section.9.5}%
 \contentsfinish 
