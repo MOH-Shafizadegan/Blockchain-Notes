@@ -103,4 +103,12 @@
 \contentsline {subsection}{\numberline {9.4.1}Honest transaction}{79}{subsection.9.4.1}%
 \contentsline {subsection}{\numberline {9.4.2}Double-spent transaction}{79}{subsection.9.4.2}%
 \contentsline {section}{\numberline {9.5}Scaling latency via Prism}{79}{section.9.5}%
+\contentsline {chapter}{\numberline {10}Sharding: Scaling Storage, Computation and Communication}{81}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduction}{81}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Multiconsensus architecture}{82}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Uniconsensus architecture}{83}{section.10.3}%
+\contentsline {section}{\numberline {10.4} Bootstrap and State-commitment}{85}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Accumulator for State-commitments}{86}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Generation and agreement on state commitments}{86}{subsection.10.4.2}%
+\contentsline {section}{\numberline {10.5}Cross-shard transactions}{88}{section.10.5}%
 \contentsfinish 
