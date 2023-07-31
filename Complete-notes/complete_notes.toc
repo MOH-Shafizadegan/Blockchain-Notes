@@ -111,4 +111,17 @@
 \contentsline {subsection}{\numberline {10.4.1}Accumulator for State-commitments}{86}{subsection.10.4.1}%
 \contentsline {subsection}{\numberline {10.4.2}Generation and agreement on state commitments}{86}{subsection.10.4.2}%
 \contentsline {section}{\numberline {10.5}Cross-shard transactions}{88}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Proof of Stake}{91}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Proof of Work is energy inefficient}{91}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Proof of Stake}{91}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Idea 1}{92}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Idea 3}{92}{subsection.11.2.2}%
+\contentsline {section}{\numberline {11.3}Key Evolving Signature (KES)}{93}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Nothing at Stake attack}{94}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Boosting Security Threshold}{95}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}c-correlation PoS protocol}{96}{subsection.11.5.1}%
+\contentsline {section}{\numberline {11.6}Dynamic Stake}{97}{section.11.6}%
+\contentsline {subsection}{\numberline {11.6.1}New fork choice rule}{98}{subsection.11.6.1}%
+\contentsline {section}{\numberline {11.7}Dynamic Availability Using VDF}{99}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}PoSAT}{99}{subsection.11.7.1}%
 \contentsfinish 
