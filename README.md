@@ -17,3 +17,4 @@ Notes of Principles of Blockchain course taught by Pramod Viswanath from Princet
 - Chapter  9 : Scaling Latency 
 - Chapter 10 : Sharding: Scaling Storage, Computation and Communication
 - Chapter 11 : Proof of Stake
+- Chapter 13 : Payment Channels
