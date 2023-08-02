@@ -124,4 +124,13 @@
 \contentsline {subsection}{\numberline {11.6.1}New fork choice rule}{98}{subsection.11.6.1}%
 \contentsline {section}{\numberline {11.7}Dynamic Availability Using VDF}{99}{section.11.7}%
 \contentsline {subsection}{\numberline {11.7.1}PoSAT}{99}{subsection.11.7.1}%
+\contentsline {chapter}{\numberline {12}Layer 2 Scaling: Payment Channels}{101}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Payment Channels}{101}{section.12.1}%
+\contentsline {section}{\numberline {12.2}One-Way Payment Channel}{102}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Two-Way Payment Channel}{103}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Multi-hop payment channels}{104}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Trusted multi-hop payments}{104}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}Trustless multi-hop payments using Hashlock}{104}{subsection.12.4.2}%
+\contentsline {subsection}{\numberline {12.4.3}Trustless multi-hop payments using Hashlock and Timelock}{105}{subsection.12.4.3}%
+\contentsline {section}{\numberline {12.5}Payment Network}{105}{section.12.5}%
 \contentsfinish 
