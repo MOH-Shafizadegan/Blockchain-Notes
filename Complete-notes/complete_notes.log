@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  4 AUG 2023 12:40
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  4 AUG 2023 19:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1404,6 +1404,24 @@ LaTeX Warning: Label `reference1' multiply defined.
 
 LaTeX Warning: Label `reference2' multiply defined.
 
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
+
+LaTeX Warning: Label `fig:f1' multiply defined.
+
 )
 \openout1 = `complete_notes.aux'.
 
@@ -1583,11 +1601,13 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+ [3]
+Missing character: There is no ; in font nullfont!
 )
 \tf@toc=\write7
 \openout7 = `complete_notes.toc'.
 
- [3] [4] (./Lectures/1.tex
+ [4] (./Lectures/1.tex
 Chapter 1.
 [5
 
@@ -2526,12 +2546,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--145
 
  []
 
-[113]) [114]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
+[113]) (./Lectures/14.tex [114]
+Chapter 14.
+File: Fig/L14_F1.png Graphic file (type bmp)
+<Fig/L14_F1.png>
+[115
+
+]
+File: Fig/L14_F2.png Graphic file (type bmp)
+<Fig/L14_F2.png>
+File: Fig/L14_F3.jpg Graphic file (type bmp)
+<Fig/L14_F3.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+[116]
+File: Fig/L14_F4.png Graphic file (type bmp)
+<Fig/L14_F4.png>
+File: Fig/L14_F5.png Graphic file (type bmp)
+<Fig/L14_F5.png>
+ [117] [118]
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
+
+ []
+
+[119]
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+ [120]
+File: Fig/L14_F6.png Graphic file (type bmp)
+<Fig/L14_F6.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+
+ []
+
+[121]
+Overfull \hbox (0.25659pt too wide) in paragraph at lines 153--154
+[]\TU/lmr/bx/n/10 Cost-Efficient Off-Chain Storage: \TU/lmr/m/n/10 zkPorter ben
+efits from cheaper off-chain storage compared to zkSync’s
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
+
+ []
+
+[122]) [123] [124]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
  (./complete_notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 37.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 37.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2544,12 +2616,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37465 strings out of 479418
- 728286 string characters out of 5881945
- 1094411 words of memory out of 5000000
- 54162 multiletter control sequences out of 15000+600000
+ 37556 strings out of 479418
+ 729494 string characters out of 5881945
+ 1094537 words of memory out of 5000000
+ 54244 multiletter control sequences out of 15000+600000
  589525 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,16n,105p,1348b,1367s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on complete_notes.pdf (115 pages).
+Output written on complete_notes.pdf (125 pages).
