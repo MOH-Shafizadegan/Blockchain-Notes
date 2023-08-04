@@ -1,0 +1,50 @@
+\documentclass{report}
+\usepackage{graphicx}
+
+\input{./includes/preamble}
+\input{./includes/macros}
+\input{./includes/letterfonts}
+
+\title{\Huge{Principles of Blockchains \\ Princeton University,\\
+		Professor: Pramod Viswanath}}
+	
+\author{\huge{Lecture 13} \\\\ Layer 2 Scaling: Rollups}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Layer 2 Scaling: Rollups}
+
+\section{Introduction}
+Rollups are a scaling solution used by the Ethereum community to increase throughput on the Ethereum Mainnet by moving computation and state-storage off-chain1. Rollups “roll up” a bunch of transactions into one and come in two basic forms: optimistic rollups and zero-knowledge rollups.\\
+Optimistic rollups make the assumption that all of the rolled-up data is valid, and that nobody is trying to fool the blockchain by hiding spurious transactions within rollups. To protect against fraudulent transactions, optimistic rollup protocols allow people to contest bunk trades. The fraudulent transaction is submitted directly on the Ethereum network to check if it’s legit, and to settle the dispute.\\
+Zero-knowledge rollups (also referred to as zk-rollups) work very differently. They rely on a piece of cryptography called a zero-knowledge proof, which allows someone to mathematically prove that a statement is true without disclosing additional information about that statement.\\
+Rollups cut down on blockchain transaction costs by “rolling up” batches of transactions into a single one. They also speed things up: the rollup is very quick to perform and the Ethereum blockchain needs only to process a single transaction rather than many. That’s useful when Ethereum maxes out at around 15 transactions per second unassisted, see Figure 1.
+\begin{center}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{Fig/F1}
+		\caption{Rollups: A Scalable Solution for Ethereum - This diagram illustrates how Rollups execute transactions off-chain and report data on-chain in a compressed way, providing a scalable solution for Ethereum.
+		}
+		\label{fig:f1}
+	\end{figure}
+\end{center}
+\section{Transfer}
+In a Rollup transfer, anyone can publish compressed data on-chain in a batch. This batch contains the pre-state, post-state, and compressed data. The diagram shows a Rollup contract connected to a State root with a dotted line. The State root is connected to four nodes representing Alice, Bob, Charlie, and David with solid lines. The nodes representing Alice, Bob, and Charlie are connected with a solid line, while the node representing David is connected with a dotted line. The text on the nodes reads “Alice > Bob > Alice > Charlie > Bob > Charlie” and “David: compressed item. There is still enough data to determine how to update the state…”. This illustrates how Rollups can execute transactions off-chain while still maintaining the security and integrity of the blockchain, see Figure 2.
+\begin{center}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]{Fig/F2}
+		\caption{This diagram illustrates the concept of Rollups transfer in blockchain technology. It shows how anyone can publish compressed data on-chain, called a batch, which contains pre-state, post-state, and compressed data. The Rollup contract interacts with the state root, which in turn interacts with individual users such as Alice, Bob, and Charlie. The diagram also shows the balances of each user.
+		}
+		\label{fig:f1}
+	\end{figure}
+\end{center}
+
+\end{document}
