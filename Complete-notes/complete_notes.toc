@@ -157,4 +157,15 @@
 \contentsline {subsection}{\numberline {14.4.5}zkEVM}{123}{subsection.14.4.5}%
 \contentsline {subsection}{\numberline {14.4.6}Pros and Cons}{123}{subsection.14.4.6}%
 \contentsline {section}{\numberline {14.5}Final Comparison}{123}{section.14.5}%
+\contentsline {chapter}{\numberline {15}Blockchains with Finality}{125}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Review of the longest chain protocol}{125}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Byzantine Fault Tolerant (BFT) Protocols}{126}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Streamlet}{126}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}Confirmation rule}{126}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}Streamlet performance}{128}{subsection.15.3.2}%
+\contentsline {subsubsection}{Communication complexity of Streamlet}{128}{section*.115}%
+\contentsline {subsection}{\numberline {15.3.3}Latency of Streamlet}{129}{subsection.15.3.3}%
+\contentsline {section}{\numberline {15.4}HotStuff}{129}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}From Streamlet to Hotstuff}{130}{subsection.15.4.1}%
+\contentsline {section}{\numberline {15.5}implementation: Pacemaker}{130}{section.15.5}%
 \contentsfinish 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  4 AUG 2023 19:56
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  4 AUG 2023 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,6 +1603,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
  [3]
 Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 )
 \tf@toc=\write7
 \openout7 = `complete_notes.toc'.
@@ -2598,12 +2599,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-[122]) [123] [124]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+[122]) (./Lectures/15.tex [123] [124]
+Chapter 15.
+File: Fig/L15_F8.png Graphic file (type bmp)
+<Fig/L15_F8.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--31
+
+ []
+
+[125
+
+]
+File: Fig/L15_F1.png Graphic file (type bmp)
+<Fig/L15_F1.png>
+File: Fig/L15_F2.png Graphic file (type bmp)
+<Fig/L15_F2.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--59
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[126]
+File: Fig/L15_F3.png Graphic file (type bmp)
+<Fig/L15_F3.png>
+
+
+LaTeX Warning: Reference `fig:f4' on page 127 undefined on input line 66.
+
+File: Fig/L15_F4.png Graphic file (type bmp)
+<Fig/L15_F4.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--76
+
+ []
+
+[127]
+File: Fig/L15_F5.png Graphic file (type bmp)
+<Fig/L15_F5.png>
+File: Fig/L15_F6.png Graphic file (type bmp)
+<Fig/L15_F6.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[128]
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--104
+
+ []
+
+File: Fig/L15_F7.png Graphic file (type bmp)
+<Fig/L15_F7.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[129]
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
+
+ []
+
+) [130]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (./complete_notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 39.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2616,12 +2694,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 37556 strings out of 479418
- 729494 string characters out of 5881945
- 1094537 words of memory out of 5000000
- 54244 multiletter control sequences out of 15000+600000
+ 37672 strings out of 479418
+ 731079 string characters out of 5881945
+ 1093925 words of memory out of 5000000
+ 54349 multiletter control sequences out of 15000+600000
  589525 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,16n,105p,1348b,1367s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on complete_notes.pdf (125 pages).
+Output written on complete_notes.pdf (131 pages).
