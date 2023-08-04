@@ -19,3 +19,5 @@ Notes of Principles of Blockchain course taught by Pramod Viswanath from Princet
 - Chapter 11 : Proof of Stake
 - Chapter 12 : Side Blockchains
 - Chapter 13 : Payment Channels
+- Chapter 14 : Rollups
+- Chapter 15 : Blockchains with Finality
