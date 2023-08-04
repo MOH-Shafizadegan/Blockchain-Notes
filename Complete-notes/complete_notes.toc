@@ -124,7 +124,7 @@
 \contentsline {subsection}{\numberline {11.6.1}New fork choice rule}{99}{subsection.11.6.1}%
 \contentsline {section}{\numberline {11.7}Dynamic Availability Using VDF}{100}{section.11.7}%
 \contentsline {subsection}{\numberline {11.7.1}PoSAT}{100}{subsection.11.7.1}%
-\contentsline {chapter}{\numberline {12}Layer 2 Scaling: Payment Channels}{102}{chapter.12}%
+\contentsline {chapter}{\numberline {12}Layer 2 Scaling: Side Blockchains}{102}{chapter.12}%
 \contentsline {section}{\numberline {12.1}Introduction}{102}{section.12.1}%
 \contentsline {section}{\numberline {12.2}Side Blockchains}{102}{section.12.2}%
 \contentsline {subsection}{\numberline {12.2.1}Data Availability Attack}{103}{subsection.12.2.1}%
@@ -142,4 +142,15 @@
 \contentsline {subsection}{\numberline {13.4.2}Trustless multi-hop payments using Hashlock}{112}{subsection.13.4.2}%
 \contentsline {subsection}{\numberline {13.4.3}Trustless multi-hop payments using Hashlock and Timelock}{112}{subsection.13.4.3}%
 \contentsline {section}{\numberline {13.5}Payment Network}{113}{section.13.5}%
+\contentsline {chapter}{\numberline {14}Blockchains with Finality}{115}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Review of the longest chain protocol}{115}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Byzantine Fault Tolerant (BFT) Protocols}{116}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Streamlet}{116}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Confirmation rule}{116}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Streamlet performance}{118}{subsection.14.3.2}%
+\contentsline {subsubsection}{Communication complexity of Streamlet}{118}{section*.106}%
+\contentsline {subsection}{\numberline {14.3.3}Latency of Streamlet}{119}{subsection.14.3.3}%
+\contentsline {section}{\numberline {14.4}HotStuff}{119}{section.14.4}%
+\contentsline {subsection}{\numberline {14.4.1}From Streamlet to Hotstuff}{120}{subsection.14.4.1}%
+\contentsline {section}{\numberline {14.5}implementation: Pacemaker}{120}{section.14.5}%
 \contentsfinish 
