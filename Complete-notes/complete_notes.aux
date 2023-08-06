@@ -51,6 +51,8 @@
 \pgfsyspdfmark {pgfid31}{36232565}{34756365}
 \pgfsyspdfmark {pgfid32}{6935668}{25699289}
 \pgfsyspdfmark {pgfid33}{36232565}{25699289}
+\pgfsyspdfmark {pgfid34}{6935668}{15547762}
+\pgfsyspdfmark {pgfid35}{36232565}{15547762}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -477,29 +479,52 @@
 \newlabel{fig:L15_f7}{{15.8}{130}{each node proposes a block with a command (cmd) and a QC, and how other nodes vote on it.\relax }{figure.caption.117}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {15.4.1}From Streamlet to Hotstuff}{130}{subsection.15.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {15.5}implementation: Pacemaker}{130}{section.15.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {16}Longest Chain Protocol Meets BFT}{131}{chapter.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {16}Algorand}{131}{chapter.16}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\@writefile{lof}{\contentsline {figure}{\numberline {16.1}{\ignorespaces Two families of Blockchain protocols\relax }}{131}{figure.caption.119}\protected@file@percent }
-\newlabel{fig:L17_f1}{{16.1}{131}{Two families of Blockchain protocols\relax }{figure.caption.119}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {16.1}Hybrid Consensus}{132}{section.16.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16.2}{\ignorespaces Hybrid Consensus\relax }}{132}{figure.caption.120}\protected@file@percent }
-\newlabel{fig:L17_f2}{{16.2}{132}{Hybrid Consensus\relax }{figure.caption.120}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {16.2}The CAP Theorem}{133}{section.16.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16.3}{\ignorespaces A decentralized protocol cannot distinguish between offline users and network partition \relax }}{133}{figure.caption.121}\protected@file@percent }
-\newlabel{fig:L17_f3}{{16.3}{133}{A decentralized protocol cannot distinguish between offline users and network partition \relax }{figure.caption.121}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16.4}{\ignorespaces CAP Theorem in Blockchains\relax }}{134}{figure.caption.122}\protected@file@percent }
-\newlabel{fig:L17_f4}{{16.4}{134}{CAP Theorem in Blockchains\relax }{figure.caption.122}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {16.2.1}Proof of CAP Theorem}{134}{subsection.16.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16.5}{\ignorespaces A visualization of the trade-offs implicated by the CAP theorem\relax }}{134}{figure.caption.123}\protected@file@percent }
-\newlabel{fig:L17_f5}{{16.5}{134}{A visualization of the trade-offs implicated by the CAP theorem\relax }{figure.caption.123}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {16.3}Finality Gadgets}{134}{section.16.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {16.3.1}A two-layer design}{135}{subsection.16.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Checkpointing}{135}{section*.124}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {16.6}{\ignorespaces Finality Gadget\relax }}{135}{figure.caption.125}\protected@file@percent }
-\newlabel{fig:L17_f6}{{16.6}{135}{Finality Gadget\relax }{figure.caption.125}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {16.3.2}Two ledgers and their properties.}{135}{subsection.16.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {16.3.3}Examining Adaptivity and Finality}{136}{subsection.16.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {16.3.4}checkpointed longest chain rule}{137}{subsection.16.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16.1}From Permissioned to Permissionless: Committee Selection}{131}{section.16.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16.1}{\ignorespaces Probability of honest supermajority for fixed committee size $N$\relax }}{132}{figure.caption.119}\protected@file@percent }
+\newlabel{fig:f1}{{16.1}{132}{Probability of honest supermajority for fixed committee size $N$\relax }{figure.caption.119}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {16.2}Player Replaceability and Secret Committee Election}{132}{section.16.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16.2}{\ignorespaces Probability of liveness and honest supermajority for a random committee size $N$. Total players $n = 1000000$ and honest fraction $0.7$. \relax }}{133}{figure.caption.120}\protected@file@percent }
+\newlabel{fig:f1}{{16.2}{133}{Probability of liveness and honest supermajority for a random committee size $N$. Total players $n = 1000000$ and honest fraction $0.7$. \relax }{figure.caption.120}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16.3}{\ignorespaces Simple committee selection vs Algorand committee selection\relax }}{133}{figure.caption.121}\protected@file@percent }
+\newlabel{fig:f1}{{16.3}{133}{Simple committee selection vs Algorand committee selection\relax }{figure.caption.121}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.2.1}Ephemeral keys}{134}{subsection.16.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16.3}Algorand: Single Round BFT Consensus Protocol}{134}{section.16.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16.4}{\ignorespaces Algorand consensus on a binary value\relax }}{135}{figure.caption.123}\protected@file@percent }
+\newlabel{fig:f1}{{16.4}{135}{Algorand consensus on a binary value\relax }{figure.caption.123}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {16.4}Consensus On a Binary Value}{135}{section.16.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16.5}Adding Player Replaceability And Secret Committee Election}{135}{section.16.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16.6}Multivalue Consensus}{136}{section.16.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {16.7}Conclusion}{136}{section.16.7}\protected@file@percent }
+\bibcite{reference1}{1}
+\bibcite{reference2}{2}
+\bibcite{reference3}{3}
+\@writefile{toc}{\contentsline {chapter}{\numberline {17}Longest Chain Protocol Meets BFT}{138}{chapter.17}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {17.1}{\ignorespaces Two families of Blockchain protocols\relax }}{138}{figure.caption.125}\protected@file@percent }
+\newlabel{fig:L17_f1}{{17.1}{138}{Two families of Blockchain protocols\relax }{figure.caption.125}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {17.1}Hybrid Consensus}{139}{section.17.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17.2}{\ignorespaces Hybrid Consensus\relax }}{139}{figure.caption.126}\protected@file@percent }
+\newlabel{fig:L17_f2}{{17.2}{139}{Hybrid Consensus\relax }{figure.caption.126}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {17.2}The CAP Theorem}{140}{section.17.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17.3}{\ignorespaces A decentralized protocol cannot distinguish between offline users and network partition \relax }}{140}{figure.caption.127}\protected@file@percent }
+\newlabel{fig:L17_f3}{{17.3}{140}{A decentralized protocol cannot distinguish between offline users and network partition \relax }{figure.caption.127}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17.4}{\ignorespaces CAP Theorem in Blockchains\relax }}{141}{figure.caption.128}\protected@file@percent }
+\newlabel{fig:L17_f4}{{17.4}{141}{CAP Theorem in Blockchains\relax }{figure.caption.128}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {17.2.1}Proof of CAP Theorem}{141}{subsection.17.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17.5}{\ignorespaces A visualization of the trade-offs implicated by the CAP theorem\relax }}{141}{figure.caption.129}\protected@file@percent }
+\newlabel{fig:L17_f5}{{17.5}{141}{A visualization of the trade-offs implicated by the CAP theorem\relax }{figure.caption.129}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {17.3}Finality Gadgets}{141}{section.17.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {17.3.1}A two-layer design}{142}{subsection.17.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Checkpointing}{142}{section*.130}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17.6}{\ignorespaces Finality Gadget\relax }}{142}{figure.caption.131}\protected@file@percent }
+\newlabel{fig:L17_f6}{{17.6}{142}{Finality Gadget\relax }{figure.caption.131}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {17.3.2}Two ledgers and their properties.}{142}{subsection.17.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {17.3.3}Examining Adaptivity and Finality}{143}{subsection.17.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {17.3.4}checkpointed longest chain rule}{144}{subsection.17.3.4}\protected@file@percent }
 \ttl@finishall

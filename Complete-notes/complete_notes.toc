@@ -168,14 +168,23 @@
 \contentsline {section}{\numberline {15.4}HotStuff}{129}{section.15.4}%
 \contentsline {subsection}{\numberline {15.4.1}From Streamlet to Hotstuff}{130}{subsection.15.4.1}%
 \contentsline {section}{\numberline {15.5}implementation: Pacemaker}{130}{section.15.5}%
-\contentsline {chapter}{\numberline {16}Longest Chain Protocol Meets BFT}{131}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Hybrid Consensus}{132}{section.16.1}%
-\contentsline {section}{\numberline {16.2}The CAP Theorem}{133}{section.16.2}%
-\contentsline {subsection}{\numberline {16.2.1}Proof of CAP Theorem}{134}{subsection.16.2.1}%
-\contentsline {section}{\numberline {16.3}Finality Gadgets}{134}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}A two-layer design}{135}{subsection.16.3.1}%
-\contentsline {subsubsection}{Checkpointing}{135}{section*.124}%
-\contentsline {subsection}{\numberline {16.3.2}Two ledgers and their properties.}{135}{subsection.16.3.2}%
-\contentsline {subsection}{\numberline {16.3.3}Examining Adaptivity and Finality}{136}{subsection.16.3.3}%
-\contentsline {subsection}{\numberline {16.3.4}checkpointed longest chain rule}{137}{subsection.16.3.4}%
+\contentsline {chapter}{\numberline {16}Algorand}{131}{chapter.16}%
+\contentsline {section}{\numberline {16.1}From Permissioned to Permissionless: Committee Selection}{131}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Player Replaceability and Secret Committee Election}{132}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Ephemeral keys}{134}{subsection.16.2.1}%
+\contentsline {section}{\numberline {16.3}Algorand: Single Round BFT Consensus Protocol}{134}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Consensus On a Binary Value}{135}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Adding Player Replaceability And Secret Committee Election}{135}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Multivalue Consensus}{136}{section.16.6}%
+\contentsline {section}{\numberline {16.7}Conclusion}{136}{section.16.7}%
+\contentsline {chapter}{\numberline {17}Longest Chain Protocol Meets BFT}{138}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Hybrid Consensus}{139}{section.17.1}%
+\contentsline {section}{\numberline {17.2}The CAP Theorem}{140}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Proof of CAP Theorem}{141}{subsection.17.2.1}%
+\contentsline {section}{\numberline {17.3}Finality Gadgets}{141}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}A two-layer design}{142}{subsection.17.3.1}%
+\contentsline {subsubsection}{Checkpointing}{142}{section*.130}%
+\contentsline {subsection}{\numberline {17.3.2}Two ledgers and their properties.}{142}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Examining Adaptivity and Finality}{143}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.4}checkpointed longest chain rule}{144}{subsection.17.3.4}%
 \contentsfinish 

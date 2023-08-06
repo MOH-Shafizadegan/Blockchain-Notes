@@ -1,0 +1,10 @@
+\contentsline {chapter}{\numberline {1}Algorand}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}From Permissioned to Permissionless: Committee Selection}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Player Replaceability and Secret Committee Election}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Ephemeral keys}{5}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}Algorand: Single Round BFT Consensus Protocol}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Consensus On a Binary Value}{6}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Adding Player Replaceability And Secret Committee Election}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Multivalue Consensus}{7}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Conclusion}{7}{section.1.7}%
+\contentsfinish 
