@@ -168,4 +168,14 @@
 \contentsline {section}{\numberline {15.4}HotStuff}{129}{section.15.4}%
 \contentsline {subsection}{\numberline {15.4.1}From Streamlet to Hotstuff}{130}{subsection.15.4.1}%
 \contentsline {section}{\numberline {15.5}implementation: Pacemaker}{130}{section.15.5}%
+\contentsline {chapter}{\numberline {16}Longest Chain Protocol Meets BFT}{131}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Hybrid Consensus}{132}{section.16.1}%
+\contentsline {section}{\numberline {16.2}The CAP Theorem}{133}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Proof of CAP Theorem}{134}{subsection.16.2.1}%
+\contentsline {section}{\numberline {16.3}Finality Gadgets}{134}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}A two-layer design}{135}{subsection.16.3.1}%
+\contentsline {subsubsection}{Checkpointing}{135}{section*.124}%
+\contentsline {subsection}{\numberline {16.3.2}Two ledgers and their properties.}{135}{subsection.16.3.2}%
+\contentsline {subsection}{\numberline {16.3.3}Examining Adaptivity and Finality}{136}{subsection.16.3.3}%
+\contentsline {subsection}{\numberline {16.3.4}checkpointed longest chain rule}{137}{subsection.16.3.4}%
 \contentsfinish 
