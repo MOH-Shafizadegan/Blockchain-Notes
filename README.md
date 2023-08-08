@@ -21,3 +21,7 @@ Notes of Principles of Blockchain course taught by Pramod Viswanath from Princet
 - Chapter 13 : Payment Channels
 - Chapter 14 : Rollups
 - Chapter 15 : Blockchains with Finality
+- Chapter 16 : Algorand
+- Chapter 17 : Longest Chain Protocol Meets BFT
+- Chapter 18 : Bootstrapping Blockchains
+- Chapter 19 : Data Privacy via Zero Knowledge Cryptography
