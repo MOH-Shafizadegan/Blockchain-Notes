@@ -25,4 +25,5 @@ Notes of Principles of Blockchain course taught by Pramod Viswanath from Princet
 - Chapter 17 : Longest Chain Protocol Meets BFT
 - Chapter 18 : Bootstrapping Blockchains
 - Chapter 19 : Data Privacy via Zero Knowledge Cryptography
+- Chapter 20 : Privacy for Smart Contracts
 - Chapter 21 : MEV and Fair transaction ordering
