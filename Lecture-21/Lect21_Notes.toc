@@ -1,0 +1,17 @@
+\contentsline {chapter}{\numberline {1}MEV and Fair Transaction Ordering}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Front running}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}HFT}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Front running in Defi}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Miner’s incentives}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}DEX}{3}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Miner extractable value (MEV)}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}In search of solutions}{5}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}EIP 1559}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Off-chain auction}{5}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Order-fairness}{6}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Single Chain Protocol}{7}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Aequitas}{7}{subsection.1.5.1}%
+\contentsline {section}{\numberline {1.6}Combating latency}{8}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Multi-chain}{8}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Zero-Block Confirmation}{8}{subsection.1.6.2}%
+\contentsfinish 
