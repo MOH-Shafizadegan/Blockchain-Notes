@@ -27,3 +27,4 @@ Notes of Principles of Blockchain course taught by Pramod Viswanath from Princet
 - Chapter 19 : Data Privacy via Zero Knowledge Cryptography
 - Chapter 20 : Privacy for Smart Contracts
 - Chapter 21 : MEV and Fair transaction ordering
+- Chapter 22 : MEV and PBS Architecture
