@@ -6,7 +6,7 @@ One of the main advantages of the (Proof-of-Work) longest-chain protocol is that
 We have learned about permissioned (committee-based) BFT protocols in the previous Chapters. These protocols provide deterministic safety (also known as finality). This means that the safety property is always preserved, even when the network is asynchronous for a long time. However, permissioned protocols have a limitation: they lack adaptivity. This means that the protocol will not make progress when the participation level is too low (but safety will never be violated).
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.4\linewidth]{Fig/L17_F1}
+	\includegraphics[width=0.4\linewidth]{Fig/17/F1}
 	\caption{Two families of Blockchain protocols}
 	\label{fig:L17_f1}
 \end{figure}\\
@@ -23,7 +23,7 @@ We will start by looking at how to choose one committee of size csize. We will r
 This committee is selected in a fair and decentralized way (because of PoW) and everyone agrees on it (because of the security of the PoW longest chain protocol). Once a committee is selected, it runs a fast and reliable BFT protocol (like HotStuff) to confirm transactions. So, the transactions are actually confirmed by the BFT protocol, not the longest-chain protocol.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/L17_F2}
+	\includegraphics[width=0.6\linewidth]{Fig/17/F2}
 	\caption{Hybrid Consensus}
 	\label{fig:L17_f2}
 \end{figure}\\
@@ -57,7 +57,7 @@ Thus, in terms of guaranteeing safety and liveness under a wide variety of condi
 	number of participants in the blockchain system. Hence, a protocol's behavior must be similar under both these conditions. 
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=0.6\linewidth]{Fig/L17_F3}
+		\includegraphics[width=0.6\linewidth]{Fig/17/F3}
 		\caption{A decentralized protocol cannot distinguish between offline users and network partition
 		}
 		\label{fig:L17_f3}
@@ -66,7 +66,7 @@ Thus, in terms of guaranteeing safety and liveness under a wide variety of condi
 	The CAP theorem lets users choose between adaptivity and finality, depending on their needs. We can use a special gadget that gives us two ways to confirm transactions: one that is adaptive, and one that is final. This way, users can decide locally which one they want to use. For example, if you are buying a coffee, you might not care about finality, and just want a fast confirmation. But if you are buying a Tesla, you might want to be sure that the transaction is final, and not risk it being reversed.
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=0.5\linewidth]{Fig/L17_F4}
+		\includegraphics[width=0.5\linewidth]{Fig/17/F4}
 		\caption{CAP Theorem in Blockchains}
 		\label{fig:L17_f4}
 	\end{figure}
@@ -79,7 +79,7 @@ Thus, in terms of guaranteeing safety and liveness under a wide variety of condi
 	\end{itemize}
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=0.7\linewidth]{Fig/L17_F5}
+		\includegraphics[width=0.7\linewidth]{Fig/17/F5}
 		\caption{A visualization of the trade-offs implicated by the CAP theorem}
 		\label{fig:L17_f5}
 	\end{figure}
@@ -100,7 +100,7 @@ Thus, in terms of guaranteeing safety and liveness under a wide variety of condi
 	The checkpointers monitor the blocks that the miners create. At regular intervals, they run a (one-time) BFT protocol, where they input blocks that the miners have made. Honest nodes input blocks that are on the longest chain, but have not been checkpointed yet. Usually, blocks at a certain fixed depth are picked; for example, a depth of 6. This would make sure that if nodes have chains of the same length and have 6 blocks in common at the end, their inputs would be the same. Checkpointers vote on each other’s inputs, and finally decide on one specific input; this becomes the checkpointed block.
 	\begin{figure}[h!]
 		\centering
-		\includegraphics[width=0.6\linewidth]{Fig/L17_F6}
+		\includegraphics[width=0.6\linewidth]{Fig/17/F6}
 		\caption{Finality Gadget}
 		\label{fig:L17_f6}
 	\end{figure}

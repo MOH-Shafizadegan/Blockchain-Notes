@@ -3,7 +3,7 @@
 In Bitcoin, the state or ledger of the system is maintained using the UTXO format, where each transaction has a list of inputs and outputs. The outputs indicate the public keys of the recipients, and the inputs refer to the outputs of previous transactions. Each UTXO has a history of transactions that can be traced back to its origin.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.25\linewidth]{Fig/L19_F1}
+	\includegraphics[width=0.25\linewidth]{Fig/19/F1}
 	\caption{UTXO Transactions}
 	\label{fig:L19_f1}
 \end{figure}
@@ -11,7 +11,7 @@ The Bitcoin network has a feature of pseudonymity, which means that the only thi
 We can use the public keys of the inputs and outputs of a transaction to create a graph that shows the links between transactions. (See Figure \ref{fig:L19_f2})
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{Fig/L19_F2}
+	\includegraphics[width=0.8\linewidth]{Fig/19/F2}
 	\caption{Typical transaction graph for a day}
 	\label{fig:L19_f2}
 \end{figure}
@@ -23,7 +23,7 @@ A mixer is a centralized third-party, which means that it is controlled by a sin
 \ex{Coinbase}{An example of a mixer is Coinbase, which is a platform that allows users to buy, sell, and store cryptocurrency. Coinbase offers different public keys for each transaction, so that the users can hide their identity.}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Fig/L19_F3}
+	\includegraphics[width=0.3\linewidth]{Fig/19/F3}
 	\caption{Trusted third-party mixer}
 	\label{fig:L19_f3}
 \end{figure}
@@ -35,7 +35,7 @@ zero-knowledge proofs
 Zerocoin is a protocol that enhances the privacy of Bitcoin transactions. Zerocoin allows users to convert their bitcoins into zerocoins, which are anonymous tokens that can be redeemed for bitcoins later. Zerocoins are stored in a separate ledger on the blockchain, and their origin and destination are hidden by using \textbf{zero-knowledge proofs}.\\\\
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/L19_F4}
+	\includegraphics[width=0.6\linewidth]{Fig/19/F4}
 	\caption{Zerocoin}
 	\label{fig:L19_f4}
 \end{figure}
@@ -53,7 +53,7 @@ Zcash uses zk-SNARK to create efficient proofs that replace the traditional link
 This helps to conceal both the identity and the value of the coins transferred.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/L19_F5}
+	\includegraphics[width=0.6\linewidth]{Fig/19/F5}
 	\caption{Zcash}
 	\label{fig:L19_f5}
 \end{figure}
@@ -79,7 +79,7 @@ Prover and Zero-knowledge are two roles that are involved in a zero-knowledge pr
 For example, if the statement is that a number x is composite, then the Prover is the one who knows the factorization of x, and the Verifier is the one who wants to check if the statement is true.The Prover can send x and its factors w to the Verifier, and claim that x is composite. The Verifier can then ask the Prover to prove it by using some mathematical technique that does not reveal w. This way, the Verifier can be convinced that x is composite, but cannot learn anything about w
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L19_F6}
+	\includegraphics[width=0.5\linewidth]{Fig/19/F6}
 	\caption{Prover and Verifier}
 	\label{fig:L19_f6}
 \end{figure}\\
@@ -99,7 +99,7 @@ The proof is done by following these steps:
 \end{enumerate}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L19_F7}
+	\includegraphics[width=0.7\linewidth]{Fig/19/F7}
 	\caption{Zero-knowledge proof}
 	\label{fig:L19_f7}
 \end{figure}
@@ -136,7 +136,7 @@ We create new data structures and ways of addressing on top of Bitcoin’s desig
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Fig/L19_F8}
+	\includegraphics[width=0.3\linewidth]{Fig/19/F8}
 	\caption{Data structure}
 	\label{fig:L19_f8}
 \end{figure}
@@ -164,7 +164,7 @@ We use algebraic circuits to represent these statements and generate the proof b
 Now anyone in the blockchain who has access to $w$ can produce the proof without revealing any information related to $w$, and anyone who has access to $x$ can check the validity of the transaction. But this method has a weakness that the commitment can still be traced.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/L19_F9}
+	\includegraphics[width=0.6\linewidth]{Fig/19/F9}
 	\caption{First attempt: Commitment}
 	\label{fig:L19_f9}
 \end{figure}
@@ -192,14 +192,14 @@ For $i \in \{1, 2\}$:
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.25\linewidth]{Fig/L19_F10}
+	\includegraphics[width=0.25\linewidth]{Fig/19/F10}
 	\caption{Second Attempt: two commitments}
 	\label{fig:L19_f10}
 \end{figure}
 This formulation is similar to the previous one, in that those who possess $w$ can create the proof and those who possess $x$ can verify the validity. However, unlike the previous method, there is no direct link between the old coins and the new coins since they use different kinds of commitments. The only issue is that without the link, how can we tell which previous output is being spent? To address this issue, we keep track of all serial numbers that appear in previous transactions as a nullifier set and perform an extra check to see if the input serial number is already in the nullifier set.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L19_F11}
+	\includegraphics[width=0.5\linewidth]{Fig/19/F11}
 	\caption{Check Unspent Coins}
 	\label{fig:L19_f11}
 \end{figure}
@@ -221,7 +221,7 @@ To make a pour transaction, the sender needs the following information:
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.4\linewidth]{Fig/L19_F12}
+	\includegraphics[width=0.4\linewidth]{Fig/19/F12}
 	\caption{Generate a pour transaction}
 	\label{fig:L19_f12}
 \end{figure}
@@ -237,7 +237,7 @@ There are three polynomial time algorithms involved in the proving process, whic
 \end{itemize} 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.4\linewidth]{Fig/L19_F13}
+	\includegraphics[width=0.4\linewidth]{Fig/19/F13}
 	\caption{Generate a zk-SNARK proof}
 	\label{fig:L19_f13}
 \end{figure}
@@ -249,7 +249,7 @@ Zcash is a privacy-enhanced version of Bitcoin that uses the same basic protocol
 Privacy refers to how well the transactions hide the details of the sender, receiver, and amount. Programmability refers to how flexible the transactions support smart contracts, which are self-executing agreements with complex rules and logic.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.4\linewidth]{Fig/L19_F14}
+	\includegraphics[width=0.4\linewidth]{Fig/19/F14}
 	\caption{Cryptocurrencies in term of privacy and Programmability}
 	\label{fig:L19_f14}
 \end{figure}\\

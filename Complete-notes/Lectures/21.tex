@@ -5,7 +5,7 @@ Front running is the act of placing a transaction in a queue with the knowledge 
 For example, if a broker knows that a large client is about to buy a lot of shares of a certain company, they may buy some shares for themselves first and then sell them at a higher price after the client’s order is executed. This way, they can profit from the price increase caused by the client’s order.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L21_F1}
+	\includegraphics[width=0.7\linewidth]{Fig/21/F1}
 	\caption{An example of front running}
 	\label{fig:L21_f1}
 \end{figure}\\	
@@ -21,7 +21,7 @@ In DeFi, front-running strategies exploit both public knowledge of user trades f
 Miners in a blockchain network can choose to order transactions based on their fees, rather than their arrival time. This is a form of front-running. Figure \ref{fig:L21_f2} shows an example of three transactions that arrive at different times, but have different fees attached to them. A rational miner would prefer to order the transactions based on their fees, rather than their arrival time, as this would maximize their profit. Therefore, the miner would put $tx_1$ and $tx_3$ before $tx_2$, even though $tx_2$ arrived earlier. Ordering by first-in-first-out (FIFO) is a myth, as miners have the power and incentive to manipulate the order of transactions in a block.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L21_F2}
+	\includegraphics[width=0.5\linewidth]{Fig/21/F2}
 	\caption{Ordering transactions based on their fees, rather than their arrival time}
 	\label{fig:L21_f2}
 \end{figure}
@@ -35,19 +35,19 @@ MEV is a measure of the profit that miners or validators can make by manipulatin
 FIgure \ref{fig:L21_f3} MEV has increased significantly over time, reaching a total of more than \$670 million as of today. (Also see figure \ref{fig:L21_f4} and \ref{fig:L21_f5})
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{Fig/L21_F3}
+	\includegraphics[width=\linewidth]{Fig/21/F3}
 	\caption{MEV}
 	\label{fig:L21_f3}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{Fig/L21_F4}
+	\includegraphics[width=\linewidth]{Fig/21/F4}
 	\caption{MEV}
 	\label{fig:L21_f4}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{Fig/L21_F5}
+	\includegraphics[width=\linewidth]{Fig/21/F5}
 	\caption{Ethereum transaction fees}
 	\label{fig:L21_f5}
 \end{figure}
@@ -69,7 +69,7 @@ The miner has two options:
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/L21_F6}
+	\includegraphics[width=0.6\linewidth]{Fig/21/F6}
 	\caption{EIP 1559}
 	\label{fig:L21_f6}
 \end{figure}
@@ -78,7 +78,7 @@ The miner has two options:
 An off-chain auction is a way of conducting an auction for a digital asset without using the blockchain to record the bids and the final sale. Instead, the auction is done through a third-party platform or service that handles the communication and verification of the bids, and transfers the ownership of the asset to the highest bidder. Off-chain auctions have some advantages over on-chain auctions, such as lower fees, faster execution, and more privacy. However, they also have some drawbacks, such as relying on a trusted intermediary, being vulnerable to network failures or attacks, and lacking transparency and auditability.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/L21_F7}
+	\includegraphics[width=0.6\linewidth]{Fig/21/F7}
 	\caption{Off-chain trading}
 	\label{fig:L21_f7}
 \end{figure}
@@ -105,7 +105,7 @@ One approach to achieve order-fairness is to use a single chain protocol, where 
 \end{itemize} 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L21_F8}
+	\includegraphics[width=0.7\linewidth]{Fig/21/F8}
 	\caption{Single Chain Protocol}
 	\label{fig:L21_f8}
 \end{figure}
@@ -115,7 +115,7 @@ In the finalization step, each node constructs a dependency graph G, where each 
 Aequitas guarantees that the finalization step produces a fair and consistent order of transactions in the blockchain.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L21_F9}
+	\includegraphics[width=0.7\linewidth]{Fig/21/F9}
 	\caption{Aequitas}
 	\label{fig:L21_f9}
 \end{figure}
@@ -125,7 +125,7 @@ Aequitas guarantees that the finalization step produces a fair and consistent or
 A multi-chain system is a type of blockchain system that uses multiple chains of blocks to store and validate transactions. A multi-chain system aims to combat latency.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.85\linewidth]{Fig/L21_F10}
+	\includegraphics[width=0.85\linewidth]{Fig/21/F10}
 	\caption{Multi chain}
 	\label{fig:L21_f10}
 \end{figure}
@@ -135,7 +135,7 @@ In a multi-chain system, mining is done by creating a superblock, which is a lar
 Latency can affect the performance and security of a blockchain system, especially in scenarios where fast and reliable transactions are required. For example, Alice pays 0.0001 bitcoin to a coffee shop using her smartphone. However, the transaction takes too long to be confirmed by the network, and by the time it is confirmed, the coffee shop has already closed. This means that Alice has paid for a coffee that she cannot receive, and the coffee shop has lost a potential customer.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L21_F11}
+	\includegraphics[width=0.7\linewidth]{Fig/21/F11}
 	\caption{Latency matters!}
 	\label{fig:L21_f11}
 \end{figure}\\\\

@@ -17,7 +17,7 @@ The protocol has some advantages and disadvantages in terms of liveness and safe
 In some applications, safety is very important, especially deterministic guarantees (known as \textbf{"finality"}) for a confirmed ledger entry, e.g., financial applications. The longest chain protocol (and any of the variations we saw in the previous chapters) cannot provide much relief in this case.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L15_F8}
+	\includegraphics[width=0.5\linewidth]{Fig/15/F8}
 	\caption{}
 	\label{fig:L15_f8}
 \end{figure}
@@ -42,7 +42,7 @@ The protocol works in rounds, and each round has three steps:
 The protocol repeats these steps for each round until a final and consistent ledger is achieved.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L15_F1}
+	\includegraphics[width=0.7\linewidth]{Fig/15/F1}
 	\caption{BFT Steps (Round-by-Round)}
 	\label{fig:L15_f1}
 \end{figure}
@@ -50,7 +50,7 @@ The protocol repeats these steps for each round until a final and consistent led
 We call the set of distinct votes on a notarized block a \textbf{quorum certificate (QC)}.  The quorum size has to be more than two-thirds of the nodes, so that only one block per round can be notarized if the number of bad nodes is less than one-third. This is because two quorums have at least one-third of the nodes in common (see Figure 2) and only bad nodes will vote for more than one block.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.25\linewidth]{Fig/L15_F2}
+	\includegraphics[width=0.25\linewidth]{Fig/15/F2}
 	\caption{The intersection of two quorums must be greater than $\frac{N}{3}$.}
 	\label{fig:L15_f2}
 \end{figure}\\
@@ -59,14 +59,14 @@ We might think that we can confirm notarized blocks right away, since only one b
 \ex{Conrming a 1-deep notarized block is insecure.}{We cannot confirm a block just because it is notarized. Let $f$ be the number of malicious nodes, and $f<\frac{N}{3}$. In Figure \ref{fig:L15_f3}, a malicious node from round 3 makes a block $B_3$, but it only sends $B_3$ to $x$ 	honest nodes, where $\frac{2N}{3}-f < x < \frac{2N}{3}$. If all $f$ malicious nodes hide their votes on $B_3$, then no honest node will see $B_3$ as notarized. Suppose the leader of round 4 is good, then it will make a block $B_4$ at the same level as $B_3$. All good nodes vote for $B_4$, and it becomes notarized. After that, all f bad nodes show their votes on $B_3$ and make $B_3$ notarized. Since $B_3$ and $B_4$ are different (not on a chain), confirming either one of them will break safety. So notarization is not enough for confirmation.}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.2\linewidth]{Fig/L15_F3}
+	\includegraphics[width=0.2\linewidth]{Fig/15/F3}
 	\caption{Conrming a 1-deep notarized block is insecure}
 	\label{fig:L15_f3}
 \end{figure}
 Confirming a block that is k-deep in the longest notarized chain is not safe either. When the network is not fast or reliable, the adversary can create two chains that are equally long and have any length, by using the same trick as before at every level. We assume that the adversary can make any message take as long as they want when the network is slow or unreliable. In Figure \ref{fig:f4}, at each level, the adversary makes sure that only $x$ honest nodes vote for the block (with an odd round number) in the upper chain, where  $\frac{2N}{3}-f < x < \frac{2N}{3}$. And after the different block (with an even round number) in the lower chain becomes notarized, the adversary shows $f$ hidden votes to make the block in the upper chain notarized. Because of this balance attack, confirming the block that is k-deep in the longest notarized chain is still not safe in Streamlet.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L15_F4}
+	\includegraphics[width=0.5\linewidth]{Fig/15/F4}
 	\caption{Conrming a k-deep notarized block is also insecure.}
 	\label{fig:L15_f4}
 \end{figure}\\
@@ -78,7 +78,7 @@ This rule is safe! Let’s say one good node sees three notarized blocks $B_5$, 
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L15_F5}
+	\includegraphics[width=0.5\linewidth]{Fig/15/F5}
 	\caption{Streamlet conrmation example.}
 	\label{fig:L15_f5}
 \end{figure}
@@ -90,7 +90,7 @@ Streamlet makes nodes repeat every message they get (blocks or transactions) to 
 \ex{}{Let’s say we have a blockchain system with 7 nodes: $a, b, c, d, e, x$, and $y$. Nodes $x$ and $y$ are malicious. By round $r$, all honest nodes see the same thing. Then, $x$ is picked to be the leader of round $r$. In the first half of round $r$, it only sends its block $B$ to nodes $a, b, c$ and $y$. In the second half of the round, $a, b$ and $c$ follow the rules and vote for $B$, sending their signature to everyone. The other malicious node, $y$, only sends its vote to $a$. At this point the round is over and no more votes on $B$ are allowed. We can see that at this point a has 5 votes for $B$ (from $a, b, c, x$, and $y$), which is more than two-thirds of the nodes. But any other good node only has 4 votes for $B$. This means that only a sees $B$ as notarized. If there are no vote repeats, in the next rounds a does not vote for any block that does not build on $B$. If $a$ and $y$ stop working, the system cannot make progress. When $a$ is the leader, it tries to extend $B$ but no one else votes for it, because they don’t know it is notarized. So the chain stops growing. See Figure \ref{fig:L15_f6}}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L15_F6}
+	\includegraphics[width=0.5\linewidth]{Fig/15/F6}
 	\caption{Communication Complexity}
 	\label{fig:L15_f6}
 \end{figure}
@@ -110,7 +110,7 @@ HotStuff is a state-of-the-art BFT consensus protocol that can achieve high perf
 HotStuff assumes that there are n nodes in the system, of which f can be Byzantine (faulty or malicious). To reach consensus, HotStuff requires a quorum certificate (QC), which is a set of 2f+1 votes on one block from different nodes. QCs are stored on the blockchain, which is a linear chain of blocks.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L15_F7}
+	\includegraphics[width=0.7\linewidth]{Fig/15/F7}
 	\caption{each node proposes a block with a command (cmd) and a QC, and how other nodes vote on it.}
 	\label{fig:L15_f7}
 \end{figure}\\

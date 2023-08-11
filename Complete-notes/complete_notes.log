@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  10 AUG 2023 23:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  11 AUG 2023 09:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1669,18 +1669,18 @@ Chapter 1.
 [7
 
 ]
-File: Fig/L1_F1.png Graphic file (type bmp)
-<Fig/L1_F1.png>
-File: Fig/L1_F4.png Graphic file (type bmp)
-<Fig/L1_F4.png>
+File: Fig/1/F1.png Graphic file (type bmp)
+<Fig/1/F1.png>
+File: Fig/1/F4.png Graphic file (type bmp)
+<Fig/1/F4.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--52
 
  []
 
 [8]
-File: Fig/L1_F2.png Graphic file (type bmp)
-<Fig/L1_F2.png>
+File: Fig/1/F2.png Graphic file (type bmp)
+<Fig/1/F2.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 54--67
 
@@ -1697,8 +1697,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--67
  []
 
 [9]
-File: Fig/L1_F3.png Graphic file (type bmp)
-<Fig/L1_F3.png>
+File: Fig/1/F3.png Graphic file (type bmp)
+<Fig/1/F3.png>
  [10]
 Underfull \hbox (badness 10000) in paragraph at lines 111--115
 
@@ -1733,21 +1733,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--46
 
  []
 
-File: Fig/L2_F1.png Graphic file (type bmp)
-<Fig/L2_F1.png>
+File: Fig/2/F1.png Graphic file (type bmp)
+<Fig/2/F1.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
 [14]
-File: Fig/L2_F2.png Graphic file (type bmp)
-<Fig/L2_F2.png>
+File: Fig/2/F2.png Graphic file (type bmp)
+<Fig/2/F2.png>
  [15]
-File: Fig/L2_F4.jpg Graphic file (type bmp)
-<Fig/L2_F4.jpg>
-File: Fig/L2_F3.png Graphic file (type bmp)
-<Fig/L2_F3.png>
+File: Fig/2/F4.jpg Graphic file (type bmp)
+<Fig/2/F4.jpg>
+File: Fig/2/F3.png Graphic file (type bmp)
+<Fig/2/F3.png>
  [16] [17]) (./Lectures/3.tex [18]
 Chapter 3.
 
@@ -1802,30 +1802,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
-File: Fig/L3_F1.png Graphic file (type bmp)
-<Fig/L3_F1.png>
+File: Fig/3/F1.png Graphic file (type bmp)
+<Fig/3/F1.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [21]
-File: Fig/L3_F2.png Graphic file (type bmp)
-<Fig/L3_F2.png>
+File: Fig/3/F2.png Graphic file (type bmp)
+<Fig/3/F2.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--97
 
  []
 
 [22]
-File: Fig/L3_F3.jpg Graphic file (type bmp)
-<Fig/L3_F3.jpg>
+File: Fig/3/F3.jpg Graphic file (type bmp)
+<Fig/3/F3.jpg>
 
 Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
 [23]
-File: Fig/L3_F4.jpg Graphic file (type bmp)
-<Fig/L3_F4.jpg>
+File: Fig/3/F4.jpg Graphic file (type bmp)
+<Fig/3/F4.jpg>
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1848,19 +1848,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--180
 [26]
 Missing character: There is no ≫ in font [lmroman10-regular]:mapping=tex-text;!
  [27]
-File: Fig/L3_F5.jpg Graphic file (type bmp)
-<Fig/L3_F5.jpg>
+File: Fig/3/F5.jpg Graphic file (type bmp)
+<Fig/3/F5.jpg>
  [28]) (./Lectures/4.tex [29
 
 ]
 Chapter 4.
-File: Fig/L4_F1.png Graphic file (type bmp)
-<Fig/L4_F1.png>
+File: Fig/4/F1.png Graphic file (type bmp)
+<Fig/4/F1.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: Fig/L4_F2.png Graphic file (type bmp)
-<Fig/L4_F2.png>
+File: Fig/4/F2.png Graphic file (type bmp)
+<Fig/4/F2.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1872,15 +1872,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
  []
 
 [31]
-File: Fig/L4_F3.png Graphic file (type bmp)
-<Fig/L4_F3.png>
+File: Fig/4/F3.png Graphic file (type bmp)
+<Fig/4/F3.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [32]
-File: Fig/L4_F4.png Graphic file (type bmp)
-<Fig/L4_F4.png>
+File: Fig/4/F4.png Graphic file (type bmp)
+<Fig/4/F4.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1895,13 +1895,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
-File: Fig/L4_F5.png Graphic file (type bmp)
-<Fig/L4_F5.png>
+File: Fig/4/F5.png Graphic file (type bmp)
+<Fig/4/F5.png>
 [35]
-File: Fig/L4_F6.png Graphic file (type bmp)
-<Fig/L4_F6.png>
-File: Fig/L4_F7.png Graphic file (type bmp)
-<Fig/L4_F7.png>
+File: Fig/4/F6.png Graphic file (type bmp)
+<Fig/4/F6.png>
+File: Fig/4/F7.png Graphic file (type bmp)
+<Fig/4/F7.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 156--164
 
@@ -1917,40 +1917,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-File: Fig/L4_F8.png Graphic file (type bmp)
-<Fig/L4_F8.png>
+File: Fig/4/F8.png Graphic file (type bmp)
+<Fig/4/F8.png>
 [37]
 Underfull \hbox (badness 10000) in paragraph at lines 185--188
 
  []
 
-File: Fig/L4_F10.png Graphic file (type bmp)
-<Fig/L4_F10.png>
-File: Fig/L4_F11.png Graphic file (type bmp)
-<Fig/L4_F11.png>
+File: Fig/4/F10.png Graphic file (type bmp)
+<Fig/4/F10.png>
+File: Fig/4/F11.png Graphic file (type bmp)
+<Fig/4/F11.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: Fig/L4_F12.png Graphic file (type bmp)
-<Fig/L4_F12.png>
+File: Fig/4/F12.png Graphic file (type bmp)
+<Fig/4/F12.png>
 [38]
 Underfull \hbox (badness 10000) in paragraph at lines 219--222
 
  []
 
-File: Fig/L4_F13.png Graphic file (type bmp)
-<Fig/L4_F13.png>
-File: Fig/L4_F14.png Graphic file (type bmp)
-<Fig/L4_F14.png>
+File: Fig/4/F13.png Graphic file (type bmp)
+<Fig/4/F13.png>
+File: Fig/4/F14.png Graphic file (type bmp)
+<Fig/4/F14.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [39]
-File: Fig/L4_F9.png Graphic file (type bmp)
-<Fig/L4_F9.png>
+File: Fig/4/F9.png Graphic file (type bmp)
+<Fig/4/F9.png>
  [40]
-File: Fig/L4_F15.png Graphic file (type bmp)
-<Fig/L4_F15.png>
+File: Fig/4/F15.png Graphic file (type bmp)
+<Fig/4/F15.png>
 ) (./Lectures/5.tex [41]
 Chapter 5.
 [42
@@ -1961,17 +1961,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--121
  []
 
 [45] [46]
-File: Fig/L5_F1.jpg Graphic file (type bmp)
-<Fig/L5_F1.jpg>
-File: Fig/L5_F2.jpg Graphic file (type bmp)
-<Fig/L5_F2.jpg>
+File: Fig/5/F1.jpg Graphic file (type bmp)
+<Fig/5/F1.jpg>
+File: Fig/5/F2.jpg Graphic file (type bmp)
+<Fig/5/F2.jpg>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [47] [48]
-File: Fig/L5_F3.jpg Graphic file (type bmp)
-<Fig/L5_F3.jpg>
+File: Fig/5/F3.jpg Graphic file (type bmp)
+<Fig/5/F3.jpg>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2038,8 +2038,8 @@ Missing character: There is no ′ in font rm-lmr10!
 Missing character: There is no ′ in font rm-lmr10!
 Missing character: There is no − in font rm-lmr10!
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
-File: Fig/L6_F1.jpg Graphic file (type bmp)
-<Fig/L6_F1.jpg>
+File: Fig/6/F1.jpg Graphic file (type bmp)
+<Fig/6/F1.jpg>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2049,27 +2049,27 @@ Missing character: There is no ′ in font rm-lmr10!
 Missing character: There is no − in font rm-lmr10!
 Missing character: There is no − in font rm-lmr7!
 Missing character: There is no − in font rm-lmr10!
-File: Fig/L6_F2.jpg Graphic file (type bmp)
-<Fig/L6_F2.jpg>
+File: Fig/6/F2.jpg Graphic file (type bmp)
+<Fig/6/F2.jpg>
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
  [57]
 Missing character: There is no ≥ in font rm-lmr10!
 Missing character: There is no ≥ in font rm-lmr10!
 Missing character: There is no ≥ in font rm-lmr10!
-File: Fig/L6_F3.jpg Graphic file (type bmp)
-<Fig/L6_F3.jpg>
+File: Fig/6/F3.jpg Graphic file (type bmp)
+<Fig/6/F3.jpg>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [58]
-File: Fig/L6_F4.jpg Graphic file (type bmp)
-<Fig/L6_F4.jpg>
-File: Fig/L6_F5.jpg Graphic file (type bmp)
-<Fig/L6_F5.jpg>
-File: Fig/L6_F6.jpg Graphic file (type bmp)
-<Fig/L6_F6.jpg>
+File: Fig/6/F4.jpg Graphic file (type bmp)
+<Fig/6/F4.jpg>
+File: Fig/6/F5.jpg Graphic file (type bmp)
+<Fig/6/F5.jpg>
+File: Fig/6/F6.jpg Graphic file (type bmp)
+<Fig/6/F6.jpg>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2079,8 +2079,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [60]
-File: Fig/L6_F7.jpg Graphic file (type bmp)
-<Fig/L6_F7.jpg>
+File: Fig/6/F7.jpg Graphic file (type bmp)
+<Fig/6/F7.jpg>
 Missing character: There is no − in font rm-lmr10!
 Missing character: There is no − in font rm-lmr10!
 ) (./Lectures/7.tex [61] [62]
@@ -2112,11 +2112,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-File: Fig/L7_F1.png Graphic file (type bmp)
-<Fig/L7_F1.png>
+File: Fig/7/F1.png Graphic file (type bmp)
+<Fig/7/F1.png>
 [64]
-File: Fig/L7_F2.png Graphic file (type bmp)
-<Fig/L7_F2.png>
+File: Fig/7/F2.png Graphic file (type bmp)
+<Fig/7/F2.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--60
 
@@ -2133,15 +2133,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--78
  []
 
 [65]
-File: Fig/L7_F3.png Graphic file (type bmp)
-<Fig/L7_F3.png>
+File: Fig/7/F3.png Graphic file (type bmp)
+<Fig/7/F3.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
-File: Fig/L7_F4.png Graphic file (type bmp)
-<Fig/L7_F4.png>
+File: Fig/7/F4.png Graphic file (type bmp)
+<Fig/7/F4.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2149,8 +2149,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: Reference `fig:f4' on page 66 undefined on input line 106.
 
 [66]
-File: Fig/L7_F5.png Graphic file (type bmp)
-<Fig/L7_F5.png>
+File: Fig/7/F5.png Graphic file (type bmp)
+<Fig/7/F5.png>
  [67]
 Missing character: There is no − in font rm-lmr10!
 Missing character: There is no − in font rm-lmr10!
@@ -2164,8 +2164,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-File: Fig/L7_F6.png Graphic file (type bmp)
-<Fig/L7_F6.png>
+File: Fig/7/F6.png Graphic file (type bmp)
+<Fig/7/F6.png>
 ) (./Lectures/8.tex
 Underfull \hbox (badness 10000) in paragraph at lines 158--1
 
@@ -2193,20 +2193,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-File: Fig/L8_F1.png Graphic file (type bmp)
-<Fig/L8_F1.png>
+File: Fig/8/F1.png Graphic file (type bmp)
+<Fig/8/F1.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--50
 
  []
 
-File: Fig/L8_F2.png Graphic file (type bmp)
-<Fig/L8_F2.png>
+File: Fig/8/F2.png Graphic file (type bmp)
+<Fig/8/F2.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: Fig/L8_F3.png Graphic file (type bmp)
-<Fig/L8_F3.png>
+File: Fig/8/F3.png Graphic file (type bmp)
+<Fig/8/F3.png>
 [71]
 Underfull \hbox (badness 10000) in paragraph at lines 69--73
 
@@ -2218,8 +2218,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--73
  []
 
 [72]
-File: Fig/L8_F4.png Graphic file (type bmp)
-<Fig/L8_F4.png>
+File: Fig/8/F4.png Graphic file (type bmp)
+<Fig/8/F4.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
@@ -2231,8 +2231,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--101
  []
 
 [73]
-File: Fig/L8_F5.png Graphic file (type bmp)
-<Fig/L8_F5.png>
+File: Fig/8/F5.png Graphic file (type bmp)
+<Fig/8/F5.png>
 ) (./Lectures/9.tex
 Underfull \hbox (badness 10000) in paragraph at lines 103--1
 
@@ -2253,16 +2253,16 @@ Chapter 9.
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
-File: Fig/L9_F1.jpg Graphic file (type bmp)
-<Fig/L9_F1.jpg>
+File: Fig/9/F1.jpg Graphic file (type bmp)
+<Fig/9/F1.jpg>
 [75
 
 ]
-File: Fig/L9_F2.jpg Graphic file (type bmp)
-<Fig/L9_F2.jpg>
+File: Fig/9/F2.jpg Graphic file (type bmp)
+<Fig/9/F2.jpg>
  [76]
-File: Fig/L9_F3.jpg Graphic file (type bmp)
-<Fig/L9_F3.jpg>
+File: Fig/9/F3.jpg Graphic file (type bmp)
+<Fig/9/F3.jpg>
  [77]
 Missing character: There is no ≫ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
@@ -2288,11 +2288,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--84
 Missing character: There is no ≤ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
 [78]
-File: Fig/L9_F4.jpg Graphic file (type bmp)
-<Fig/L9_F4.jpg>
+File: Fig/9/F4.jpg Graphic file (type bmp)
+<Fig/9/F4.jpg>
  [79]
-File: Fig/L9_F5.jpg Graphic file (type bmp)
-<Fig/L9_F5.jpg>
+File: Fig/9/F5.jpg Graphic file (type bmp)
+<Fig/9/F5.jpg>
  [80]
 Missing character: There is no β in font zplmi!
 
@@ -2318,8 +2318,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--159
  []
 
 [82]
-File: Fig/L9_F6.jpg Graphic file (type bmp)
-<Fig/L9_F6.jpg>
+File: Fig/9/F6.jpg Graphic file (type bmp)
+<Fig/9/F6.jpg>
 Missing character: There is no − in font rm-lmr7!
 Missing character: There is no − in font rm-lmr7!
 ) (./Lectures/10.tex [83]
@@ -2327,25 +2327,25 @@ Chapter 10.
 [84
 
 ]
-File: Fig/L10_F1.jpg Graphic file (type bmp)
-<Fig/L10_F1.jpg>
+File: Fig/10/F1.jpg Graphic file (type bmp)
+<Fig/10/F1.jpg>
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--38
 
  []
 
 [85]
-File: Fig/L10_F2.jpg Graphic file (type bmp)
-<Fig/L10_F2.jpg>
+File: Fig/10/F2.jpg Graphic file (type bmp)
+<Fig/10/F2.jpg>
  [86]
-File: Fig/L10_F3.jpg Graphic file (type bmp)
-<Fig/L10_F3.jpg>
+File: Fig/10/F3.jpg Graphic file (type bmp)
+<Fig/10/F3.jpg>
  [87] [88]
-File: Fig/L10_F4.jpg Graphic file (type bmp)
-<Fig/L10_F4.jpg>
+File: Fig/10/F4.jpg Graphic file (type bmp)
+<Fig/10/F4.jpg>
  [89]
-File: Fig/L10_F5.jpg Graphic file (type bmp)
-<Fig/L10_F5.jpg>
+File: Fig/10/F5.jpg Graphic file (type bmp)
+<Fig/10/F5.jpg>
 
 Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
@@ -2362,8 +2362,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--134
 
  []
 
-File: Fig/L10_F6.jpg Graphic file (type bmp)
-<Fig/L10_F6.jpg>
+File: Fig/10/F6.jpg Graphic file (type bmp)
+<Fig/10/F6.jpg>
 
 Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
@@ -2429,8 +2429,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
  []
 
 [95]
-File: Fig/L11_F1.png Graphic file (type bmp)
-<Fig/L11_F1.png>
+File: Fig/11/F1.png Graphic file (type bmp)
+<Fig/11/F1.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
@@ -2442,8 +2442,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--72
  []
 
 [96]
-File: Fig/L11_F2.png Graphic file (type bmp)
-<Fig/L11_F2.png>
+File: Fig/11/F2.png Graphic file (type bmp)
+<Fig/11/F2.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 80--90
 
@@ -2451,26 +2451,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--90
 
 [97]
 Missing character: There is no ′ in font rm-lmr10!
-File: Fig/L11_F3.png Graphic file (type bmp)
-<Fig/L11_F3.png>
-File: Fig/L11_F4.png Graphic file (type bmp)
-<Fig/L11_F4.png>
+File: Fig/11/F3.png Graphic file (type bmp)
+<Fig/11/F3.png>
+File: Fig/11/F4.png Graphic file (type bmp)
+<Fig/11/F4.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 104--119
 
  []
 
 [98]
-File: Fig/L11_F5.png Graphic file (type bmp)
-<Fig/L11_F5.png>
+File: Fig/11/F5.png Graphic file (type bmp)
+<Fig/11/F5.png>
  [99]
 
 LaTeX Warning: Reference `eq:9' on page 100 undefined on input line 138.
 
-File: Fig/L11_F6.png Graphic file (type bmp)
-<Fig/L11_F6.png>
-File: Fig/L11_F7.png Graphic file (type bmp)
-<Fig/L11_F7.png>
+File: Fig/11/F6.png Graphic file (type bmp)
+<Fig/11/F6.png>
+File: Fig/11/F7.png Graphic file (type bmp)
+<Fig/11/F7.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 161--165
 
@@ -2482,8 +2482,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--165
  []
 
 [100]
-File: Fig/L11_F8.png Graphic file (type bmp)
-<Fig/L11_F8.png>
+File: Fig/11/F8.png Graphic file (type bmp)
+<Fig/11/F8.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
@@ -2502,8 +2502,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--180
 
 LaTeX Warning: Reference `fig:f9' on page 101 undefined on input line 184.
 
-File: Fig/L11_F9.png Graphic file (type bmp)
-<Fig/L11_F9.png>
+File: Fig/11/F9.png Graphic file (type bmp)
+<Fig/11/F9.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 182--193
 
@@ -2527,8 +2527,8 @@ Overfull \hbox (3.41689pt too wide) in paragraph at lines 9--12
 ull-fledged blockchain, the trusted main blockchain
  []
 
-File: Fig/L12_F1.jpg Graphic file (type bmp)
-<Fig/L12_F1.jpg>
+File: Fig/12/F1.jpg Graphic file (type bmp)
+<Fig/12/F1.jpg>
 [104
 
 ] [105]
@@ -2541,8 +2541,8 @@ Overfull \hbox (9.4845pt too wide) in paragraph at lines 67--68
 
 [106] [107]
 Missing character: There is no ≤ in font rm-lmr10!
-File: Fig/L12_F2.jpg Graphic file (type bmp)
-<Fig/L12_F2.jpg>
+File: Fig/12/F2.jpg Graphic file (type bmp)
+<Fig/12/F2.jpg>
 Missing character: There is no ℓ in font zplmi!
 Missing character: There is no ≤ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
@@ -2561,33 +2561,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-File: Fig/L13_F1.png Graphic file (type bmp)
-<Fig/L13_F1.png>
+File: Fig/13/F1.png Graphic file (type bmp)
+<Fig/13/F1.png>
 [111
 
 ]
-File: Fig/L13_F2.png Graphic file (type bmp)
-<Fig/L13_F2.png>
-File: Fig/L13_F3.png Graphic file (type bmp)
-<Fig/L13_F3.png>
+File: Fig/13/F2.png Graphic file (type bmp)
+<Fig/13/F2.png>
+File: Fig/13/F3.png Graphic file (type bmp)
+<Fig/13/F3.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [112]
-File: Fig/L13_F4.png Graphic file (type bmp)
-<Fig/L13_F4.png>
-File: Fig/L13_F5.png Graphic file (type bmp)
-<Fig/L13_F5.png>
+File: Fig/13/F4.png Graphic file (type bmp)
+<Fig/13/F4.png>
+File: Fig/13/F5.png Graphic file (type bmp)
+<Fig/13/F5.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [113]
-File: Fig/L13_F6.png Graphic file (type bmp)
-<Fig/L13_F6.png>
-File: Fig/L13_F7.png Graphic file (type bmp)
-<Fig/L13_F7.png>
+File: Fig/13/F6.png Graphic file (type bmp)
+<Fig/13/F6.png>
+File: Fig/13/F7.png Graphic file (type bmp)
+<Fig/13/F7.png>
  [114]
 Underfull \hbox (badness 10000) in paragraph at lines 131--135
 
@@ -2605,25 +2605,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--145
 
 [115]) (./Lectures/14.tex [116]
 Chapter 14.
-File: Fig/L14_F1.png Graphic file (type bmp)
-<Fig/L14_F1.png>
+File: Fig/14/F1.png Graphic file (type bmp)
+<Fig/14/F1.png>
 [117
 
 ]
-File: Fig/L14_F2.png Graphic file (type bmp)
-<Fig/L14_F2.png>
-File: Fig/L14_F3.jpg Graphic file (type bmp)
-<Fig/L14_F3.jpg>
+File: Fig/14/F2.png Graphic file (type bmp)
+<Fig/14/F2.png>
+File: Fig/14/F3.jpg Graphic file (type bmp)
+<Fig/14/F3.jpg>
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
 
 [118]
-File: Fig/L14_F4.png Graphic file (type bmp)
-<Fig/L14_F4.png>
-File: Fig/L14_F5.png Graphic file (type bmp)
-<Fig/L14_F5.png>
+File: Fig/14/F4.png Graphic file (type bmp)
+<Fig/14/F4.png>
+File: Fig/14/F5.png Graphic file (type bmp)
+<Fig/14/F5.png>
  [119] [120]
 Underfull \hbox (badness 10000) in paragraph at lines 109--112
 
@@ -2632,8 +2632,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--112
 [121]
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
  [122]
-File: Fig/L14_F6.png Graphic file (type bmp)
-<Fig/L14_F6.png>
+File: Fig/14/F6.png Graphic file (type bmp)
+<Fig/14/F6.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 142--145
 
@@ -2657,8 +2657,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
 [124]) (./Lectures/15.tex [125] [126]
 Chapter 15.
-File: Fig/L15_F8.png Graphic file (type bmp)
-<Fig/L15_F8.png>
+File: Fig/15/F8.png Graphic file (type bmp)
+<Fig/15/F8.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 27--31
 
@@ -2667,10 +2667,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--31
 [127
 
 ]
-File: Fig/L15_F1.png Graphic file (type bmp)
-<Fig/L15_F1.png>
-File: Fig/L15_F2.png Graphic file (type bmp)
-<Fig/L15_F2.png>
+File: Fig/15/F1.png Graphic file (type bmp)
+<Fig/15/F1.png>
+File: Fig/15/F2.png Graphic file (type bmp)
+<Fig/15/F2.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 50--59
 
@@ -2680,24 +2680,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--59
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [128]
-File: Fig/L15_F3.png Graphic file (type bmp)
-<Fig/L15_F3.png>
+File: Fig/15/F3.png Graphic file (type bmp)
+<Fig/15/F3.png>
 
 
 LaTeX Warning: Reference `fig:f4' on page 129 undefined on input line 66.
 
-File: Fig/L15_F4.png Graphic file (type bmp)
-<Fig/L15_F4.png>
+File: Fig/15/F4.png Graphic file (type bmp)
+<Fig/15/F4.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--76
 
  []
 
 [129]
-File: Fig/L15_F5.png Graphic file (type bmp)
-<Fig/L15_F5.png>
-File: Fig/L15_F6.png Graphic file (type bmp)
-<Fig/L15_F6.png>
+File: Fig/15/F5.png Graphic file (type bmp)
+<Fig/15/F5.png>
+File: Fig/15/F6.png Graphic file (type bmp)
+<Fig/15/F6.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2717,8 +2717,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
-File: Fig/L15_F7.png Graphic file (type bmp)
-<Fig/L15_F7.png>
+File: Fig/15/F7.png Graphic file (type bmp)
+<Fig/15/F7.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2740,25 +2740,25 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 7.
 
 LaTeX Warning: Command \textless invalid in math mode on input line 8.
 
-File: Fig/L16_F1.jpg Graphic file (type bmp)
-<Fig/L16_F1.jpg>
+File: Fig/16/F1.jpg Graphic file (type bmp)
+<Fig/16/F1.jpg>
 [133
 
 ]
-File: Fig/L16_F2.jpg Graphic file (type bmp)
-<Fig/L16_F2.jpg>
-File: Fig/L16_F3.jpg Graphic file (type bmp)
-<Fig/L16_F3.jpg>
+File: Fig/16/F2.jpg Graphic file (type bmp)
+<Fig/16/F2.jpg>
+File: Fig/16/F3.jpg Graphic file (type bmp)
+<Fig/16/F3.jpg>
 Missing character: There is no σ in font zplmi!
  [134] [135] [136]
-File: Fig/L16_F4.jpg Graphic file (type bmp)
-<Fig/L16_F4.jpg>
+File: Fig/16/F4.jpg Graphic file (type bmp)
+<Fig/16/F4.jpg>
  [137] [138]) (./Lectures/17.tex [139
 
 ]
 Chapter 17.
-File: Fig/L17_F1.png Graphic file (type bmp)
-<Fig/L17_F1.png>
+File: Fig/17/F1.png Graphic file (type bmp)
+<Fig/17/F1.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--18
 
@@ -2787,8 +2787,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--18
 [140
 
 ]
-File: Fig/L17_F2.png Graphic file (type bmp)
-<Fig/L17_F2.png>
+File: Fig/17/F2.png Graphic file (type bmp)
+<Fig/17/F2.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--34
 
@@ -2815,10 +2815,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--41
  []
 
 [141]
-File: Fig/L17_F3.png Graphic file (type bmp)
-<Fig/L17_F3.png>
-File: Fig/L17_F4.png Graphic file (type bmp)
-<Fig/L17_F4.png>
+File: Fig/17/F3.png Graphic file (type bmp)
+<Fig/17/F3.png>
+File: Fig/17/F4.png Graphic file (type bmp)
+<Fig/17/F4.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 53--73
 
@@ -2835,11 +2835,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--73
  []
 
 [142]
-File: Fig/L17_F5.png Graphic file (type bmp)
-<Fig/L17_F5.png>
+File: Fig/17/F5.png Graphic file (type bmp)
+<Fig/17/F5.png>
  [143]
-File: Fig/L17_F6.png Graphic file (type bmp)
-<Fig/L17_F6.png>
+File: Fig/17/F6.png Graphic file (type bmp)
+<Fig/17/F6.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 98--107
 
@@ -2885,22 +2885,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--22
 [147
 
 ]
-File: Fig/L18_F1.png Graphic file (type bmp)
-<Fig/L18_F1.png>
+File: Fig/18/F1.png Graphic file (type bmp)
+<Fig/18/F1.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
-File: Fig/L18_F2.jpg Graphic file (type bmp)
-<Fig/L18_F2.jpg>
+File: Fig/18/F2.jpg Graphic file (type bmp)
+<Fig/18/F2.jpg>
 [148]
-File: Fig/L18_F3.jpg Graphic file (type bmp)
-<Fig/L18_F3.jpg>
-File: Fig/L18_F4.jpg Graphic file (type bmp)
-<Fig/L18_F4.jpg>
-File: Fig/L18_F5.jpg Graphic file (type bmp)
-<Fig/L18_F5.jpg>
+File: Fig/18/F3.jpg Graphic file (type bmp)
+<Fig/18/F3.jpg>
+File: Fig/18/F4.jpg Graphic file (type bmp)
+<Fig/18/F4.jpg>
+File: Fig/18/F5.jpg Graphic file (type bmp)
+<Fig/18/F5.jpg>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2910,14 +2910,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-File: Fig/L18_F6.jpg Graphic file (type bmp)
-<Fig/L18_F6.jpg>
-File: Fig/L18_F7.jpg Graphic file (type bmp)
-<Fig/L18_F7.jpg>
-File: Fig/L18_F8.jpg Graphic file (type bmp)
-<Fig/L18_F8.jpg>
-File: Fig/L18_F9.jpg Graphic file (type bmp)
-<Fig/L18_F9.jpg>
+File: Fig/18/F6.jpg Graphic file (type bmp)
+<Fig/18/F6.jpg>
+File: Fig/18/F7.jpg Graphic file (type bmp)
+<Fig/18/F7.jpg>
+File: Fig/18/F8.jpg Graphic file (type bmp)
+<Fig/18/F8.jpg>
+File: Fig/18/F9.jpg Graphic file (type bmp)
+<Fig/18/F9.jpg>
 [149] [150]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2930,10 +2930,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [151] [152] [153] [154]) (./Lectures/19.tex [155]
 Chapter 19.
-File: Fig/L19_F1.png Graphic file (type bmp)
-<Fig/L19_F1.png>
-File: Fig/L19_F2.png Graphic file (type bmp)
-<Fig/L19_F2.png>
+File: Fig/19/F1.png Graphic file (type bmp)
+<Fig/19/F1.png>
+File: Fig/19/F2.png Graphic file (type bmp)
+<Fig/19/F2.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2950,10 +2950,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
 [156
 
 ]
-File: Fig/L19_F3.png Graphic file (type bmp)
-<Fig/L19_F3.png>
-File: Fig/L19_F4.png Graphic file (type bmp)
-<Fig/L19_F4.png>
+File: Fig/19/F3.png Graphic file (type bmp)
+<Fig/19/F3.png>
+File: Fig/19/F4.png Graphic file (type bmp)
+<Fig/19/F4.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--44
 
@@ -2969,33 +2969,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--50
 
  []
 
-File: Fig/L19_F5.png Graphic file (type bmp)
-<Fig/L19_F5.png>
+File: Fig/19/F5.png Graphic file (type bmp)
+<Fig/19/F5.png>
 [158]
 Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
-File: Fig/L19_F6.png Graphic file (type bmp)
-<Fig/L19_F6.png>
+File: Fig/19/F6.png Graphic file (type bmp)
+<Fig/19/F6.png>
 [159]
-File: Fig/L19_F7.png Graphic file (type bmp)
-<Fig/L19_F7.png>
+File: Fig/19/F7.png Graphic file (type bmp)
+<Fig/19/F7.png>
  [160]
 Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
-File: Fig/L19_F8.png Graphic file (type bmp)
-<Fig/L19_F8.png>
+File: Fig/19/F8.png Graphic file (type bmp)
+<Fig/19/F8.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 148--152
 
  []
 
 [161]
-File: Fig/L19_F9.png Graphic file (type bmp)
-<Fig/L19_F9.png>
+File: Fig/19/F9.png Graphic file (type bmp)
+<Fig/19/F9.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 162--171
 
@@ -3007,26 +3007,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--171
  []
 
 [162]
-File: Fig/L19_F10.png Graphic file (type bmp)
-<Fig/L19_F10.png>
-File: Fig/L19_F11.png Graphic file (type bmp)
-<Fig/L19_F11.png>
+File: Fig/19/F10.png Graphic file (type bmp)
+<Fig/19/F10.png>
+File: Fig/19/F11.png Graphic file (type bmp)
+<Fig/19/F11.png>
  [163]
-File: Fig/L19_F12.png Graphic file (type bmp)
-<Fig/L19_F12.png>
+File: Fig/19/F12.png Graphic file (type bmp)
+<Fig/19/F12.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 231--234
 
  []
 
-File: Fig/L19_F13.png Graphic file (type bmp)
-<Fig/L19_F13.png>
+File: Fig/19/F13.png Graphic file (type bmp)
+<Fig/19/F13.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [164]
-File: Fig/L19_F14.png Graphic file (type bmp)
-<Fig/L19_F14.png>
+File: Fig/19/F14.png Graphic file (type bmp)
+<Fig/19/F14.png>
 ) (./Lectures/20.tex [165]
 Chapter 20.
 File: Fig/20/F1.jpg Graphic file (type bmp)
@@ -3074,8 +3074,8 @@ File: Fig/20/F9.jpg Graphic file (type bmp)
 <Fig/20/F9.jpg>
 ) (./Lectures/21.tex [173] [174]
 Chapter 21.
-File: Fig/L21_F1.png Graphic file (type bmp)
-<Fig/L21_F1.png>
+File: Fig/21/F1.png Graphic file (type bmp)
+<Fig/21/F1.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
@@ -3084,19 +3084,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--13
 [175
 
 ]
-File: Fig/L21_F2.png Graphic file (type bmp)
-<Fig/L21_F2.png>
+File: Fig/21/F2.png Graphic file (type bmp)
+<Fig/21/F2.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-File: Fig/L21_F3.png Graphic file (type bmp)
-<Fig/L21_F3.png>
-File: Fig/L21_F4.png Graphic file (type bmp)
-<Fig/L21_F4.png>
-File: Fig/L21_F5.png Graphic file (type bmp)
-<Fig/L21_F5.png>
+File: Fig/21/F3.png Graphic file (type bmp)
+<Fig/21/F3.png>
+File: Fig/21/F4.png Graphic file (type bmp)
+<Fig/21/F4.png>
+File: Fig/21/F5.png Graphic file (type bmp)
+<Fig/21/F5.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--54
 
@@ -3126,10 +3126,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--67
 
  []
 
-File: Fig/L21_F6.png Graphic file (type bmp)
-<Fig/L21_F6.png>
-File: Fig/L21_F7.png Graphic file (type bmp)
-<Fig/L21_F7.png>
+File: Fig/21/F6.png Graphic file (type bmp)
+<Fig/21/F6.png>
+File: Fig/21/F7.png Graphic file (type bmp)
+<Fig/21/F7.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -3149,10 +3149,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--98
  []
 
 [179]
-File: Fig/L21_F8.png Graphic file (type bmp)
-<Fig/L21_F8.png>
-File: Fig/L21_F9.png Graphic file (type bmp)
-<Fig/L21_F9.png>
+File: Fig/21/F8.png Graphic file (type bmp)
+<Fig/21/F8.png>
+File: Fig/21/F9.png Graphic file (type bmp)
+<Fig/21/F9.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 113--122
 
@@ -3166,11 +3166,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--122
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: Fig/L21_F10.png Graphic file (type bmp)
-<Fig/L21_F10.png>
+File: Fig/21/F10.png Graphic file (type bmp)
+<Fig/21/F10.png>
 [180]
-File: Fig/L21_F11.png Graphic file (type bmp)
-<Fig/L21_F11.png>
+File: Fig/21/F11.png Graphic file (type bmp)
+<Fig/21/F11.png>
 ) (./Lectures/22.tex
 Underfull \hbox (badness 10000) in paragraph at lines 135--1
 
@@ -3259,9 +3259,9 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 45 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 38611 strings out of 479418
- 743749 string characters out of 5881945
- 1102940 words of memory out of 5000000
+ 38498 strings out of 479418
+ 741659 string characters out of 5881945
+ 1103038 words of memory out of 5000000
  55211 multiletter control sequences out of 15000+600000
  589525 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

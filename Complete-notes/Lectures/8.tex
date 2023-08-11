@@ -42,7 +42,7 @@ The “quality” of a chain is not measured by its height, but by how heavy the
 The weight of a subtree is the total number of blocks in that subtree, regardless of whether they are valid or not. The rule then selects the chain that has the heaviest subtree as the longest chain.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L8_F1}
+	\includegraphics[width=0.5\linewidth]{Fig/8/F1}
 	\caption{GHOST chain vs. Longest chain }
 	\label{fig:l8_f1}
 \end{figure}\\
@@ -51,7 +51,7 @@ In Figure \ref{fig:l8_f1}, the weights of the blocks are labeled inside each blo
 One of the threats to the security of Bitcoin is a private attack. The GHOST rule claims to be secure against this attack, as long as more than half of the hash power is honest. The reason is that the weight of the honest subtree is proportional to the honest mining rate, while the weight of the private subtree is proportional to the adversary mining rate. Therefore, the honest subtree will always be heavier than the private subtree, and the GHOST rule will choose it as the valid chain. This security guarantee does not depend on the mining rate, so the throughput can be increased by increasing the mining rate, as long as the network can handle it.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/L8_F2}
+	\includegraphics[width=0.6\linewidth]{Fig/8/F2}
 	\caption{Private attack in GHOST}
 	\label{fig:l8_f2}
 \end{figure}\\
@@ -60,7 +60,7 @@ Unlike the Longest chain protocol, private attack is no more the worst case atta
 The balance attack aims to create two equally weighted chains (based on the GHOST rule) by the adversary. Honest miners choose the oldest chain to mine on when there are multiple chains with the same weight. The adversary can manipulate the network so that each half of the honest nodes see a different chain first. This way, the honest nodes are divided into two groups, each mining on a different chain, and the adversary can mine privately on both chains from the genesis block (see Figure \ref{fig:l8_f3}). The adversary reveals its blocks as needed (to keep the balance of the two chains). The blockchain protocol becomes unsafe if the balance attack lasts longer than the confirmation depth k.
 \begin{figure}[h!	]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L8_F3}
+	\includegraphics[width=0.7\linewidth]{Fig/8/F3}
 	\caption{Balance attack on GHOST}
 	\label{fig:l8_f3}
 \end{figure}
@@ -83,7 +83,7 @@ The mining process is as follows:
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Fig/L8_F4}
+	\includegraphics[width=0.3\linewidth]{Fig/8/F4}
 	\caption{Bitcoin-NG mining process}
 	\label{fig:l8_f4}
 \end{figure}
@@ -109,7 +109,7 @@ The full Prism protocol also resolves another important limitation of the longes
 confirmation.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L8_F5}
+	\includegraphics[width=0.5\linewidth]{Fig/8/F5}
 	\caption{Prism 1.0 and Fruitchains protocols have two block types: proposer and transaction blocks,
 		interspersed with each other. The transaction and proposer blocks are mined in parallel, coupled
 		through the sortition process. Transaction block hashes are referred to by proposer blocks thus

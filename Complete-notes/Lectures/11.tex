@@ -51,7 +51,7 @@ However, there are two problems with this idea, which are related to the securit
 \end{itemize}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L11_F1}
+	\includegraphics[width=0.7\linewidth]{Fig/11/F1}
 	\caption{PoW vs. PoS}
 	\label{fig:l11_f1}
 \end{figure}
@@ -80,7 +80,7 @@ VRF makes the block proposer selection more random and secret, so that the attac
 The honest participants follow the longest chain rule, which means they only mine on the end of the longest chain. The attacker, however, mines on many places in the chain tree, and tries to create a longer chain than the honest one. The attacker can do this because they can use the same stake to mine many blocks without spending much resources. 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L11_F2}
+	\includegraphics[width=0.7\linewidth]{Fig/11/F2}
 	\caption{NaS attack}
 	\label{fig:l11_f2}
 \end{figure}\\
@@ -106,13 +106,13 @@ The adversary can also try to bribe some of the block proposers in the Ouroboros
 For example, the adversary can create a forked version of the blockchain with the help of the bribed proposers and keep it secret until a block s is confirmed by the k-deep rule. Then, the adversary can reveal the forked blockchain to everyone, making it the longest chain and replacing $s$ with $s′$ (which contains a double spend). Note that this attack only requires $k + 1$ out of $2k + 1$ lotteries to be won by the bribed proposers, who may have a very small stake in total.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.55\linewidth]{Fig/L11_F3}
+	\includegraphics[width=0.55\linewidth]{Fig/11/F3}
 	\caption{Structure of bribing attack}
 	\label{fig:l11_f3}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.55\linewidth]{Fig/L11_F4}
+	\includegraphics[width=0.55\linewidth]{Fig/11/F4}
 	\caption{Bribing attack on Ouroboros Praos}
 	\label{fig:l11_f4}
 \end{figure}
@@ -121,7 +121,7 @@ For example, the adversary can create a forked version of the blockchain with th
 The $c$-correlation property states that the updates of the randomness source are correlated with the multiples of a parameter $c$, which controls the security level of the protocol. In this rule, the common source of randomness remains the same for $c$ blocks, and is updated only when the current block to be generated is at a depth that is a multiple of $c$.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L11_F5}
+	\includegraphics[width=0.5\linewidth]{Fig/11/F5}
 	\caption{A snapshot of a block tree under c-correlation protocol with $c = 5$.}
 	\label{fig:l11_f5}
 \end{figure}\\
@@ -138,11 +138,11 @@ When updating, the hash of block header is used as the new source of randomness,
 The protocol in Equation (\ref{eq:l11_7}) has the lowest value of $c$, which is $1$. This means that the randomness source updates with every block, but it also makes the NaS attack very easy. The protocol in Equation (\ref{eq:9}) has the highest value of c, which is ∞. This means that the randomness source updates only once per epoch, but it also makes the NaS attack impossible. By changing the value of c, we can adjust the security level of the protocol (see Table 1). Figure 6 shows that with c-correlation, we can achieve the same security as the current Ouroboros protocol used by Cardano, but with a much smaller epoch size.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{Fig/L11_F6}
+	\includegraphics[width=\linewidth]{Fig/11/F6}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{Fig/L11_F7}
+	\includegraphics[width=0.5\linewidth]{Fig/11/F7}
 	\caption{The security threshold $\beta_c^*$
 		c of c-correlation against the epoch size, equaling to c times the
 		inter-block time, which we set to be 20s, to match the implementation of Ouroboros in Cardano. The
@@ -165,7 +165,7 @@ The stake grinding attack is when the adversary uses its stake to increase its c
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.3\linewidth]{Fig/L11_F8}
+	\includegraphics[width=0.3\linewidth]{Fig/11/F8}
 	\caption{Stake grinding attack}
 	\label{fig:l11_f8}
 \end{figure}
@@ -184,7 +184,7 @@ The protocol we have shown so far works well if only a small part (for example, 
 The protocol needs another thing to work well: all the bad nodes are always online. This is not just extra, but very important for the security. Imagine that in the first year of the PoS blockchain, only 10\% of the stake is online. All of them are good nodes. Then, in the second year, all 100\% of the stake is online, but 20\% is bad. Even though most of the online stake is good, the protocol is not safe because the bad nodes can use their 20\% stake to go back in time and win all the past blocks from the start. Then they can make a chain very fast from the start and make it longer than the current chain (see Figure \ref{fig:l11_f9}(a)). This is possible because making blocks in the PoS protocol is very cheap (just need to play all the old lotteries). So, when bad nodes come online, they can change not only the present, but also the past. PoW does not have this problem because it takes a lot of time and work to make a chain from the past and that chain will always be shorter than the current chain. So, PoW has a sense of time, which means nodes cannot change the past blocks when they were offline. This is why PoW can handle dynamic nodes, where both good and bad nodes can come and go (see Figure \ref{fig:f9}(b)).
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Fig/L11_F9}
+	\includegraphics[width=0.7\linewidth]{Fig/11/F9}
 	\caption{(a) Newly coming online stakeholders in the PoS protocol can grow a chain from genesis
 		instantaneously. (b) Newly joined miners in the PoW protocol take a long time to grow such a chain
 		and is always behind.}
