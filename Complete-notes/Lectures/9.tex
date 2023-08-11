@@ -22,7 +22,7 @@ The plot in Figure 1 illustrates this trade-off between latency and security, sh
 \begin{center}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.8\linewidth]{Fig/9/F1}
+		\includegraphics[width=0.8\linewidth]{Fig/09/F1}
 		\caption{Bitcoin’s latency–security trade-oﬀ for diﬀerent $\beta$ assuming $\delta = 0$. We set $\lambda$ to be $6$ blocks per hour, as in Bitcoin.}
 		\label{fig:f1}
 	\end{figure}
@@ -34,7 +34,7 @@ Figure 2 illustrates the security-latency trade-off as implied by both the lower
 \begin{center}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.8\linewidth]{Fig/9/F2}
+		\includegraphics[width=0.8\linewidth]{Fig/09/F2}
 		\caption{Bitcoin’s latency–security trade-oﬀ for $\beta = 0.1$ when $\delta > 0$. We set $\lambda$ to be $6$ blocks per hour as in Bitcoin and $\delta = 10$ seconds. The lower bound on latency is derived from the private attack, while the upper bound is borrowed from \href{https://arxiv.org/pdf/2011.14051.pdf}{this work}.}
 		\label{fig:f1}
 	\end{figure}
@@ -44,7 +44,7 @@ Lecture 8 introduces Prism 1.0, a blockchain protocol with two types of blocks: 
 \begin{center}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.8\linewidth]{Fig/9/F3}
+		\includegraphics[width=0.8\linewidth]{Fig/09/F3}
 		\caption{Factorizing the blocks into three types of blocks: proposer blocks, transaction blocks and voter blocks.}
 		\label{fig:f1}
 	\end{figure}
@@ -93,7 +93,7 @@ Overall, Prism combines parallelism, security, and decoupling to achieve efficie
 \begin{center}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.8\linewidth]{Fig/9/F4}
+		\includegraphics[width=0.8\linewidth]{Fig/09/F4}
 		\caption{Superblock containing a transaction block, a proposer block and m voter blocks is “$(m+2)$-for-one” mined; the resulting cryptographic sortition identifes the type of the block as the winner of the mining process.}
 		\label{fig:f1}
 	\end{figure}
@@ -110,7 +110,7 @@ In summary, Prism's parallel voting scheme allows for faster confirmation latenc
 \begin{center}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.8\linewidth]{Fig/9/F5}
+		\includegraphics[width=0.8\linewidth]{Fig/09/F5}
 		\caption{(a) Transaction block is referred to by an isolated honest proposer block. (b) Transaction block is referred to by a non-isolated proposer block but on the next level there is an isolated proposer block. Note that since $H_{2}$ is honest, it refers to all unconfrmed transaction blocks, i.e., $TB$.}
 		\label{fig:f1}
 	\end{figure}
@@ -166,7 +166,7 @@ The comparison between Bitcoin and Prism latency is illustrated in Figure 6. In 
 \begin{center}
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.8\linewidth]{Fig/9/F6}
+		\includegraphics[width=0.8\linewidth]{Fig/09/F6}
 		\caption{Comparison between Bitcoin and Prism latency under various values of $\beta$. We set $\lambda$ to be 6 blocks per hour and the error probability $\epsilon = 10^{−3}$. This also justifes the choice of $m$ in the \href{https://arxiv.org/abs/1909.11261}{implementation of Prism}.}
 		\label{fig:f1}
 	\end{figure}

@@ -78,7 +78,7 @@ Therefore, the adversary must wait until its private chain is at least as long a
 Timing is critical for the success of the private attack. If the adversary reveals its chain too early, even if it displaces block $B$, the attack will not lead to a safety violation. The adversary must wait until the honest chain is long enough, at least $k$ deep, for the attack to have the desired impact and violate the safety of block $B$. 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/6/F1}
+	\includegraphics[width=0.6\linewidth]{Fig/06/F1}
 	\caption{Private attack on block B with k = 5.}
 	\label{fig:f1}
 \end{figure}
@@ -113,7 +113,7 @@ $c = − \log_{e}(4\beta(1 - \beta)) > 0.$
 So the probability of deconfrmation decays exponentially in k, as also illustrated in Figure 2. Turns out this calculation was also conducted by Nakamoto themself, albeit somewhat incorrectly, which is included in Figure 2 as a comparison.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/6/F2}
+	\includegraphics[width=0.6\linewidth]{Fig/06/F2}
 	\caption{Private attack with β = 0.3.}
 	\label{fig:f1}
 \end{figure}
@@ -131,7 +131,7 @@ The significance of this result is that, in the case of zero network delay, any 
 This observation is crucial in understanding the relationship between different attack strategies and provides insights into the security of the Nakamoto consensus protocol under various conditions. It shows that the private attack is a powerful and general attack strategy, and other attacks, like the balance attack, are limited in their effectiveness compared to the private attack (Figure 3). 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/6/F3}
+	\includegraphics[width=0.6\linewidth]{Fig/06/F3}
 	\caption{Illustration of a balance attack.}
 	\label{fig:f1}
 \end{figure}
@@ -151,7 +151,7 @@ Now an adversary launching a private attack is successful if its rate of growth 
 \end{equation}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/6/F4}
+	\includegraphics[width=0.6\linewidth]{Fig/06/F4}
 	\caption{Minimum hash power needed by the adversary to succeed in its private attack. It turns
 		out that this is also the security threshold for the adversary to successfully launch any safety attack.}
 	\label{fig:f1}
@@ -163,13 +163,13 @@ However, despite this, it turns out that the private attack is still a worst-cas
 The reason why the private attack is still a worst-case attack in terms of the required honest hash power is due to the inherent properties of the Nakamoto consensus protocol. The protocol is designed such that an attacker needs to have a majority of the total hash power to overpower the honest nodes and control the longest chain. Therefore, the same condition derived for the success of the private attack also holds for any other attack, and the private attack remains a worst-case scenario for determining the minimum required honest hash power to ensure safety in the blockchain system.
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/6/F5}
+	\includegraphics[width=0.6\linewidth]{Fig/06/F5}
 	\caption{Attacks aimed to create a fork with length 2}
 	\label{fig:f1}
 \end{figure}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/6/F6}
+	\includegraphics[width=0.6\linewidth]{Fig/06/F6}
 	\caption{By blocktree partitioning, a general attack is represented as multiple adversarial chains simultaneously racing with a fictitious honest chain. Note that this fictitious chain is formed by only the honest blocks, and may not correspond to the longest chain in the actual system. However, the longest chain in the actual system must grow no slower than this fictitious chain.}
 	\label{fig:f1}
 \end{figure}
@@ -183,7 +183,7 @@ When Nakamoto blocks occur regularly, the blockchain's safety is effectively gua
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Fig/6/F7}
+	\includegraphics[width=0.6\linewidth]{Fig/06/F7}
 	\caption{Race between the adversarial trees and the fctitious honest chain. While there may be 	multiple adversarial trees simultaneously racing with the honest chain, the growth rate of each tree is bounded by the growth rate of the adversarial chain in the private attack. An honest block is a Nakamoto block when all the previous adversarial trees never catch up with the honest chain past that block. To simplify notations, $\lambda_{ag} = \beta\lambda$ and $\lambda h = (1 − \beta)\lambda$.}
 	\label{fig:f1}
 \end{figure}
