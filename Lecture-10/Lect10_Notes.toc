@@ -1,9 +1,0 @@
-\contentsline {chapter}{\numberline {1}Sharding: Scaling Storage, Computation and Communication}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Multiconsensus architecture}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Uniconsensus architecture}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4} Bootstrap and State-commitment}{6}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Accumulator for State-commitments}{7}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Generation and agreement on state commitments}{7}{subsection.1.4.2}%
-\contentsline {section}{\numberline {1.5}Cross-shard transactions}{9}{section.1.5}%
-\contentsfinish 
