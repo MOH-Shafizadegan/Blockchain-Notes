@@ -1,10 +1,10 @@
 \contentsline {chapter}{\numberline {1}Scaling Latency}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Bitcoin Latency}{2}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Prism: Fast Confrmation}{3}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Fast confrmation rule in Prism}{6}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Fast confrmation rule}{7}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Tentative Confrmation rule}{8}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Final confrmation rule}{8}{subsection.1.3.3}%
+\contentsline {section}{\numberline {1.2}Prism: Fast Confirmation}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Fast confirmation rule in Prism}{6}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Fast confirmation rule}{7}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Tentative Confirmation rule}{8}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Final confirmation rule}{8}{subsection.1.3.3}%
 \contentsline {section}{\numberline {1.4}Non-isolated Proposer Block}{8}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Honest transaction}{9}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Double-spent transaction}{9}{subsection.1.4.2}%

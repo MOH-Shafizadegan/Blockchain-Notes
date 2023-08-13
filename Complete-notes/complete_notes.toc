@@ -94,11 +94,11 @@
 \contentsline {section}{\numberline {8.4}Prism 1.0 }{74}{section.8.4}%
 \contentsline {chapter}{\numberline {9}Scaling Latency}{75}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Bitcoin Latency}{75}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Prism: Fast Confrmation}{76}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Fast confrmation rule in Prism}{79}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Fast confrmation rule}{80}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Tentative Confrmation rule}{81}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.3}Final confrmation rule}{81}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.2}Prism: Fast Confirmation}{76}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Fast confirmation rule in Prism}{79}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Fast confirmation rule}{80}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Tentative Confirmation rule}{81}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Final confirmation rule}{81}{subsection.9.3.3}%
 \contentsline {section}{\numberline {9.4}Non-isolated Proposer Block}{81}{section.9.4}%
 \contentsline {subsection}{\numberline {9.4.1}Honest transaction}{82}{subsection.9.4.1}%
 \contentsline {subsection}{\numberline {9.4.2}Double-spent transaction}{82}{subsection.9.4.2}%

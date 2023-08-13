@@ -7,7 +7,7 @@ For a committee with a random size, two conditions are essential:
 	\item \textbf{Ensuring liveness:} $X \textgreater \frac{2E[N]}{3}$, guaranteeing that honest players can drive progress within the protocol.
 	\item \textbf{Ensuring safety:}  $X + 2Y \textless \frac{4E[N]}{3}$, ensuring that the committee maintains a $\frac{2}{3}$ honest supermajority.
 \end{enumerate}
-Upon examining the probability distribution in this context (see figure 2), it becomes evident that the likelihood of a random committee successfully executing a secure BFT protocol approaches certainty as the committee size and the number of participants increase.\\
+Upon examining the probability distribution in this context (see figure \ref{fig:L16_f2}), it becomes evident that the likelihood of a random committee successfully executing a secure BFT protocol approaches certainty as the committee size and the number of participants increase.\\
 However, this form of random committee selection faces security challenges due to potential attacks from adaptive adversaries. These vulnerabilities arise from two scenarios: 
 \begin{itemize}
 	\item Preknowledge of committee selection, allowing an adaptive adversary to preemptively corrupt committee members.
@@ -18,7 +18,7 @@ To mitigate these issues, Algorand introduces innovative solutions:
 	\item A novel committee selection process that remains robust against adaptive adversaries, leveraging secret credentials.
 	\item A novel BFT consensus mechanism that maintains robustness even when individual nodes within the committee are compromised.
 \end{itemize}
-These strategies are elaborated in subsequent sections, addressing the implementation of secure committee selection and BFT consensus protocols, as depicted in figure 3b. Further insights into the execution of these solutions will be discussed in the upcoming sections.
+These strategies are elaborated in subsequent sections, addressing the implementation of secure committee selection and BFT consensus protocols, as depicted in figure \ref{fig:L16_f3}b. Further insights into the execution of these solutions will be discussed in the upcoming sections.
 \begin{center}
 	\begin{figure}
 		\centering
@@ -32,7 +32,7 @@ These strategies are elaborated in subsequent sections, addressing the implement
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/16/F2}
 		\caption{Probability of liveness and honest supermajority for a random committee size $N$. Total players $n = 1000000$ and honest fraction $0.7$. }
-		\label{fig:f1}
+		\label{fig:L16_f2}
 	\end{figure}
 \end{center}
 \begin{center}
@@ -40,7 +40,7 @@ These strategies are elaborated in subsequent sections, addressing the implement
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/16/F3}
 		\caption{Simple committee selection vs Algorand committee selection}
-		\label{fig:f1}
+		\label{fig:L16_f3}
 	\end{figure}
 \end{center}
 \section{Player Replaceability and Secret Committee Election}
@@ -75,7 +75,7 @@ The protocol operates within synchronized steps, where the delivery of messages 
 	\end{tabular}
 \end{table}
 \section{Consensus On a Binary Value}
-Algorand's binary Byzantine Fault Tolerant (BFT) consensus protocol operates in a perpetual loop, systematically cycling through three distinct steps. The protocol's structure is depicted in Figure 4, and it employs a counter variable denoted as "$s$" (initiated at $s = 1$) to signify the number of executed steps. Consequently, the first step corresponds to $s = 1, 4, ...$, the second step to $s = 2, 5, ...$, and the third step to $s = 3, 6, ...$.\\
+Algorand's binary Byzantine Fault Tolerant (BFT) consensus protocol operates in a perpetual loop, systematically cycling through three distinct steps. The protocol's structure is depicted in Figure \ref{fig:L16_f4}, and it employs a counter variable denoted as "$s$" (initiated at $s = 1$) to signify the number of executed steps. Consequently, the first step corresponds to $s = 1, 4, ...$, the second step to $s = 2, 5, ...$, and the third step to $s = 3, 6, ...$.\\
 The first and second steps of the protocol adhere to the previously discussed property (A). Additionally, they are designed to ensure that once consensus has been attained regarding a specific bit, an honest participant can discern this achievement, output the corresponding bit, and conclude their involvement. This property is formally articulated as property (C).\\
 (C) If an honest player "$i$" outputs a value during the first or second step, then the protocol guarantees that consensus will prevail by the end of that step. Moreover, the third step embodies both property (A) and (B), as previously detailed. By leveraging these properties, the protocol's nature as a Byzantine consensus protocol is established. Specifically, properties (A) and (C) work together to prevent honest players from outputting disparate values, while properties (A) and (B) ensure the eventual convergence and output of a unanimous value, thereby culminating in an agreement.
 \begin{center}
@@ -83,13 +83,13 @@ The first and second steps of the protocol adhere to the previously discussed pr
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/16/F4}
 		\caption{Algorand consensus on a binary value}
-		\label{fig:f1}
+		\label{fig:L16_f4}
 	\end{figure}
 \end{center}
 \section{Adding Player Replaceability And Secret Committee Election}
 Incorporating the committee into the protocol involves granting message propagation eligibility exclusively to committee members. However, it's important to note that the fundamental process of updating the local value "$b_{i}$" remains a shared responsibility among all players. The overall communication complexity is now quantified as $O(nN)$, attributable to each committee member transmitting messages to every player.\\
 The introduction of player replaceability and secret committee election hinges on the computation of credentials, as elucidated in the previous section. Upon calculating its credential for a specific round "$r$" and step "$s$" (denoted as $\alpha_{i}^{r, s}$), a player discerns its role within the committee and is equipped with the means to substantiate this role. This substantiation is achieved by appending the calculated credential to its messages during the respective step.\\
-In the protocol diagram depicted in Figure 4, a simple adaptation is necessary: the parameter "$2t + 1$" is replaced with "$\frac{2E[N]}{3}$." This change is necessitated by the fact that the random committee now boasts an anticipated size of $E[N]$ rather than the original fixed size of $n = 3t + 1$.
+In the protocol diagram depicted in Figure \ref{fig:L16_f4}, a simple adaptation is necessary: the parameter "$2t + 1$" is replaced with "$\frac{2E[N]}{3}$." This change is necessitated by the fact that the random committee now boasts an anticipated size of $E[N]$ rather than the original fixed size of $n = 3t + 1$.
 \section{Multivalue Consensus}
 Extending the Algorand consensus from binary values to multivalued scenarios involves the election of a leader for each round "r," responsible for constructing and distributing a valid block denoted as $B^{r}$. The process of electing the "potential leader" remains analogous to the committee election, albeit with a significantly smaller threshold. This adjustment leads to the selection of only a few dozen players as potential leaders.\\
 Once potential leaders are identified, they proceed to propagate their respective blocks. Each player evaluates potential leaders and selects the leader whose credential hash is the smallest. Subsequently, they cast their vote for the block hash twice, with the second vote being dispatched only if the first vote receives more than two-thirds of first-vote responses.\\

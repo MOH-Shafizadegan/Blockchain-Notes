@@ -1,4 +1,4 @@
-\contentsline {chapter}{\numberline {1}Layer 2 Scaling: Payment Channels}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Layer 2 Scaling: Side Blockchains}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Side Blockchains}{2}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Data Availability Attack}{3}{subsection.1.2.1}%

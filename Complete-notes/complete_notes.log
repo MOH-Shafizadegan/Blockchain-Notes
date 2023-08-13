@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  11 AUG 2023 10:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  12 AUG 2023 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1318,64 +1318,7 @@ Package: titletoc 2019/10/16 v2.13 TOC entries
 ))
 (./includes/macros.tex) (./includes/letterfonts.tex) (./complete_notes.aux
 
-LaTeX Warning: Label `fig:l3_f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
+LaTeX Warning: Label `fig:L9_f1' multiply defined.
 
 
 LaTeX Warning: Label `fig:f1' multiply defined.
@@ -1969,7 +1912,11 @@ File: Fig/05/F2.jpg Graphic file (type bmp)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47] [48]
+[47]
+
+LaTeX Warning: Reference `fig:L5_f3' on page 48 undefined on input line 262.
+
+[48]
 File: Fig/05/F3.jpg Graphic file (type bmp)
 <Fig/05/F3.jpg>
 
@@ -2018,14 +1965,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--48
  []
 
 Missing character: There is no ∈ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⪯ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ⌊ in font rm-lmr6!
 Missing character: There is no ⌊ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ⌊ in font rm-lmr6!
 [55]
 Missing character: There is no ≤ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ⌊ in font rm-lmr7!
-Missing character: There is no ⪯ in font rm-lmr10!
 Missing character: There is no ≡ in font rm-lmr10!
 Missing character: There is no ≡ in font rm-lmr10!
 Missing character: There is no ′ in font rm-lmr10!
@@ -2250,11 +2195,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--1
 
 [74]
 Chapter 9.
-Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no β in font [lmroman10-regular]:mapping=tex-text;!
 File: Fig/09/F1.jpg Graphic file (type bmp)
 <Fig/09/F1.jpg>
+
+LaTeX Warning: Reference `L9_f2' on page 75 undefined on input line 33.
+
 [75
 
 ]
@@ -2267,6 +2213,10 @@ File: Fig/09/F3.jpg Graphic file (type bmp)
 Missing character: There is no ≫ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
 Missing character: There is no ≤ in font rm-lmr10!
+
+
+LaTeX Warning: Reference `L9_f4' on page 78 undefined on input line 73.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 71--75
 
@@ -2291,11 +2241,12 @@ Missing character: There is no ≤ in font rm-lmr10!
 File: Fig/09/F4.jpg Graphic file (type bmp)
 <Fig/09/F4.jpg>
  [79]
+
+LaTeX Warning: Reference `L9_f5' on page 80 undefined on input line 108.
+
 File: Fig/09/F5.jpg Graphic file (type bmp)
 <Fig/09/F5.jpg>
- [80]
-Missing character: There is no β in font zplmi!
-
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
@@ -2307,15 +2258,24 @@ Missing character: There is no ≈ in font rm-lmr10!
 Missing character: There is no ∗ in font rm-lmr7!
 Missing character: There is no ∗ in font rm-lmr7!
 Missing character: There is no ≈ in font rm-lmr10!
+
+LaTeX Warning: Reference `L9_f5' on page 81 undefined on input line 141.
+
 [81]
 Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
 
+LaTeX Warning: Reference `L9_f5' on page 82 undefined on input line 152.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
+
+
+LaTeX Warning: Reference `L9_f6' on page 82 undefined on input line 165.
 
 [82]
 File: Fig/09/F6.jpg Graphic file (type bmp)
@@ -3259,10 +3219,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 45 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 38498 strings out of 479418
- 742258 string characters out of 5881945
- 1103038 words of memory out of 5000000
- 55211 multiletter control sequences out of 15000+600000
+ 38522 strings out of 479418
+ 742506 string characters out of 5881945
+ 1106598 words of memory out of 5000000
+ 55235 multiletter control sequences out of 15000+600000
  589525 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,16n,105p,1348b,1425s stack positions out of 5000i,500n,10000p,200000b,80000s

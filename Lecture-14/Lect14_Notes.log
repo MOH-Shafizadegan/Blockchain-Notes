@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  4 AUG 2023 19:52
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  13 AUG 2023 10:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1316,29 +1316,14 @@ File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 Package: titletoc 2019/10/16 v2.13 TOC entries
 \ttl@leftsep=\dimen329
 ))
-(./includes/macros.tex) (./includes/letterfonts.tex) (./Lect14_Notes.aux
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-
-LaTeX Warning: Label `fig:f1' multiply defined.
-
-)
+(./includes/macros.tex) (./includes/letterfonts.tex) (./Lect14_Notes.aux)
 \openout1 = `Lect14_Notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 14.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
  14.
- (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+
+(e:/Program Files/texlive/2020/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
 LaTeX Font Info:    ... okay on input line 14.
@@ -1523,7 +1508,7 @@ File: Fig/F4.png Graphic file (type bmp)
 File: Fig/F5.png Graphic file (type bmp)
 <Fig/F5.png>
  [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 131--134
+Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
@@ -1533,45 +1518,42 @@ Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 File: Fig/F6.png Graphic file (type bmp)
 <Fig/F6.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
  []
 
 [8]
-Overfull \hbox (0.25659pt too wide) in paragraph at lines 175--176
+Overfull \hbox (0.25659pt too wide) in paragraph at lines 176--177
 []\TU/lmr/bx/n/10 Cost-Efficient Off-Chain Storage: \TU/lmr/m/n/10 zkPorter ben
 efits from cheaper off-chain storage compared to zkSync’s
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--184
+Underfull \hbox (badness 10000) in paragraph at lines 181--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--194
+Underfull \hbox (badness 10000) in paragraph at lines 192--195
 
  []
 
 [9] [10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (./Lect14_Notes.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 243.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 246.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 36132 strings out of 479418
- 709238 string characters out of 5881945
- 1081036 words of memory out of 5000000
- 52955 multiletter control sequences out of 15000+600000
+ 36140 strings out of 479418
+ 709308 string characters out of 5881945
+ 1082935 words of memory out of 5000000
+ 52963 multiletter control sequences out of 15000+600000
  570589 words of font info for 100 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,11n,105p,952b,582s stack positions out of 5000i,500n,10000p,200000b,80000s

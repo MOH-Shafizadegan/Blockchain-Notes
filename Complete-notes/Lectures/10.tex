@@ -16,7 +16,7 @@ To enable random reallocation, a node-to-shard allocation engine (N2S) is introd
 While this solution achieves horizontal scaling, it comes with some limitations:
 \begin{enumerate}
 	\item The N2S allocation requires each node to have an identity, making this sharding procedure not permissionless, which is different from Bitcoin's design.
-	\item To maintain the fraction of honest hashing power in each shard and ensure global majority of honest hash power translates to majority honest hash power in each shard, the number of nodes per shard needs to be substantial, limiting the number of shards (K) as a function of the number of nodes (N), see Figure 1.
+	\item To maintain the fraction of honest hashing power in each shard and ensure global majority of honest hash power translates to majority honest hash power in each shard, the number of nodes per shard needs to be substantial, limiting the number of shards (K) as a function of the number of nodes (N), see Figure \ref{fig:L10_f1}.
 	\item The architecture is not secure against an adaptive adversary, as the adversary can corrupt miners after they have been allocated to a shard, leading to collusion within a shard. To address this, regular reallocations of N2S allocations can be conducted to prevent coordination and collusion by the adversary. However, faster rotations of allocations may introduce more overhead in the N2S procedure, which diminishes the horizontal scaling effect.
 \end{enumerate}
 These limitations are addressed in a full sharding solution, which is described next.
@@ -24,8 +24,8 @@ These limitations are addressed in a full sharding solution, which is described 
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/10/F1}
-		\caption{Probability that every shard is secure (i.e., honest supermajority in each of the $K = 10$ shards) as a function of the number of users N under diﬀerent adversarial models ($10\%$, $20\%$, $25\%$ and $30\%$ net adversarial fraction)}
-		\label{fig:f1}
+		\caption{Probability that every shard is secure (i.e., honest supermajority in each of the $K = 10$ shards) as a function of the number of users N under different adversarial models ($10\%$, $20\%$, $25\%$ and $30\%$ net adversarial fraction)}
+		\label{fig:L10_f1}
 	\end{figure}
 \end{center}
 \section{Uniconsensus architecture}
@@ -36,7 +36,7 @@ In other words, nodes work together to mine a superblock, which contains multipl
 In the uniconsensus architecture, the data structure consists of two main types of block structures: a proposer blocktree and K shard ledgers.\\
 \begin{itemize}
 	\item \textbf{Proposer Blocktree:} The proposer blocktree is responsible for the single main consensus engine in the uniconsensus architecture. It is organized using a Proof-of-Work (PoW) based Nakamoto longest chain consensus protocol. Proposer blocks are the building blocks of this tree and contain the necessary information for the main consensus. Each proposer block also includes hash-pointers to shard blocks.
-	\item \textbf{Shard Ledgers:} There are K shard ledgers, where K represents the number of shards. Each shard ledger consists of shard blocks. Shard blocks are specific to individual shards and are identified by their ShardID. These shard blocks contain shard transactions, similar to transaction blocks in the Prism protocol (as discussed in Lectures 8 and 9). Unlike the proposer blocktree, shard blocks do not contain any blocktree pointers, see Figure 2.
+	\item \textbf{Shard Ledgers:} There are K shard ledgers, where K represents the number of shards. Each shard ledger consists of shard blocks. Shard blocks are specific to individual shards and are identified by their ShardID. These shard blocks contain shard transactions, similar to transaction blocks in the Prism protocol (as discussed in Lectures 8 and 9). Unlike the proposer blocktree, shard blocks do not contain any blocktree pointers, see Figure \ref{L10_f2}.
 \end{itemize}
 The absence of blocktree pointers in shard blocks is deliberate and serves a specific purpose. The ordering of shard blocks is solely inferred from their order in the main consensus engine, which is the longest chain of the proposer blocktree. This is similar to the way the Prism protocol determines the ordering of transaction blocks without relying on blocktree pointers. In the uniconsensus architecture, the main consensus engine's longest chain of proposer blocks is used to order shard blocks within each shard.\\
 The primary responsibility of shard block mining in this architecture is to ensure adversary resistance, ensuring that the blocks remain secure against attacks. However, shard block mining does not play a role in determining the ordering of shard blocks. Instead, their ordering is entirely derived from their corresponding hash pointers in the proposer chain.
@@ -45,7 +45,7 @@ The primary responsibility of shard block mining in this architecture is to ensu
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/10/F2}
 		\caption{Data structures in the Uniconsensus architecture.}
-		\label{fig:f1}
+		\label{fig:L10_f2}
 	\end{figure}
 \end{center}
 In this architecture, security is ensured by requiring every miner to mine both proposer blocks and shard blocks simultaneously. This is achieved through a process called "many-for-one mining" and cryptographic sortition.
@@ -53,14 +53,14 @@ In this architecture, security is ensured by requiring every miner to mine both 
 \textbf{Cryptographic Sortition: }The cryptographic sortition algorithm ensures that the hash of the superblock falls within specific ranges, allowing it to be classified as either a proposer block or a shard block. Specifically, if the hash of the superblock falls between 0 and $\tau_{1}$ ($\tau_{1}$ represents the proposer block mining difficulty), then the superblock is treated as a proposer block. On the other hand, if the hash falls between $\tau_{1}$ and $\tau_{2}$ (where $\tau_2$ is a shard-specific variable), the superblock is treated as a shard block for the identified shard.\\
 The combination of many-for-one mining and cryptographic sortition prevents adversaries from selectively focusing their mining resources solely on mining either proposer blocks or shard blocks. This ensures a fair distribution of mining efforts and contributes to the security of the system.\\
 Moreover, during the mining process, the shard ID of the potential shard block is fixed, which means that a single mining attempt can only create a shard block for one specific shard (chosen by the miner). This helps maintain the integrity and separation of different shards in the system, This 2-for-one PoW sortition
-is shown in Figure 3.\\
+is shown in Figure \ref{L10_f3}.\\
 To maintain a consistent shard block generation rate for each shard, the shard block mining difficulty is periodically adjusted for each shard. This adjustment ensures that each shard generates blocks at a constant and controlled rate.
 \begin{center}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/10/F3}
 		\caption{Uniconsensus architecture: 2-for-one PoW sortition.}
-		\label{fig:f1}
+		\label{fig:L10_f3}
 	\end{figure}
 \end{center}
 Indeed, the uniconsensus architecture offers significant improvements in resource usage and scalability compared to traditional full replication blockchains. By allowing each node to maintain only the proposer blocktree and a shard ledger of its choice, the system achieves better efficiency. Nodes are no longer burdened with maintaining the ledgers of all $K$ shards, but only a fraction $\frac{1}{K}$, which reduces storage, computation, and communication requirements.\\
@@ -69,7 +69,7 @@ The elimination of the need for a consensus majority in each shard significantly
 The uniconsensus architecture addresses several limitations of the multiconsensus approach and offers several key advantages:
 \begin{enumerate}
 	\item \textbf{Identity-free sharding:} Unlike the multiconsensus architecture, the uniconsensus architecture does not require an N2S allocation for nodes. Nodes are free to join any shard of their choice without the need for an on-chain validator/miner identity. This reduces complexity and allows for greater flexibility in node participation.
-	\item \textbf{Small number of nodes per shard:} Since the uniconsensus architecture does not rely on an honest majority within each shard, the constraint on the number of nodes per shard, as depicted in Figure 1, no longer applies. This allows for a more scalable and efficient allocation of nodes across shards.
+	\item \textbf{Small number of nodes per shard:} Since the uniconsensus architecture does not rely on an honest majority within each shard, the constraint on the number of nodes per shard, as depicted in Figure \ref{L10_f1}, no longer applies. This allows for a more scalable and efficient allocation of nodes across shards.
 	\item \textbf{Adaptive adversary resistance:} The uniconsensus architecture is resilient to safety violations by corrupting a shard. Since the presence of an honest majority within a shard is no longer a requirement for security, destroying an honest majority in a shard is not a viable attack strategy. Additionally, the lack of an on-chain mapping of miner identity to shard ID weakens the targeting capabilities of adaptive adversaries.
 \end{enumerate}
 However, the self-allocation of nodes in the uniconsensus architecture can lead to potential liveness attacks. An adversary could concentrate its mining power on a single shard, overwhelming honest shard blocks and reducing the fraction of honest blocks in the shard. This could throttle the throughput of honest transactions in the targeted shard, causing a loss in liveness.\\
@@ -83,14 +83,14 @@ The process of generating and maintaining these state-commitments is crucial for
 To design an accumulator for the (account, value) tuples in the ledger's state, a sparse Merkle tree is used. In a sparse Merkle tree, there exists a leaf in the tree for every possible output from a cryptographic hash function, representing every possible account number in the ledger. However, most of the leaves are empty, making the tree sparse. This allows for efficient simulations because only the non-empty leaves need to be stored and updated.\\
 Unlike a regular Merkle tree, an ordered Merkle tree is not used for state-commitments because it is costly to add or remove accounts from the middle of the tree, especially when the tree is large.\\
 In the sparse Merkle tree, the value of a leaf is the balance of the corresponding account if it exists or null if the account does not exist. This way, the tree can efficiently represent the dynamic nature of the ledger's state with insertions and deletions of accounts.\\
-To further optimize the sparse Merkle tree, a compressed form called Merkle Patricia Trie (MPT) is often used. MPT has similar insertion and deletion complexity ($O(1)$) as a sparse Merkle tree but is more space-efficient, A sparse merkle tree with only two accounts is illustrated in Figure 4.\\
+To further optimize the sparse Merkle tree, a compressed form called Merkle Patricia Trie (MPT) is often used. MPT has similar insertion and deletion complexity ($O(1)$) as a sparse Merkle tree but is more space-efficient, A sparse merkle tree with only two accounts is illustrated in Figure \ref{L10_f4}.\\
 A state commitment consists of the root of the Merkle Patricia Trie representing a shard's execution state. This root is generated at regular intervals known as epochs and is posted on either the beacon chain (for multiconsensus architecture) or the main consensus engine (for uniconsensus architecture). By having all nodes agree on the state commitment's root, the validity and consistency of the ledger's state can be ensured across the network, enabling secure and efficient bootstrapping for nodes relocating to new shards.
 \begin{center}
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/10/F4}
 		\caption{State-commitment using a sparse Merkle tree.}
-		\label{fig:f1}
+		\label{fig:L10_f4}
 	\end{figure}
 \end{center}
 \subsection{Generation and agreement on state commitments}
@@ -104,14 +104,14 @@ Ensuring that state commitments are generated and agreed upon in a Byzantine fau
 	To address these challenges, the uniconsensus architecture incorporates two novel ideas: interactivity among the nodes generating state-commitments and relying on honest nodes to detect fraud in the broadcasts, rather than proving the veracity of each broadcast.\\
 	The state-commitments are generated by specific parties within a shard, known as commitment leaders. The broadcasts of these state-commitments are scrutinized for fraud by the honest nodes in the shard. If any fraud is detected, an honest node, referred to as the challenger, posts a proof of fraud on the main consensus engine, the proposer chain. If no fraud proof is posted within a specific time-frame, the state-commitment is assumed to be honest.\\
 	To keep the proposer chain lightweight, the fraud proof must also be lightweight. Since consecutive state-commitments summarize thousands of transactions, it is not desirable for the consensus engine to process all those transactions to verify a fraud-proof. Instead, the goal is to pinpoint the fraud proof of incorrect computation to just one transaction or bytecode. This is achieved through a logarithmic search across all transactions.\\
-	The process is illustrated in Figure 5a, where the fraud-proof is generated by a challenger and posted on the proposer chain to challenge the correctness of a state-commitment.\\
+	The process is illustrated in Figure \ref{L10_f5}a, where the fraud-proof is generated by a challenger and posted on the proposer chain to challenge the correctness of a state-commitment.\\
 	By employing interactivity and relying on honest nodes to detect fraud, the uniconsensus architecture establishes a fraud-proof based approach for state-commitments. Assuming correct if not proven wrong within a time-frame allows for an efficient and secure generation of state-commitments, even in the absence of node identity and an honest majority within each shard.
 	\begin{center}
 		\begin{figure}
 			\centering
 			\includegraphics[width=0.8\linewidth]{Fig/10/F5}
 			\caption{State-commitment in uniconsensus architecture.}
-			\label{fig:f1}
+			\label{fig:L10_f5}
 		\end{figure}
 	\end{center}
 	The logarithmic fraud search mechanism involves two parties, a commitment-leader, and a challenger, both belonging to the same shard. When the commitment-leader, who is adversarial, posts an invalid state-commitment on the consensus engine, the challenger detects the fraud and initiates the fraud search protocol. The following sequence of interactions summarizes the protocol once fraud is detected and challenged:\\
@@ -122,7 +122,7 @@ Ensuring that state commitments are generated and agreed upon in a Byzantine fau
 		\item The interactions proceed in a recursive manner until the conflict is resolved down to a single transaction. At this point, the search for the single transaction is complete.
 		\item The identified transaction is posted on the consensus engine to decide if fraud has occurred or not. If the transaction is indeed invalid, it is removed from the ledger, and consensus is regained.
 	\end{enumerate}
-	The process is illustrated in Figure 5b, where the fraudulent state-commitment is challenged, and the protocol recursively searches for the specific transaction that caused the fraud.\\
+	The process is illustrated in Figure \ref{L10_f5}b, where the fraudulent state-commitment is challenged, and the protocol recursively searches for the specific transaction that caused the fraud.\\
 	Once fraud has been detected and the incriminating transaction is found, it is excised from the ledger, and consensus is restored. In some designs, the commitment-leader may also be penalized for this fraudulent behavior. For example, in a Proof of Work (PoW) setting, the penalty can be imposed outside the blockchain. In the context of Proof of Stake (PoS) mechanisms, the penalization can be handled within the blockchain, such as slashing a collateral transaction required to be posted by the commitment-leaders.\\
 	The fraud-proof mechanism, along with the ability to penalize adversarial behavior, incentivizes commitment-leaders to follow the protocol honestly, as they risk losing rewards or collateral if they engage in fraudulent activities. This approach ensures the integrity and security of state-commitments in the uniconsensus architecture.
 \end{enumerate} 
@@ -144,7 +144,7 @@ By using a two-stage commit protocol, atomicity can be ensured in cross-shard tr
 		\centering
 		\includegraphics[width=0.8\linewidth]{Fig/10/F6}
 		\caption{Cross-shard two-phase commitment.}
-		\label{fig:f1}
+		\label{fig:L10_f6}
 	\end{figure}
 \end{center}
 The generalized two-phase commitment protocol presented above ensures atomicity in cross-shard transactions by allowing a rollback of the transaction if any of the input shards fail to lock the required funds. The protocol works as follows:\\
