@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  13 AUG 2023 09:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2022.9.17)  13 AUG 2023 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1298,17 +1298,14 @@ File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 Package: titletoc 2019/10/16 v2.13 TOC entries
 \ttl@leftsep=\dimen322
 ))
-(./includes/macros.tex) (./includes/letterfonts.tex) (./Lect22_Notes.aux
-
-LaTeX Warning: Label `fig:f9' multiply defined.
-
-)
+(./includes/macros.tex) (./includes/letterfonts.tex) (./Lect22_Notes.aux)
 \openout1 = `Lect22_Notes.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 13.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
  13.
- (e:/Program Files/texlive/2020/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+
+(e:/Program Files/texlive/2020/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
 LaTeX Font Info:    ... okay on input line 13.
@@ -1517,11 +1514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--211
 [10]
 File: Fig/F9.png Graphic file (type bmp)
 <Fig/F9.png>
-
-
-LaTeX Warning: Reference `fig:f10' on page 11 undefined on input line 223.
-
-[11]
+ [11]
 File: Fig/F10.png Graphic file (type bmp)
 <Fig/F10.png>
  [12] [13]
@@ -1534,17 +1527,11 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 238.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
  35093 strings out of 479418
  689732 string characters out of 5881945
- 1066530 words of memory out of 5000000
+ 1066737 words of memory out of 5000000
  51922 multiletter control sequences out of 15000+600000
  551707 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
