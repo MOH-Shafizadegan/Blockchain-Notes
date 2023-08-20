@@ -6,15 +6,15 @@ Notes of Principles of Blockchain course taught by Pramod Viswanath from Princet
 - Mohammad Mowlavi
 
 ## Contents
-- Chapter  1 : Introduction
-- Chapter  2 : Blockchains as Cryptographic Data Structures
-- Chapter  3 : Proof of Work and Nakamoto Consensus
-- Chapter  4 : Peer to Peer Network
-- Chapter  5 : Bitcoin System
-- Chapter  6 : Safety of Bitcoin 
-- Chapter  7 : Liveness of Bitcoin
-- Chapter  8 : Scaling Throughput in Bitcoin
-- Chapter  9 : Scaling Latency 
+- Chapter 01 : Introduction
+- Chapter 02 : Blockchains as Cryptographic Data Structures
+- Chapter 03 : Proof of Work and Nakamoto Consensus
+- Chapter 04 : Peer to Peer Network
+- Chapter 05 : Bitcoin System
+- Chapter 06 : Safety of Bitcoin 
+- Chapter 07 : Liveness of Bitcoin
+- Chapter 08 : Scaling Throughput in Bitcoin
+- Chapter 09 : Scaling Latency 
 - Chapter 10 : Sharding: Scaling Storage, Computation and Communication
 - Chapter 11 : Proof of Stake
 - Chapter 12 : Side Blockchains
