@@ -141,7 +141,6 @@ Cryptocurrency wallets play a crucial role in simplifying the process of managin
 	\item \textbf{Trust in Wallet Software:}
 	\begin{itemize}
 		\item Using a cryptocurrency wallet requires placing trust in the software's functionality and security.
-		\item Using a cryptocurrency wallet requires placing trust in the software's functionality and security.
 	\end{itemize}
 \end{enumerate}
 \subsection{Transaction fees}
@@ -187,7 +186,7 @@ Coinbase transactions are a crucial mechanism for introducing new Bitcoins into 
 	\item \textbf{Block Reward Halving:}
 	\begin{itemize}
 		\item Initially, when Bitcoin was launched, the block reward for miners was 50 BTC per block.
-		\item Approximately every 210,000 blocks (about four years), the block reward is halved through an event known as "halving."
+		\item Approximately every 210,000 blocks (about four years), the block reward is halved through an event known as "halving".
 		\item This means that after each halving, miners receive half the number of Bitcoins as the previous reward.
 	\end{itemize}
 	\item \textbf{Current Block Reward:}
@@ -220,7 +219,6 @@ Coinbase transactions are a crucial mechanism for introducing new Bitcoins into 
 	\caption{Bitcoin rewards in dollars. Figure sourced from  \href{https://www.cmcmarkets.com/en/learn-cryptocurrencies/bitcoin-halving}{here}}
 	\label{fig:L5_f2}
 \end{figure}
-
 The combination of coinbase transactions and transaction fees ensures the proper functioning and security of the Bitcoin network. Miners are motivated to continue mining, securing the network, and processing transactions as they receive both block rewards and transaction fees as incentives for their efforts. The gradual reduction in block rewards through halvings also creates a deflationary monetary policy, which further contributes to Bitcoin's scarcity and potential value appreciation over time (Figure \ref{fig:L5_f1}, \ref{fig:L5_f2}).
 
 \subsection{Transaction mempool}
@@ -230,7 +228,7 @@ The transaction mempool plays a crucial role in the process of how Bitcoin trans
 	\begin{itemize}
 		\item When a user wants to make a Bitcoin transaction, they create a transaction message, sign it using their private key, and broadcast it across the Bitcoin network.
 		\item The transaction message is a few kilobytes in size and contains information about the transaction inputs, outputs, and the corresponding digital signatures.
-		\item Miners in the network receive these transactions and verify the signatures before adding them to their memory pool, known as the "mempool."
+		\item Miners in the network receive these transactions and verify the signatures before adding them to their memory pool, known as the "mempool".
 	\end{itemize}
 	\item \textbf{The Mempool:}
 	\begin{itemize}
@@ -251,12 +249,12 @@ The transaction mempool plays a crucial role in the process of how Bitcoin trans
 	\item \textbf{Confirmation Latency:}
 	\begin{itemize}
 		\item There is a certain latency between the time a transaction is issued and when it is confirmed on the blockchain. This latency is influenced by two factors: (a) the time it takes for a transaction to be included in a block (can be reduced by offering a higher transaction fee), and (b) the time it takes for that block to be buried deep enough in the longest chain for the transaction to be considered confirmed.
-		\item Users may choose to trade off latency for security, deciding whether to use higher transaction fees for faster confirmation or lower fees for potentially longer confirmation times.
+		\item Users may choose to trade-off latency for security, deciding whether to use higher transaction fees for faster confirmation or lower fees for potentially longer confirmation times.
 	\end{itemize}
 	\item \textbf{Blockchain Design Trade-offs:}
 	\begin{itemize}
 		\item The trade-off between latency and security is specific to the Bitcoin blockchain design.
-		\item Other blockchain designs may have different approaches and trade-offs, which will be explored in future lectures.
+		\item Other blockchain designs may have different approaches and trade-offs, which will be explored in future chapters.
 	\end{itemize}
 \end{enumerate}
 The mempool and the prioritization of transactions based on fees are essential components that allow the Bitcoin network to efficiently process and confirm transactions while incentivizing miners to maintain the security of the blockchain through the proof-of-work process (Figure \ref{fig:L5_f3}).
@@ -350,7 +348,7 @@ Light nodes and stateless clients are important concepts in blockchain networks,
 		\item Stateless clients are an extension of light nodes that aim to validate transactions and blocks without maintaining the full state of the blockchain at all times.
 		\item Instead of storing the entire state, stateless clients download only the necessary state information on-demand to validate a specific block or transaction.
 		\item Once the validation is complete, the stateless client can delete the downloaded state information to save storage space.
-		\item To securely handle the state information, it is stored in the form of an accumulator, a data structure that we discussed in Lecture 2 of the blockchain course.
+		\item To securely handle the state information, it is stored in the form of an accumulator, a data structure that we discussed in Chapter 2 of the blockchain course.
 	\end{itemize}
 	\item \textbf{Advantages of Stateless Clients:}
 	\begin{itemize}
@@ -367,14 +365,12 @@ Light nodes and stateless clients are important concepts in blockchain networks,
 In conclusion, light nodes and stateless clients are innovative approaches to make blockchain networks more scalable and inclusive. By allowing participants to interact with the network without storing the full state, these concepts address the challenges of resource-intensive storage and computation in traditional blockchain architectures.
 
 \section{Smart contracts}
-In the context of blockchain technology, smart contracts are self-executing contracts with the terms and conditions written directly into code. They are programmed to automatically execute and enforce the terms of the contract without the need for a trusted third party. Smart contracts run on blockchain networks, and their execution is validated and recorded on the blockchain, making them transparent and immutable.\\
-In traditional settings, when two parties want to exchange money subject to certain conditions, they would create a written contract and rely on a trusted intermediary or authority to enforce the contract's terms. With smart contracts on a blockchain, this intermediary is eliminated, and the trust is decentralized across the network.\\
+In the context of blockchain technology, smart contracts are self-executing contracts with the terms and conditions written directly into code. They are programmed to automatically execute and enforce the terms of the contract without the need for a trusted third party. Smart contracts run on blockchain networks, and their execution is validated and recorded on the blockchain, making them transparent and immutable.\\\\
+In traditional settings, when two parties want to exchange money subject to certain conditions, they would create a written contract and rely on a trusted intermediary or authority to enforce the contract's terms. With smart contracts on a blockchain, this intermediary is eliminated, and the trust is decentralized across the network.\\\\
 In summary, smart contracts are a powerful innovation that leverages blockchain technology to enable secure, automated, and transparent execution of agreements without the need for intermediaries. While Bitcoin's smart contract capabilities are limited, other blockchain platforms like Ethereum have expanded the possibilities of smart contracts to revolutionize various industries and applications.
 \subsection{Scripts in Bitcoin}
-In the context of Bitcoin, smart contracts are referred to as "scripts." A script is a sequence of opcodes included in every transaction output, specifying the conditions that must be satisfied to spend the coins from that output. By using different combinations of opcodes, Bitcoin scripts can enforce various conditions beyond the default ones, providing a level of programmability.
-
-The default condition in a regular transaction output requires the spender to provide a public key that matches the address mentioned in the output and sign the transaction with the corresponding private key. This ensures that only the rightful owner of the coins can spend them.
-
+In the context of Bitcoin, smart contracts are referred to as "scripts." A script is a sequence of opcodes included in every transaction output, specifying the conditions that must be satisfied to spend the coins from that output. By using different combinations of opcodes, Bitcoin scripts can enforce various conditions beyond the default ones, providing a level of programmability.\\\\
+The default condition in a regular transaction output requires the spender to provide a public key that matches the address mentioned in the output and sign the transaction with the corresponding private key. This ensures that only the rightful owner of the coins can spend them.\\\\
 However, Bitcoin scripts allow for additional conditions to be specified. Some examples include:
 \begin{enumerate}
 	\item \textbf{Timelocks:} A transaction can be configured to be unspendable until a certain block height or a specific time is reached. This can be useful for time-sensitive transactions or implementing time-based conditions.
