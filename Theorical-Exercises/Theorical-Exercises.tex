@@ -1,0 +1,212 @@
+\documentclass{report}
+\usepackage{graphicx}
+
+\input{./includes/preamble}
+\input{./includes/macros}
+\input{./includes/letterfonts}
+
+\title{\Huge{Principles of Blockchains \\ Princeton University,\\
+		Professor: Pramod Viswanath}}
+	
+\author{\huge{Lecture 22} \\\\ Theorical Questions}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Theorical Questions}
+\section{Questions}
+\begin{enumerate}
+	\item The birthday paradox says that, counter-intuitively, the probability of a shared birthday exceeds 95\% in a group of only 47 people. The birthday attack is a cryptographic attack that relies upon the birthday paradox to find collisions in the hash function. Now we are trying to find collisions in SHA-256. Please answer the following questions.
+	\begin{itemize}
+		\item How many hashes do you need to calculate so as to guarantee a collision?
+		\item How many hashes do you need to calculate so that you can find a collision with probability 95\%?
+	\end{itemize}
+	\item We create a new hash function called MySHA, which is just defned as SHA256 truncated to the frst 4 bytes (the frst 8 hex digits). Please fnd a hash collision in a MySHA. You should be able to produce a collision in no more than a few seconds.
+	\item Given a Merkel tree with 128 leaf nodes, how many nodes are there in the Merkel tree? What is the depth of the tree? What is the proof size? How about a Merkel tree with 200 leaf nodes?
+	\item When should a transaction be considered irreversibly confirmed in Bitcoin?
+	\begin{itemize}
+		\item When all miners have received the transaction.
+		\item When it appears in a mined block.
+		\item When it appears in a mined block on the longest chain.
+		\item When it appears in a mined block, which has k blocks after it in the longest chain (for some value of k)?
+	\end{itemize}
+	\item Stochastic modeling of Bitcoin mining.
+	\begin{itemize}
+		\item A very reasonable model for proof-of-work mining is the Poisson point process (cf., Chapter 3). Within this model, what is the distribution of the mining time between two consecutive blocks in Bitcoin? Write down the corresponding cumulative distribution function (CDF). 
+		\item Using the data from this \href{https://www.blockchain.com/explorer/blocks/btc?page=1}{website}, plot the empirical CDF of the inter-block mining time in the past two weeks and compare it with your model in first part.
+	\end{itemize}
+	\item In this question, we correct Nakamoto’s table in the \textbf{Bitcoin whitepaper } (page 8). Considering the private attack discussed in this lecture, the goal of the adversary is to deconfirm a $k$-deep block. We assume the adversarial and honest mining processes are Poisson point processes with rates $\beta\lambda$ and $(1 - \beta)\lambda$, respectively.
+	\begin{itemize}
+		\item Simulate the private attack with your own choice of $k$, $\beta$ and $\lambda$ using Monte Carlo method. Does the success probability change with $\lambda$? why? 
+		\item Simulate the private attack with the parameters in Nakamoto’s table using Monte Carlo method. Do your simulation results match with values in Nakamoto’s table?
+		\item Nakamoto assumes that when the honest chain has length $k$, the length of the private chain will follow a Poisson distribution with expected value $\frac{k\beta}{1 - \beta}$. Is this correct? verify your answer with Monte Carlo simulations.
+		\item Derive a closed-form expression for the success probability by correcting the distribution in third part, and compare it with your simulation results in first part.
+	\end{itemize}
+	\item Difficulty-target conversion in Bitcoin. As of Dec. 28 2021, the \href{https://www.blockchain.com/explorer/blocks/btc/0000000000000000000020af543d6dff0f2d5cee1834c0b4e939abbc577f0fef}{mining difficulty} of Bitcoin is $24,272,331,996,979.97$. In other words, only one in about this number of nonces that you try will work. How many leading zeros are there in the mining target (in hexadecimal)? Verify your answer by comparing it with the block hashes of that day.
+	\item In this lecture, we have seen that there are three core ideas to the Bitcoin difculty adjustment algorithm. In this question, we consider some other difficulty adjustment algorithms in Bitcoin and possible security vulnerabilities.
+	\begin{itemize}
+		\item Consider a simple algorithm using only the heaviest chain rule, i.e., simply let the miners choose their own difficulty. Can you find attacks on this algorithm?
+		\item Consider an algorithm using the heaviest chain rule where difficulty is adjusted every 2016 blocks, but without any bound. Can you find attacks on this algorithm?
+		\item Consider the full algorithm used in Bitcoin. Argue why your attacks in first and second part do not work.
+	\end{itemize}
+	\item If it takes longer for blocks to be disseminated across the P2P network of Bitcoin, which of the following are true?
+	\begin{itemize}
+		\item Forks become more likely.
+		\item Forks become less likely.
+		\item The chance of forks remains the same.
+	\end{itemize}
+	\item As the number of nodes in the P2P network of Bitcoin, $N$, grows, how does the time for a block to be disseminated to the network grow?
+	\begin{itemize}
+		\item $O(1)$
+		\item $O(\log^{N})$
+		\item $O(\sqrt{N})$
+		\item $O(N)$
+		\item $O(N^{2})$
+	\end{itemize}
+	\item As the number of nodes in the P2P network of Bitcoin, $N$, grows, how does the total number of messages sent for a block to be disseminated to the network grow?
+	\begin{itemize}
+		\item $O(1)$
+		\item $O(\log^{N})$
+		\item $O(\sqrt{N})$
+		\item $O(N)$
+		\item $O(N^{2})$
+	\end{itemize}
+	\item How to hash nonces: Assuming at each round of the mining process a random binary string x with the same length is given, and the goal is to find a binary nonce string $y$ with the same length such that hash of a certain combination $\circ$ of $x$ and $y$ is smaller than a threshold $\tau$, i.e., $H(x \circ y) \leq \tau$. For the following types of combinations, can you design attacks that do better than randomly guessing the nonce?
+	\begin{itemize}
+		\item Bit-wise xor.
+		\item Bit-wise and.
+		\item Bit-wise or.
+	\end{itemize} 
+	\item Fork and computation power: Assuming a static miner network where the computation power of each miner is fixed, a fork happens when two miners mine new blocks within a small interval $T\Delta$. Comparing miners with more computation power to miners with less computation power, are the probabilities of mining a fork different?
+	\item Let $\Delta$ be the maximum network delay in the Bitcoin network and $\tau$ be the expected time before a new block is mined. What should be true to guarantee safety?
+	\begin{itemize}
+		\item $\Delta$ $\ll$ $\tau$
+		\item  $\Delta < \tau$
+		\item $\Delta \approx \tau$
+		\item $\Delta > \tau$
+		\item $\Delta \gg \tau$ 
+	\end{itemize}
+	\item 
+\end{enumerate}
+
+\section{Answers}
+
+\begin{enumerate}
+	\item \begin{itemize}
+		\item To guarantee a collision in SHA-256 hashes, you need to calculate $2^{128}$ hashes.\\
+		SHA-256 outputs a 256-bit hash. For there to be a collision (two inputs hashing to the same output), the hash space needs to be fully explored. SHA-256's hash space is $2^{256}$ possibilities. So to guarantee a collision, we need to generate $2^{128}$ unique hashes.
+		\item To have a 95\% probability of finding a collision in SHA256 hashes, you need to calculate approximately $2^{64}$ hashes.\\
+		This relies on the birthday paradox. The birthday paradox says that the probability of a collision in a set of randomly generated values exceeds 50\% when the number of values exceeds the square root of the size of the problem space.\\
+		For SHA-256, the problem space is $2^{256}$. Taking the square root of $2^{256}$ is approximately $2^{128}$. With $2^{64}$ hashes, we exceed the square root threshold and obtain around a 95\% probability of a collision occurring.
+	\end{itemize} 
+	\item Answer is written in Q2.py.
+	\item \begin{itemize}
+		\item For a Merkel tree with 128 leaf nodes:
+		\begin{itemize}
+			\item Number of nodes in the tree: $2 * 128 - 1 = 255$
+			\item Depth of the tree: $\log_{2}^{128} = 7$
+			\item Proof size: 7 (the number of hashes needed to validate a leaf)
+		\end{itemize}
+		\item For a Merkel tree with 200 leaf nodes:
+		\begin{itemize}
+			\item Number of nodes in the tree: $2 * 200 - 1 = 399$
+			\item Depth of the tree: $log_{2}^{200} = 8$
+			\item Proof size: 8 (the number of hashes needed to validate a leaf)
+		\end{itemize}
+	\end{itemize}
+	Some explanations:\\
+	A Merkel tree with N leaf nodes will have $2N - 1$ total nodes. This is because each non-leaf node has two child nodes, resulting in a complete binary tree.\\
+	The depth of a Merkel tree is the number of branches from the root to the deepest leaf node. This can be calculated as $log_{2}^{N}$ where $N$ is the number of leaf nodes.\\
+	The proof size is equal to the depth, as it represents the number of hashes needed to validate a leaf when traversing the tree from the root.
+	\item The correct answer is when it appears in a mined block, which has k blocks after it in the longest chain (for some value of k).\\
+	In Bitcoin, a transaction is not considered fully confirmed until it is buried under several blocks in the longest blockchain. The reasoning is:
+	Requiring k additional blocks on top provides a high degree of certainty that the transaction will not be reversed. As k increases, the probability of an orphaned block or chain reorg decreases exponentially.\\
+	The standard for irreversible in Bitcoin is when a transaction has 6 confirmations, meaning it is buried under 6 additional blocks. But a higher k value results in an even higher degree of certainty.\\
+	So in summary, only requiring the transaction to be deep in the longest chain, not just received or in any single block, makes it irreversible on the Bitcoin network.
+	\item \begin{itemize}
+		\item Within the Poisson point process model of Bitcoin mining:\\
+		\begin{itemize}
+			\item The distribution of the time between consecutive blocks is exponential.
+			\item The cumulative distribution function (CDF) is:
+			$$F(t) = 1 - e^{-t\lambda}$$
+			Where $\lambda$ is the expected rate of block discovery, which in Bitcoin is approximately equal to the reciprocal of the intended average block time ($10$ minutes or $600$ seconds).
+		\end{itemize}
+		\item Not answered yet \text{:))}
+	\end{itemize}
+	\item 
+	\begin{itemize}
+		\item Simulation is written is \text{Q6-a.py}. The success probability decreases with $\lambda$ because higher mining power ($\lambda$) makes it harder for the attacker to outpace the honest chain.
+		\item Not answered yet \text{:))}
+		\item No, Nakamoto's assumption that the private chain length follows a Poisson distribution is not correct. The correct distribution is a binomial, as it is the result of repeating Bernoulli trials (mining a block or not).
+		\item With the correct binomial distribution, we can derive the closed form expression for success probability by calculating the CDF of the binomial and setting it equal to $\frac{1}{k}$.
+	\end{itemize}
+	\item Not answered yet \text{:))}	
+	\item \begin{itemize}
+		\item  In a simple algorithm where miners choose their own difficulty without any regulation or coordination, there are several potential attacks:
+		\begin{enumerate}
+			\item \textbf{Selfish Mining Attack:} Miners might strategically lower their difficulty to mine blocks more quickly and increase their own rewards. They can then release these blocks to the network in a way that disrupts the natural difficulty adjustment process, leading to inconsistent block generation intervals and potential forks.
+			\item \textbf{DoS Attacks:} Miners might set extremely high difficulties, effectively refusing to mine. This could disrupt the normal operation of the network by slowing down block generation to a crawl.
+			\item \textbf{Economic Attacks:} Miners can engage in strategic behavior by adjusting their difficulty to influence the mining rewards and transaction fees they receive, potentially leading to imbalanced incentives and security issues.
+		\end{enumerate}
+		\item  In an algorithm where difficulty is adjusted every 2016 blocks without any bound or constraints, the main problem is that there's no safeguard against rapid changes in difficulty. This could lead to two significant issues:
+		\begin{enumerate}
+			\item \textbf{Wild Fluctuations:} Without any bounds on difficulty adjustments, miners could quickly change the difficulty based on their interests. This might lead to rapid oscillations in block generation times, making the network unreliable and potentially causing significant forks.
+			\item \textbf{Security Vulnerabilities:} Miners could strategically manipulate difficulty adjustments to weaken the security of the network. For example, they might lower the difficulty to encourage more miners to join, only to raise it dramatically afterward, making it extremely difficult for the network to keep up.
+		\end{enumerate}
+	\item The full Bitcoin difficulty adjustment algorithm, as designed by Nakamoto, incorporates several important mechanisms to address these issues:
+	\begin{enumerate}
+		\item \textbf{Regular Adjustment Intervals:} Difficulty is adjusted every 2016 blocks (approximately every two weeks). This ensures that the network can adapt to changes in computational power without experiencing wild fluctuations.
+		\item \textbf{Bound on Adjustment:} The algorithm includes a mechanism to limit the maximum adjustment to a factor of $4$ in either direction. This prevents rapid, extreme changes in difficulty.
+		\item \textbf{Proof of Work (PoW):} The security of the Bitcoin network is maintained through PoW, which provides incentives for miners to behave honestly. The difficulty adjustment algorithm doesn't change the fundamental security properties of PoW.
+		\item \textbf{Longest Chain Rule:} The heaviest chain rule is still a fundamental part of Bitcoin's consensus mechanism. However, the difficulty adjustment algorithm ensures that the heaviest chain is based on a predictable and stable block generation rate.
+	\end{enumerate}
+	\end{itemize}
+	\item The answer is forks become more likely.\\
+	When it takes longer for blocks to be disseminated across the P2P network of Bitcoin, the chance of multiple miners solving proof-of-work puzzles simultaneously and broadcasting their blocks at roughly the same time increases. This increases the likelihood of temporary forks in the blockchain. As more miners receive and build upon different blocks, it becomes harder for the network to reach a consensus quickly, potentially leading to forks.
+	\item The answer is $O(\log^{N})$\\
+	As the number of nodes in the P2P network of Bitcoin, $N$, grows, the time for a block to be disseminated to the network generally grows logarithmically. This is because with more nodes, there are more potential pathways for information to travel, but the growth in time is typically not linear ($O(N)$) because of the efficient P2P network topology and communication mechanisms in place. It's closer to logarithmic growth due to the network's structure and the way information spreads through it. 
+	\item The answer is $O(N)$\\
+	As the number of nodes in the P2P network of Bitcoin, $N$, grows, the total number of messages sent for a block to be disseminated to the network typically grows linearly ($O(N)$). This is because each node needs to send the block to every other node in the network, resulting in a linear relationship between the number of nodes and the number of messages exchanged.
+	\item For each of the specified types of combinations, here are some considerations on whether attacks can do better than randomly guessing the nonce:
+	\begin{itemize}
+		\item \textbf{Bit-wise XOR:} 
+		\begin{itemize}
+			\item In this case, the goal is to find a nonce y such that $H(x XOR y) \leq \tau$.
+			\item XOR is a bitwise operation that returns 1 if the bits being compared are different and 0 if they are the same.
+			\item Since the hash function is typically designed to produce a uniformly distributed output for small changes in the input (avalanche effect), trying to predict how XORing a specific nonce with x will affect the hash output is very difficult.
+			\item Therefore, for the bit-wise XOR combination, it is unlikely that any attack can consistently perform better than random guessing the nonce.
+		\end{itemize}
+		\item \textbf{Bit-wise AND:}
+		\begin{itemize}
+			\item In this case, the goal is to find a nonce y such that $H(x AND y) \leq \tau$.
+			\item Bit-wise AND returns 1 if both corresponding bits in x and y are 1, otherwise it returns 0.
+			\item An attack in this scenario could potentially perform better than random guessing if there are patterns in the hash function's output that can be exploited. For example, if the hash function has specific weaknesses related to the AND operation, an attacker might find a nonce that, when ANDed with x, produces predictable bits in the hash output.
+			\item However, if the hash function is designed properly and does not exhibit such patterns, then it would be challenging for an attack to do better than random guessing.
+		\end{itemize}
+		\item \textbf{Bit-wise OR:} 
+		\begin{itemize}
+			\item In this case, the goal is to find a nonce y such that $H(x OR y) \leq \tau$.
+			\item Bit-wise OR returns 1 if at least one of the corresponding bits in x and y is 1.
+			\item Similar to bit-wise AND, whether an attack can do better than random guessing depends on the specific properties of the hash function.
+			\item If the hash function has known weaknesses related to the OR operation, an attacker might exploit those weaknesses to find a nonce that produces the desired hash output.
+			\item However, if the hash function is robust and well-designed, it should not exhibit predictable patterns when performing bit-wise OR, making it difficult for an attack to do better than random guessing.
+		\end{itemize}
+	\end{itemize}
+	\item In a static miner network where the computational power of each miner is fixed and known, the probability of mining a fork is not inherently different between miners with more computational power and miners with less computational power. This is because, in a fair and deterministic mining process, each miner's probability of mining a block (or a fork) is proportional to their computational power relative to the total computational power of the network.\\
+	Here's how it works:
+	\begin{itemize}
+		\item \textbf{Mining Probability:} In a Proof-of-Work (PoW) blockchain like Bitcoin, miners compete to solve a cryptographic puzzle (finding a nonce) to add a new block to the blockchain. The probability of a miner successfully solving this puzzle and mining a valid block is directly proportional to their computational power. Miners with more computational power have a higher chance of solving the puzzle faster.
+		\item \textbf{Network Consensus:} To maintain consensus in the blockchain network, miners must agree on the "longest chain" rule. The longest chain is the one with the most accumulated computational work, not necessarily the one with the most blocks.
+		\item \textbf{Fork Occurrence:} Forks occur when multiple miners successfully mine new blocks within a short time frame ($T\Delta$). This can happen when miners solve the puzzle simultaneously or nearly simultaneously. It's important to note that forks are typically resolved by the network through a consensus mechanism.
+	\end{itemize}
+	\item Not answered yet \text{:))}
+\end{enumerate}
+
+
+\end{document}
